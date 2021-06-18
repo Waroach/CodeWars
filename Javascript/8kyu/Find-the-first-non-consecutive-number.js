@@ -9,13 +9,24 @@
 // 1 Can you write a solution that will return null2 for both [] and [ x ] though?
 // (This is an empty array and one with a single number and is not tested for, but you can write your own example test. )
 
+                                                    // First Try not fullly working
+// function firstNonConsecutive (arr) {
+//     for(i=0;i<arr.length;i++){
+//         if (i+1 != arr[i]){
+//             return arr[i]
+//             console.log(`looser ${arr[i]}`)
+//         }
+//     }
+// }
+
+                                                    // Second Try Fixed and working
 function firstNonConsecutive (arr) {
-    for(i=0;i<arr.length;i++){
-        if (i+1 != arr[i]){
-            return arr[i]
-            console.log(`looser ${arr[i]}`)
+    for (let i = 0; i <arr.length-1; i++){
+        if(arr[i+1] != arr[i]+1){
+            return arr[i+1]
         }
     }
+    return null
 }
 
 firstNonConsecutive([1,2,3,4,6,7,8])
