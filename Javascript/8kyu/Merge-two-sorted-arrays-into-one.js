@@ -18,16 +18,11 @@
 // arr6 = [1, 2, 3, 4, 5, 10, 12];
 // mergeArrays(arr5, arr6);  // [1, 2, 3, 4, 5, 7, 9, 10, 11, 12]
 
-
 function mergeArrays(arr1, arr2) {
-    // let uniq = new Set()
     let concat = arr1
     for(i=0;i<arr2.length;i++){
         arr1.push(arr2[i])
     }
-    // for(element of concat){
-    //     uniq.add(element)
-    // }
     let uniq = concat.filter((c, index) => {
         return concat.indexOf(c) === index
     })
@@ -36,5 +31,17 @@ function mergeArrays(arr1, arr2) {
     return uniq.sort((a, b) => a - b)
 }
 
+                                                    // First try did not work
+// function mergeArrays(arr1, arr2) {
+//     let uniq = new Set()
+//     let concat = arr1
+//     for(i=0;i<arr2.length;i++){
+//         arr1.push(arr2[i])
+//     }
+//     for(element of concat){
+//         uniq.add(element)
+//     }
+//     return uniq.sort((a, b) => a - b)
+// }
 
 mergeArrays([1, 2, 3, 4, 5], [6, 7, 8, 9, 10])
