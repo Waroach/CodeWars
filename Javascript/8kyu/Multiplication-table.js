@@ -6,5 +6,23 @@
 // for given example, the return value should be: [[1,2,3],[2,4,6],[3,6,9]]
 
 multiplicationTable = function(size) {
+    let array = []
+    for(i=1;i<size+1;i++){
+        array.push(i)
+    }
     
+    console.log(array)
 }
+
+
+// multiplicationTable = function(size) {
+//     let result = ''
+//     for (var i = 1; i < (size + 1); i++) {
+//         for (var j = 1; j < (size + 1); j++){
+//             result += (i*j) + ' '
+//         }
+//         result += '\n'
+//     }
+//     console.log(result)
+//     retur
+// }
