@@ -6,23 +6,16 @@
 // for given example, the return value should be: [[1,2,3],[2,4,6],[3,6,9]]
 
 multiplicationTable = function(size) {
-    let array = []
+    let array1=[],array2=[],concat=[],cut=[]
     for(i=1;i<size+1;i++){
-        array.push(i)
+        for(j=1;j<size+1;j++){
+            array2.push(i*j)
+        }
+        array1.push(i)
     }
-    
-    console.log(array)
+    concat.push(...array1, ...array2)
+    for(h=0;array2.length>=size;h++){
+        cut.push(array2.splice(0,size))
+    }
+    return cut
 }
-
-
-// multiplicationTable = function(size) {
-//     let result = ''
-//     for (var i = 1; i < (size + 1); i++) {
-//         for (var j = 1; j < (size + 1); j++){
-//             result += (i*j) + ' '
-//         }
-//         result += '\n'
-//     }
-//     console.log(result)
-//     retur
-// }
