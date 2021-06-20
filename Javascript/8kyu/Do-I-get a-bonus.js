@@ -9,12 +9,17 @@
 // prefixed with "£" (= "\u00A3", JS, Go, Java and Julia),
 // "$" (C#, C++, Ruby, Clojure, Elixir, PHP, Python, Haskell and Lua) or "¥" (Rust).
 
+                                            // First Try WORKS
+// function bonusTime(salary, bonus) {
+//     if(!rust){
+//         return `£${salary}`
+//     }else{
+//         salary = salary * 10
+//         return `£${salary}`
+//     }
+// }
 
-function bonusTime(salary, bonus) {
-    if(!rust){
-        return `£${salary}`
-    }else{
-        salary = salary * 10
-        return `£${salary}`
-    }
+                                            // first try using a ternery i.e. return (isMember ? '$2.00' : '$10.00');
+function bonusTime(salary,bonus){
+    return (!bonus ? "£"+salary : "£"+salary * 10)
 }
