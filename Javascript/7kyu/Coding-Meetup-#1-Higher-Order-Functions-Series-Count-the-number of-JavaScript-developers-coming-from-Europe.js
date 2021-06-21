@@ -11,5 +11,13 @@
 // ];
 
 function countDevelopers(list) {
-    // your awesome code here :)
+    let count = 0
+    for(i=0;i<list.length;i++){
+        if((list[i].continent.toLowerCase() == 'europe') && (list[i].language.toLowerCase() == 'javascript')){
+            console.log(`${list[i].continent} ${list[i].language}`)
+            count++
+        }
+        console.log(list[i])
+    }
+    return count
 }
