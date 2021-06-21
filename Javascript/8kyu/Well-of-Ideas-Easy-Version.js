@@ -19,11 +19,3 @@ function well(x){
         return 'Fail!'
     }
 }
-
-well(['bad', 'bad', 'bad'])
-
-describe("Example tests",() =>{
-    Test.assertEquals(well(['bad', 'bad', 'bad']), 'Fail!');
-    Test.assertEquals(well(['good', 'bad', 'bad', 'bad', 'bad']), 'Publish!');
-    Test.assertEquals(well(['good', 'bad', 'bad', 'bad', 'bad', 'good', 'bad', 'bad', 'good']), 'I smell a series!');
-    });
