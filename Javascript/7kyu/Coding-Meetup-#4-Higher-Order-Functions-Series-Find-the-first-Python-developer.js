@@ -6,14 +6,24 @@
 // < firstName here >, < country here > of the first Python developer who has signed up; or
 // There will be no Python developers if no Python developer has signed up.
 
-function getFirstPython(list) {
-    for(i=0;i<list.length;i++){
-        if(list[i].language === 'Python'){
-            return `${list[i].firstName}, ${list[i].country}`
+function getFirstPython(list){
+    for(i of list){
+        if (i.language === 'Python'){
+            return `${i.firstName}, ${i.country}`
         }
     }
     return `There will be no Python developers`
 }
+
+                                                    // First Try Works
+// function getFirstPython(list) {
+//     for(i=0;i<list.length;i++){
+//         if(list[i].language === 'Python'){
+//             return `${list[i].firstName}, ${list[i].country}`
+//         }
+//     }
+//     return `There will be no Python developers`
+// }
 
 // For example, given the following input array:
 // getFirstPython([
