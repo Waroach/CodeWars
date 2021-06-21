@@ -3,9 +3,9 @@ function differenceInAges(ages){
 }
 
 // OR
-function differenceInAges(ages){
-    let maxAge = Math.max(...ages)
-    let minAge = Math.min(...ages)
-    let difAge = maxAge - minAge
-    return [minAge, maxAge, difAge]
-}
+// function differenceInAges(ages){
+//     let maxAge = Math.max(...ages)
+//     let minAge = Math.min(...ages)
+//     let difAge = maxAge - minAge
+//     return [minAge, maxAge, difAge]
+// }
