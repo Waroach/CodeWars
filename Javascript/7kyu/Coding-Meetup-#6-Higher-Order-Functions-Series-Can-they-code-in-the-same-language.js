@@ -4,18 +4,27 @@
 // Your task is to return either:
 // true if all developers in the list code in the same language; or
 // false otherwise.
-
-function isSameLanguage(list) {
-    let language = list[0].language
+                                                            // Second Try Cleaned up code a little.
+function isSameLanguage(list){
     for(i=0;i<list.length;i++){
-        if(list[i].language != language){
+        if(list[0].language !== list[i].language){
             return false
-        }else{
-            language = list[i].language
         }
     }
     return true
 }
+                                                            // First Try Works Great
+// function isSameLanguage(list) {
+//     let language = list[0].language
+//     for(i=0;i<list.length;i++){
+//         if(list[i].language != language){
+//             return false
+//         }else{
+//             language = list[i].language
+//         }
+//     }
+//     return true
+// }
 
 // For example, given the following input array:
 isSameLanguage([
