@@ -4,21 +4,30 @@
 // Your task is to return an object (associative array in PHP)
 // which includes the count of each coding language represented at the meetup.
 
-                                                            // First Try WORKING
-function countLanguages(list) {
-    let lang = {}
-    list.reduce((languages, {language}) => {
-        if(languages.hasOwnProperty(language) == true){
-            languages[language]++
-            lang[language]++
-        }else{
-            languages[language] = 1
-            lang[language] = 1
-        }
+
+                                                            // Cleaned up code using Ternery style
+const countLanguages = list =>
+    list.reduce((languages, { language }) => {
+        languages.hasOwnProperty(language) ? languages[language]++ : (languages[language] = 1)
+        console.log(languages)
         return languages
     }, {})
-    return lang
-}
+
+                                                            // First Try WORKING
+// function countLanguages(list) {
+//     let lang = {}
+//     list.reduce((languages, {language}) => {
+//         if(languages.hasOwnProperty(language) == true){
+//             languages[language]++
+//             lang[language]++
+//         }else{
+//             languages[language] = 1
+//             lang[language] = 1
+//         }
+//         return languages
+//     }, {})
+//     return lang
+// }
 
 // For example, given the following input array:
 countLanguages([
