@@ -7,15 +7,56 @@
 // 'Africa', 'Americas', 'Asia', 'Europe', 'Oceania'.
 // false otherwise.
 
+//Qualifiers
+//No - Capital or missspellings - so choosing from a list or something.
+//No- blank, null, or undefined
+//No more then 5 continent options for the user to choose from
+// 
 function allContinents(list) {
-    // thank you for checking out the Coding Meetup kata :)
+    // check to see if at least one of each continent is represented
+    // Otherwise return faslse
+    // any funny business?
+
+    //for loop pulling just continents
+    let continents = new Set()
+    for(i=0;i<list.length;i++){
+        //remove duplicates
+        continents.add(list[i].continent)
+    }
+    //check length
+    console.log(continents)
+    if(continents.size == 5){
+        return true
+    }else{
+        return false
+    }
 }
 
 // For example, given the following input array:
-allContinents([
+console.log(allContinents([
     { firstName: 'Fatima', lastName: 'A.', country: 'Algeria', continent: 'Africa', age: 25, language: 'JavaScript' },
     { firstName: 'Agustín', lastName: 'M.', country: 'Chile', continent: 'Americas', age: 37, language: 'C' },
     { firstName: 'Jing', lastName: 'X.', country: 'China', continent: 'Asia', age: 39, language: 'Ruby' },
     { firstName: 'Laia', lastName: 'P.', country: 'Andorra', continent: 'Europe', age: 55, language: 'Ruby' },
     { firstName: 'Oliver', lastName: 'Q.', country: 'Australia', continent: 'Oceania', age: 65, language: 'PHP' },
-])
+]), 'true')
+
+console.log(allContinents([
+    { firstName: 'Fatima', lastName: 'A.', country: 'Algeria', continent: 'Africa', age: 25, language: 'JavaScript' },
+    { firstName: 'Agustín', lastName: 'M.', country: 'Chile', continent: 'Americas', age: 37, language: 'C' },
+    { firstName: 'Jing', lastName: 'X.', country: 'China', continent: 'Africa', age: 39, language: 'Ruby' },
+    { firstName: 'Laia', lastName: 'P.', country: 'Andorra', continent: 'Europe', age: 55, language: 'Ruby' },
+    { firstName: 'Oliver', lastName: 'Q.', country: 'Australia', continent: 'Oceania', age: 65, language: 'PHP' },
+]), 'false, missing Asia')
+
+console.log(allContinents([
+    { firstName: 'Fatima', lastName: 'A.', country: 'Algeria', continent: 'Africa', age: 25, language: 'JavaScript' },
+    { firstName: 'Agustín', lastName: 'M.', country: 'Chile', continent: 'Americas', age: 37, language: 'C' },
+    { firstName: 'Jing', lastName: 'X.', country: 'China', continent: 'Asia', age: 39, language: 'Ruby' },
+    { firstName: 'Laia', lastName: 'P.', country: 'Andorra', continent: 'Europe', age: 55, language: 'Ruby' },
+    { firstName: 'Oliver', lastName: 'Q.', country: 'Australia', continent: 'Oceania', age: 65, language: 'PHP' },
+    { firstName: 'Fatima', lastName: 'A.', country: 'Algeria', continent: 'Africa', age: 25, language: 'JavaScript' },
+    { firstName: 'Agustín', lastName: 'M.', country: 'Chile', continent: 'Americas', age: 37, language: 'C' },
+    { firstName: 'Jing', lastName: 'X.', country: 'China', continent: 'Asia', age: 39, language: 'Ruby' },
+    { firstName: 'Laia', lastName: 'P.', country: 'Andorra', continent: 'Europe', age: 55, language: 'Ruby' },
+]), 'true')
