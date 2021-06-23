@@ -24,12 +24,7 @@ function allContinents(list) {
         continents.add(list[i].continent)
     }
     //check length
-    console.log(continents)
-    if(continents.size == 5){
-        return true
-    }else{
-        return false
-    }
+    return (continents.size == 5) ? true : false
 }
 
 // For example, given the following input array:
