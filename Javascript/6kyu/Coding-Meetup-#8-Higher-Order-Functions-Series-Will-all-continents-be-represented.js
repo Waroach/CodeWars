@@ -17,10 +17,11 @@ function allContinents(list) {
     // Otherwise return faslse
     // any funny business?
 
-    //for loop pulling just continents
+    //new Set to add only original continents too.
     let continents = new Set()
+    //for loop pulling just continents
     for(i=0;i<list.length;i++){
-        //remove duplicates
+        //remove duplicates by only adding Original Continents to the Set
         continents.add(list[i].continent)
     }
     //check length
