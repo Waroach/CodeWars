@@ -32,11 +32,7 @@ function isAgeDiverse(list) {
             check[9] = true
         }
     }
-    if( check.every(v => v === true) ){
-        return true
-    }else{
-        return false
-    }
+    return check.every(v => v === true) ? true : false
 }
 
 // For exampe, given the following input array:
