@@ -8,7 +8,9 @@
 // false otherwise.
 
 function isAgeDiverse(list) {
-    // thank you for checking out the Coding Meetup kata :)
+    for(element of list){
+        console.log(parseInt(element.age / 10, 10) * 10)
+    }
 }
 
 // For exampe, given the following input array:
