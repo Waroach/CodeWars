@@ -8,8 +8,34 @@
 // false otherwise.
 
 function isAgeDiverse(list) {
-    for(element of list){
-        console.log(parseInt(element.age / 10, 10) * 10)
+    let check = [false,false,false,false,false,false,false,false,false,false]
+    for(e of list){
+        if(e.age >= 100){
+            check[0] = true
+        }else if(e.age >= 90){
+            check[1] = true
+        }else if(e.age >= 80){
+            check[2] = true
+        }else if(e.age >= 70){
+            check[3] = true
+        }else if(e.age >= 60){
+            check[4] = true
+        }else if(e.age >= 50){
+            check[5] = true
+        }else if(e.age >= 40){
+            check[6] = true
+        }else if(e.age >= 30){
+            check[7] = true
+        }else if(e.age >= 20){
+            check[8] = true
+        }else if(e.age >= 13){
+            check[9] = true
+        }
+    }
+    if( check.every(v => v === true) ){
+        return true
+    }else{
+        return false
     }
 }
 
