@@ -9,7 +9,11 @@
 // the function is run in year 2020.
 
 function addUsername(list) {
-    // thank you for checking out the Coding Meetup kata :)
+    for(e in list){
+        let lName = list[e].lastName.toLowerCase().charAt(0)
+        list[e].username = (`${list[e].firstName.toLowerCase()}${lName}${2020-list[e].age}`)
+    }
+    return list
 }
 
 // Given the following input array:
