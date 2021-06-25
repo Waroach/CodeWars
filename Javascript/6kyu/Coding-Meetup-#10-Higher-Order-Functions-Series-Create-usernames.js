@@ -8,16 +8,27 @@
 // meetup organised in 10-years-time. The example above assumes that
 // the function is run in year 2020.
 
-function addUsername(list) {
-    for(e in list){
-        let lName = list[e].lastName.toLowerCase().charAt(0)
-        list[e].username = (`${list[e].firstName.toLowerCase()}${lName}${2020-list[e].age}`)
-    }
-    return list
+function addUsername(list){
+    return list.map(e=>{return{...e,username:(e.firstName.toLowerCase()+e.lastName.slice(0,1).toLowerCase()+(Date.prototype.getFullYear()-e.age).toString())}})
 }
+                                            // First Try i dont think it like me using 2020 as year.
+// function addUsername(list) {
+//     let newList = {}
+//     for(e in list){
+//         userName = (list[e].firstName.toLowerCase() + list[e].lastName.toLowerCase().charAt(0) + (2020 - list[e].age))
+//         list[e].username = userName
+//         console.log(list[e])
+//     }
+
+//     // for(e in list){
+//     //     userName = (list[e].firstName.toLowerCase() + list[e].lastName.toLowerCase().charAt(0) + (2020 - list[e].age))
+//     //     list[e].username = userName
+//     // }
+//     console.log(newList)
+// }
 
 // Given the following input array:
-console.log (addUsername([
+console.log(addUsername([
     { firstName: 'Emily', lastName: 'N.', country: 'Ireland', continent: 'Europe', age: 30, language: 'Ruby' },
     { firstName: 'Nor', lastName: 'E.', country: 'Malaysia', continent: 'Asia', age: 20, language: 'Clojure' }
-]), 'emilyn1990 nore2000')
+]), 'emilyn1990 - nore2000')
