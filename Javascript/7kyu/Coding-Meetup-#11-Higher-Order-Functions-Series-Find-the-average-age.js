@@ -6,15 +6,19 @@
 // The input array will always be valid and formatted as in the example above.
 // Age is represented by a number which can be any positive integer.
 
-
 function getAverageAge(list) {
-    let total = 0, numOfUsers = 0
-    for(e in list){
-        total += list[e].age
-        numOfUsers++
-    }
-    return Math.round(total / numOfUsers)
+    return Math.round(list.reduce((combinedAge,element)=>combinedAge+element.age,0)/list.length)
 }
+
+                                            // First Try WORKS BRUTE FORCE
+// function getAverageAge(list) {
+//     let total = 0, numOfUsers = 0
+//     for(e in list){
+//         total += list[e].age
+//         numOfUsers++
+//     }
+//     return Math.round(total / numOfUsers)
+// }
 
 
 // Given the following input array:
