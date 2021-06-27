@@ -11,14 +11,19 @@
 // same way (e.g. 'JavaScript' will always be formatted with upper-case 'J' and 'S'.
 
 function findAdmin(list, lang) {
-    let jsAdmins = []
-    for(e in list){
-        if((list[e].language === lang)&&(list[e].githubAdmin === 'yes')){
-            jsAdmins.push(list[e])
-        }
-    }
-    return jsAdmins
+    return list.filter(e=> e.language===lang&&e.githubAdmin==='yes')
 }
+
+                                            // first Try WORKS BRUTEFORCE
+// function findAdmin(list, lang) {
+//     let jsAdmins = []
+//     for(e in list){
+//         if((list[e].language === lang)&&(list[e].githubAdmin === 'yes')){
+//             jsAdmins.push(list[e])
+//         }
+//     }
+//     return jsAdmins
+// }
 
 // Given the following input array:
 console.log(findAdmin([
@@ -26,10 +31,11 @@ console.log(findAdmin([
 { firstName: 'Kseniya', lastName: 'T.', country: 'Belarus', continent: 'Europe', age: 49, language: 'Ruby', githubAdmin: 'no' },
 { firstName: 'Jing', lastName: 'X.', country: 'China', continent: 'Asia', age: 34, language: 'JavaScript', githubAdmin: 'yes' },
 { firstName: 'Piotr', lastName: 'B.', country: 'Poland', continent: 'Europe', age: 128, language: 'JavaScript', githubAdmin: 'no' }
-]), 2)
+], 'JavaScript'), '2')
 
-// write a function that when executed as findAdmin(list1, 'JavaScript') returns only the JavaScript developers who are GitHub admins:
-// [
-// { firstName: 'Harry', lastName: 'K.', country: 'Brazil', continent: 'Americas', age: 22, language: 'JavaScript', githubAdmin: 'yes' },
-// { firstName: 'Jing', lastName: 'X.', country: 'China', continent: 'Asia', age: 34, language: 'JavaScript', githubAdmin: 'yes' }
-// ]
+console.log(findAdmin([
+{ firstName: 'Harry', lastName: 'K.', country: 'Brazil', continent: 'Americas', age: 22, language: 'JavaScript', githubAdmin: 'yes' },
+{ firstName: 'Kseniya', lastName: 'T.', country: 'Belarus', continent: 'Europe', age: 49, language: 'Ruby', githubAdmin: 'yes' },
+{ firstName: 'Jing', lastName: 'X.', country: 'China', continent: 'Asia', age: 34, language: 'JavaScript', githubAdmin: 'no' },
+{ firstName: 'Piotr', lastName: 'B.', country: 'Poland', continent: 'Europe', age: 128, language: 'JavaScript', githubAdmin: 'no' }
+], 'Ruby'), '1')
