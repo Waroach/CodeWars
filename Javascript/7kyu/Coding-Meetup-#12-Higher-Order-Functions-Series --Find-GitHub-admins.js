@@ -13,13 +13,12 @@
 function findAdmin(list, lang) {
     let jsAdmins = []
     for(e in list){
-        if((list[e].language === 'JavaScript')&&(list[e].githubAdmin === 'yes')){
+        if((list[e].language === lang)&&(list[e].githubAdmin === 'yes')){
             jsAdmins.push(list[e])
         }
     }
     return jsAdmins
 }
-
 
 // Given the following input array:
 console.log(findAdmin([
