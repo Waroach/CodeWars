@@ -11,7 +11,7 @@
 // same way (e.g. 'JavaScript' will always be formatted with upper-case 'J' and 'S'.
 
 function findAdmin(list, lang) {
-    return list.filter(e=> e.language===lang&&e.githubAdmin==='yes')
+    return list.filter(e=>e.language===lang&&e.githubAdmin==='yes')
 }
 
                                             // first Try WORKS BRUTEFORCE
