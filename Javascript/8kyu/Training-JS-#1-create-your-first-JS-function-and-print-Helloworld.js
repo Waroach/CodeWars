@@ -8,7 +8,11 @@
 //     function myfunc(){  ---------your function code will starting with "{"
 //       //you should type your code here
 //     }----------------------------ending with "}"
-// If we want to print some to the screen, maybe we can use Document.write() in the web, or use alert() pop your message, but Codewars did not support these methods, we should use console.log() in your function. see this example:
+// If we want to print some to the screen, maybe we can
+// use Document.write() in the web, or use alert() pop
+// your message, but Codewars did not support these
+// methods, we should use console.log() in your function.
+            // see this example:
 // function printWordToScreen(){
 //   var somewords="This is an example."
 //   console.log(somewords)
@@ -34,3 +38,8 @@
 // to see if your code is working properly.
 // In the end, click "Submit" to submit your
 // code pass this kata.
+
+function helloWorld(){
+    var str="Hello World!"
+    console.log(str)
+}
