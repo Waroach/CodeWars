@@ -1,7 +1,16 @@
 function trueOrFalse(val){
-    if ()    return ?;             
-    else     return ?;
+    if (val)    return 'true';             
+    else     return 'false';
 }
+
+                        // Brute Force way Also Works
+// function trueOrFalse(val){
+//     if (val){
+//         return 'true'
+//     }else{
+//         return 'false'
+//     }
+// }
 
 // In javascript, Boolean object only has two value,
 // true or false. Use ===, ==, >, <, >=, <= between
