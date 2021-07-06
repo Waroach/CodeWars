@@ -1,6 +1,7 @@
+const num = int => `${int < 16 ? '0' : ''}${int.toString(16)}`
+
 function colorOf(r,g,b){
-    //coding here
-    
+    return `#${num(r)}${num(g)}${num(b)}`
 }
 
 // Task
