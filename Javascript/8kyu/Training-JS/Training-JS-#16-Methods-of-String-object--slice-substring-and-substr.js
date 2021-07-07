@@ -1,6 +1,15 @@
-function cutIt(arr){
-    //coding here...
-    
+\function cutIt(arr){
+    let shortString = arr[0].length
+    let newArr = []
+    for(i=0;i<arr.length;i++){
+        if(arr[i].length < shortString){
+            shortString = arr[i].length
+        }
+    }
+    for(x=0;x<arr.length;x++){
+        newArr.push(arr[x].slice(0,shortString))
+    }
+    return newArr
 }
 
 /*
