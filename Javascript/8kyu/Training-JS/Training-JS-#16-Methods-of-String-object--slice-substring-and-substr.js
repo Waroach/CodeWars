@@ -1,4 +1,4 @@
-\function cutIt(arr){
+function cutIt(arr){
     let shortString = arr[0].length
     let newArr = []
     for(i=0;i<arr.length;i++){
