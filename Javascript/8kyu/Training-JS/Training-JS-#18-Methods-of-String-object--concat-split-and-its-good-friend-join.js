@@ -1,5 +1,5 @@
-function splitAndMerge(string, separator) {
-    // Code goes here
+function splitAndMerge(string, separator){
+    return string.split(' ').map( index => index.split('').join(separator) ).join(' ')
 }
 
 /*
