@@ -1,6 +1,9 @@
-function splitAndMerge(string, separator){
-    return string.split(' ').map( index => index.split('').join(separator) ).join(' ')
-}
+const splitAndMerge = (string, separator) => (string.split(' ').map( index => index.split('').join(separator) ).join(' '))
+
+                            // First Try 
+// function splitAndMerge(string, separator){
+//     return string.split(' ').map( index => index.split('').join(separator) ).join(' ')
+// }
 
 /*
 Task
