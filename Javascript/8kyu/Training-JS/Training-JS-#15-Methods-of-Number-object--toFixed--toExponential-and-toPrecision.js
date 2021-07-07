@@ -1,6 +1,9 @@
 function howManySmaller(arr,n){
-    //coding here..
-    
+    let count = 0
+    for(e of arr){
+        if(e.toFixed(2) < n){ count++ }
+    }
+    return count
 }
 
 /*
