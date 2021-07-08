@@ -1,6 +1,9 @@
 function alienLanguage(str){
-    //coding here...
-    
+    str = str.toUpperCase().split('').reverse().join('').split(' ')
+    for(i in str){
+        str[i] = str[i].replace(str[i][0],str[i][0].toLowerCase())
+    }
+    return str.join(' ').split('').reverse().join('')
 }
 
 /*
