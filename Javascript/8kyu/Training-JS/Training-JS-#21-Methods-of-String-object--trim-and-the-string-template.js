@@ -1,7 +1,6 @@
-function fiveLine(s){
-    //coding here...
-    
-}
+
+const fiveLine = s => { s = s.replace(/\s+/g, '')
+                        return `${s}\n${s+s}\n${s+s+s}\n${s+s+s+s}\n${s+s+s+s+s}` }
 
 console.log(fiveLine("  a"), "a\naa\naaa\naaaa\naaaaa")
 console.log(fiveLine("  xy "), "xy\nxyxy\nxyxyxy\nxyxyxyxy\nxyxyxyxyxy")
