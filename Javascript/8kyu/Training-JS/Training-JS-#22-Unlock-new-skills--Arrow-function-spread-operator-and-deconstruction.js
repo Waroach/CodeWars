@@ -1,6 +1,10 @@
-function shuffleIt(arr,...swap){
-    //coding here...
-    
+const shuffleIt = (array, ...swaps) => {
+    const newArray = [...array]
+    swaps.forEach(([firstIndex, secondIndex]) => {
+        const [firstNumber, secondNumber] = [newArray[firstIndex], newArray[secondIndex]]
+        ;[newArray[firstIndex], newArray[secondIndex]] = [secondNumber, firstNumber]
+    })
+    return newArray
 }
 
 console.log(shuffleIt([1,2,3,4,5],[1,2]), [1,3,2,4,5])
