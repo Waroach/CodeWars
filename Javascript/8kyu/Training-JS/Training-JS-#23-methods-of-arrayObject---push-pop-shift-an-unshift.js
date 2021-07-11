@@ -1,7 +1,12 @@
 function infiniteLoop(arr,d,n){
-    //coding here...
-    
+    let wholeArr = []
+    for(x of arr){ for(e of x){ consoel.log(e)}}
+    console.log(wholeArr)
 }
+
+infiniteLoop( [[1,2,3],[4,5,6],[7,8,9]],"left",1 )
+  //console.log( infiniteLoop( [[1,2,3],[4,5,6],[7,8,9]],"left",1 ) )
+  //, [[2,3,4],[5,6,7],[8,9,1]]
 
 /*
 Task
