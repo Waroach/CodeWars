@@ -1,13 +1,16 @@
 function infiniteLoop(arr,d,n){
     let wholeArr = []
-    for(x of arr){ 
-        for(e of x){
-            consoel.log(x[e])
-        }
+    let tempArr = []
+    
+    console.log(arr[0][0])
+    if(d === "right"){
+        //
     }
-    console.log(wholeArr)
-
-
+    //
+    for(i=0;i<arr.length;i++){
+        //
+    }
+    //
 }
 
 infiniteLoop( [[1,2,3],[4,5,6],[7,8,9]],"left",1 )
