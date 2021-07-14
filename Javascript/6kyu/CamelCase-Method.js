@@ -1,11 +1,35 @@
-String.prototype.camelCase = function() {
-    let arg = this.toString()
-        .trim()
-        .split(" ")
-    let arr = arg.map((word, i, arr) =>
-        word ? word.slice(0,1).toUpperCase() + word.slice(1) : word
+String.prototype.capitalize = function() {
+    let dict = {
+        a: "A",
+        b: "B",
+        c: "C",
+        d: "D",
+        e: "E",
+        f: "F",
+        g: "G",
+        h: "H",
+        i: "I",
+        j: "J",
+        k: "K",
+        l: "L",
+        m: "M",
+        n: "N",
+        o: "O",
+        p: "P",
+        q: "Q",
+        r: "R",
+        s: "S",
+        t: "T",
+        u: "U",
+        v: "V",
+        w: "W",
+        x: "X",
+        y: "Y",
+        z: "Z"
+    }
+    return (
+        this.toString()[0].replace(/[a-z]/, v => dict[v]) + this.toString().slice(1)
     )
-    return arr.join("")
 }
 
 /*

@@ -1,4 +1,10 @@
-
+let arg = this.toString()
+        .trim()
+        .split(" ")
+    let arr = arg.map((word, i, arr) =>
+        word ? word.slice(0,1).toUpperCase() + word.slice(1) : word
+    )
+    return arr.join("")
 
 /*
 https://www.codewars.com/kata/56c19316e8b139dff60006da/train/javascript
