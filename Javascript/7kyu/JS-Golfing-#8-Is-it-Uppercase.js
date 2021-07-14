@@ -1,4 +1,10 @@
-f=s=>
+// Works but is more then 8 Chars.
+f=s=> s.toString() === s.toUpperCase()
+
+
+// 9 CHARACTERS??
+// SOMEHOW this WORKS
+// f=s=>s<{}
 
 /*
 JS Golfing Series
