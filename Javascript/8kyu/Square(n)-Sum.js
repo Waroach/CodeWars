@@ -9,3 +9,5 @@ const squareSum = numbers => numbers.reduce((a,c) => a + (c*c), 0)
 
 console.log(squareSum([1,2]), 5)
 console.log(squareSum([0, 3, 4, 5]), 50)
+console.log(squareSum([3, 6, 7, 8]))
+console.log(squareSum([5, 7, 8, 2, 9, 3, 0]))
