@@ -1,4 +1,12 @@
-camelCase=s=> 
+String.prototype.camelCase = function() {
+    let arg = this.toString()
+        .trim()
+        .split(" ")
+    let arr = arg.map((word, i, arr) =>
+        word ? word.slice(0,1).toUpperCase() + word.slice(1) : word
+    )
+    return arr.join("")
+}
 
 /*
 Write simple .camelCase method (camel_case function in PHP,
