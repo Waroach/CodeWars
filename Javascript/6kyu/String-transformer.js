@@ -1,6 +1,11 @@
 function stringTransformer(str) {
-    // Your code here
+    const allUpperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    return str.split('')
+    .map(c => allUpperCase.indexOf(c) === -1 ? c.toUpperCase() : c.toLowerCase())
+    .join('').split(' ').reverse().join(' ')
 }
+
+console.log(stringTransformer('Example tESt stRing'), '--STrING TesT eXAMPLE--')
 
 /*
 Given a string, return a new string that has transformed based on the input:
