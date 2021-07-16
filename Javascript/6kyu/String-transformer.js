@@ -1,9 +1,20 @@
 function stringTransformer(str) {
-    const allUpperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    return str.split('')
-    .map(c => allUpperCase.indexOf(c) === -1 ? c.toUpperCase() : c.toLowerCase())
-    .join('').split(' ').reverse().join(' ')
+    return str.split(' ')
+    .reverse()
+    .join(' ')
+    .split('')
+    .map(l=>l===l.toUpperCase()?l.toLowerCase():l.toUpperCase())
+    .join('')
 }
+
+
+// Old but workds
+// function stringTransformer(str) {
+//     const allUpperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+//     return str.split('')
+//     .map(c => allUpperCase.indexOf(c) === -1 ? c.toUpperCase() : c.toLowerCase())
+//     .join('').split(' ').reverse().join(' ')
+// }
 
 console.log(stringTransformer('Example tESt stRing'), '--STrING TesT eXAMPLE--')
 
