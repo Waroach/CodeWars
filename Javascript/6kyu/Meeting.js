@@ -1,5 +1,10 @@
-function meeting(s) {
-    // your code
+meeting=s=>{
+    let newArr = s.toUpperCase()
+    .split(';')
+    .map( e=> e.split(":").reverse().join(',') )
+    .sort()
+    .join(')(')
+    return `(${newArr})`
 }
 
 meeting("Fred:Corwill;Wilfred:Corwill;Barney:Tornbull;Betty:Tornbull;Bjon:Tornbull;Raphael:Corwill;Alfred:Corwill")
