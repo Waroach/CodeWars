@@ -1,9 +1,14 @@
 function threeInOne(arr){
-    //coding here...
-    
+    let newArr = []
+    for(i=0;i<arr.length;i+=3){
+        newArr.push(arr.slice(i,i+3))
+    }
+    return newArr.map(v=>v.reduce((a,c)=>a+c))
 }
 
 /**
+https://www.codewars.com/kata/572cb264362806af46000793/train/javascript
+
 Task
 Coding in function threeInOne. function accept 1 parameters arr,
 it's a 1D number array. Your task is to merge each of the 3
