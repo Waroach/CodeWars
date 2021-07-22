@@ -1,5 +1,25 @@
 function solve(arr){
-    //..
+    let sorted = arr.sort((a,b)=>a-b)
+    let solved = []
+    let begin = 0
+    let end = sorted.length-1
+    if(sorted.length%2==1){
+        while(begin != end){
+            solved.push(sorted[end])
+            solved.push(sorted[begin])
+            begin+=1
+            end-=1
+        }
+    solved.push(sorted[end])
+    }else{
+        while(begin != end){
+            solved.push(sorted[end])
+            solved.push(sorted[begin])
+            begin+=1
+            end-=1
+        }
+    }
+    return solved
 }
 
 
