@@ -10,16 +10,18 @@ function solve(arr){
             begin+=1
             end-=1
         }
-    solved.push(sorted[end])
-    }else{
-        while(begin != end){
+        solved.push(sorted[end])
+        return solved
+    }
+    if(sorted.length%2==0){
+        while(begin < end){
             solved.push(sorted[end])
             solved.push(sorted[begin])
             begin+=1
             end-=1
         }
+        return solved
     }
-    return solved
 }
 
 
