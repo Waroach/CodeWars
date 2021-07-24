@@ -1,6 +1,5 @@
-function count (string) {  
-    // The function code should be here
-    return {};
+function count(s){
+    return s.split(``).reduce((a,b)=>(a[b]=a[b]+1||1,a),{})
 }
 
 /*
