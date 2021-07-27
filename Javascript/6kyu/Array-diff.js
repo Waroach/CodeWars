@@ -1,9 +1,12 @@
 function arrayDiff(a, b) {
-    return a.filter(n => n != b)
+    return a.filter(n => !b.includes(n))
 }
+
 
 /*
 https://www.codewars.com/kata/523f5d21c841566fde000009/train/javascript
+
+Need to redo this one to study it.
 
 Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
 
