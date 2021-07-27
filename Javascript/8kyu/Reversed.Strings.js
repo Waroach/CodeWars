@@ -17,6 +17,9 @@
                             // Cleaned up Version
 solution=s=>s.split('').reverse().join('')
 
+                            // Using .reduce
+solution=s=>s.split('').reduce((a,c)=>c+a,'')
+
 console.log(solution('world'), 'dlrow')
 console.log(solution('hello'), 'olleh')
 console.log(solution(''), '')
