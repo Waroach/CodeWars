@@ -1,5 +1,5 @@
 function arrayDiff(a, b) {
-
+    let arr = a.filter(n => n === b)
 }
 
 /*
