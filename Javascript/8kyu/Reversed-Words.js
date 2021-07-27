@@ -7,4 +7,7 @@
                             // Second Try
 reverseWords=s=>s.split(' ').reverse().join(' ')
 
+                            // Using Reduce
+reverseWords=s=>s.split(' ').reduce((a,c)=>c+" "+a)
+
 console.log(reverseWords("The greatest victory is that which requires no battle"), "battle no requires which that is victory greatest The")
