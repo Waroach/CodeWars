@@ -7,6 +7,7 @@ function arrayDiff(a, b) {
 https://www.codewars.com/kata/523f5d21c841566fde000009/train/javascript
 
 Need to redo this one to study it.
+Redo Once 7/27/2021
 
 Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
 
