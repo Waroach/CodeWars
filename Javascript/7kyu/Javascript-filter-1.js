@@ -6,7 +6,9 @@ function searchNames(logins){
 https://www.codewars.com/kata/525d9b1a037b7a9da7000905/train/javascript
 
 Need to redo and work on this one
-Use l[0].endsWith('_')
+Try either of these options
+l[0].endsWith('_')
+.filter(el => el[0].match(/[_]$/))
 
 
 
