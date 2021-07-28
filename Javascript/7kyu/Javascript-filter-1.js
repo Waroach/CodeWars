@@ -6,9 +6,10 @@ function searchNames(logins){
 https://www.codewars.com/kata/525d9b1a037b7a9da7000905/train/javascript
 
 Need to redo and work on this one
-Try either of these options
+Try either of these options. Each line is a dif optoin
 l[0].endsWith('_')
 .filter(el => el[0].match(/[_]$/))
+return logins.filter(function (login) { return login[0].slice(-1) === '_' });
 
 
 
