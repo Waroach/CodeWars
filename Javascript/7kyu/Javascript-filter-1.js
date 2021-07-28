@@ -1,8 +1,12 @@
-function searchNames( logins ){
+function searchNames(logins){
+    return logins.filter( l=>l[0].lastIndexOf('_')==l[0].length-1?true:false )
 }
 
 /*
 https://www.codewars.com/kata/525d9b1a037b7a9da7000905/train/javascript
+
+
+
 
 
 While developing a website, you detect that some of the members have troubles logging in.
