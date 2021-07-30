@@ -1,5 +1,13 @@
 function sumMix(x){
-
+    // grab each item from the array
+    let total = 0
+    for(i=0;i<x.length;i++){
+      // check if it is a number and or turn into a number
+        total += Number(x[i])
+      // sum to accumalitve total
+    }
+    // return that total as a number
+    return total
 }
 
 
