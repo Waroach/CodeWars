@@ -5,7 +5,7 @@
 //const squareSum = numbers => numbers.reduce((a,c) => a + (c*c), 0)
 
 // Cleaned up version
-squareSum=n=>n.reduce((a,c)=> a+Math.pow(c,2), 0)
+squareSum=n=>n.reduce((a,c)=>a+Math.pow(c,2),0)
 
 // function squareSum(numbers){
 //     return numbers.reduce((total,number)=>Math.pow(number,2)+total,0)
