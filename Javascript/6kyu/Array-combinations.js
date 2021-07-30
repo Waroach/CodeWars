@@ -1,19 +1,19 @@
-function solve(arr) {\
+function solve(arr) {
     let newArr = []
     let total = 0
-      arr.map(a=>{
-        a.reduce(e=>)
-      })
-  }
+    arr.map(a=>{
+        a.reduce(e=>console.log(e))
+    })
+}
   // [[1,2],[4],[5,6]]
   // 1,4,5
   // 2,4,5
   // 1,4,6
   // 2,4,6
-  
+
   // [1,2], 0 ,[[1,2],[4],[5,6]]
   //  (Map, Reduce, Set)
-  console.log(solve([[1,2],[4],[5,6]]),4)
+console.log(solve([[1,2],[4],[5,6]]),4)
   // console.log(solve([[1,2],[4,4],[5,6,6]]),4)
   // console.log(solve([[1,2],[3,4],[5,6]]),8)
   // console.log(solve([[1,2,3],[3,4,6,6,7],[8,9,10,12,5,6]]),72)
