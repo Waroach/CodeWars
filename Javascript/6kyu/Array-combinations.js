@@ -19,6 +19,9 @@ console.log(solve([[1,2,3],[3,4,6,6,7],[8,9,10,12,5,6]]),72)
 https://www.codewars.com/kata/59e66e48fc3c499ec5000103/train/javascript
 (Map, Reduce, Set)
 
+I need to work on spreads.... and Sets or new Sets
+
+
 Pseudocode
 const solve = arr  I’m passing in an array, and that array has subarrays.
 So I’m going to do arr.map().  This is all about turning the array into Sets, then … the map should eventually give me an array that looks like that (3,4,6), then going to reduce that array.
