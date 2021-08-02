@@ -9,6 +9,11 @@ https://www.codewars.com/kata/525f0459fb9570f9ff00005d/javascript
 
 I believe i should use .filter() and maybe .split()
 
+This was part of the Javscript-Filter-1
+function searchNames(logins){
+    return logins.filter( l=>l[0].lastIndexOf('_')==l[0].length-1?true:false )
+}
+
 
 Your friend saw the great work you did with keeping your user-names at bay in
 http://www.codewars.com/dojo/katas/525d9b1a037b7a9da7000905
