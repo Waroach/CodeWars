@@ -1,6 +1,13 @@
 function searchNames( logins ){
+    
 }
 
+                            // This works but fails on Codewars...
+// function searchNames( logins ){
+//     let arr = []
+//     logins.filter((e,i,a)=>e.[0]=="." || e[e.length-1]=="."?arr.push(a[i+1]):false)
+//     return arr
+// }
 
 
 /*
