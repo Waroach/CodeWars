@@ -1,5 +1,6 @@
+                            // Not sure how this works....
 function searchNames( logins ){
-    
+    return logins.filter((v,i)=>/^\.|\.$/g.test(logins[i-1])&&/@\w+./g.test(v))
 }
 
                             // This works but fails on Codewars...
