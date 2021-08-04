@@ -1,6 +1,10 @@
-function solve(arr){
-  return arr.map( a => [...new Set(a)].length ).reduce((a,c)=>a*c)
-}
+
+solve=arr=>arr.map(a=>[...new Set(a)].length).reduce((a,c)=>a*c)
+
+              // First Try
+// function solve(arr){
+//   return arr.map( a => [...new Set(a)].length ).reduce((a,c)=>a*c)
+// }
 
   // [[1,2],[4],[5,6]]
   // 1,4,5
