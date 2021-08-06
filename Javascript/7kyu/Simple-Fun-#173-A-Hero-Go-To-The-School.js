@@ -2,7 +2,7 @@ function whichBusToTake(b, s) {
     for(i=0;i<b.length;i++){
         if(b[i]=='red' && s[i])return i
     }
-    return s.findIndex((e,i)=>e==true?i:false)
+    return s.findIndex(e=>e==true)
 }
 
 /*
