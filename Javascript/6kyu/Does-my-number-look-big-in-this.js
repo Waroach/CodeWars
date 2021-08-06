@@ -1,6 +1,11 @@
 function narcissistic(value) {
-    // Code me to return true or false
+    let n = value.toString().split('')
+    console.log( n.reduce( (a,c)=>Number(a)+Math.pow(Number(c), n.length) ) )
 }
+
+console.log(narcissistic( 7 ), true, "7 is narcissistic" )
+console.log(narcissistic( 371 ), true, "371 is narcissistic" )
+
 
 /*
 https://www.codewars.com/kata/5287e858c6b5a9678200083c/train/javascript
