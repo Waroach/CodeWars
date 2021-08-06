@@ -1,6 +1,6 @@
 function movie(card, ticket, perc) {
     let sysA = n = 0,sysB = card
-    while (sysB >= sysA) {
+    while (Math.ceil(sysB) >= sysA) {
         sysA += ticket
         sysB += ticket * Math.pow(perc,++n)
     }
