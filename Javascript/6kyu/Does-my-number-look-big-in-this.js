@@ -1,6 +1,8 @@
 function narcissistic(value) {
-    let n = value.toString().split('')
-    console.log( n.reduce( (a,c)=>Number(a)+Math.pow(Number(c), n.length) ) )
+    let n = String(value).split('')
+    let total = 0
+    n.filter( a=> total += Math.pow(Number(a), n.length) )
+    return total === value
 }
 
 console.log(narcissistic( 7 ), true, "7 is narcissistic" )
