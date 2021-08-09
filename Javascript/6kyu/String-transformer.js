@@ -8,7 +8,7 @@ function stringTransformer(str) {
 }
 
 
-// Old but workds
+// Old but works
 // function stringTransformer(str) {
 //     const allUpperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 //     return str.split('')
@@ -19,6 +19,8 @@ function stringTransformer(str) {
 console.log(stringTransformer('Example tESt stRing'), '--STrING TesT eXAMPLE--')
 
 /*
+This needs to be worked on.
+
 Given a string, return a new string that has transformed based on the input:
 Change case of every character, ie. lower case to upper case, upper case to lower case.
 Reverse the order of words from the input.
