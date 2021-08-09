@@ -1,6 +1,9 @@
-function hexToDec(hexString){
-    return parseInt(hexString, 16)
-}
+hexToDec=h=>parseInt(h, 16)
+
+                            // First Try
+// function hexToDec(hexString){
+//     return parseInt(hexString, 16)
+// }
 
 console.log(hexToDec("1"), 1)
 console.log(hexToDec("a"), 10)
