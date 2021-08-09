@@ -1,5 +1,5 @@
 function hexToDec(hexString){
-    parseInt(hexString, 16)
+    return parseInt(hexString, 16)
 }
 
 console.log(hexToDec("1"), 1)
