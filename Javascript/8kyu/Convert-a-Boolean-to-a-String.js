@@ -1,5 +1,8 @@
+booleanToString=b=>String(b)
+
+                            // First Try
 function booleanToString(b){
-    //your code here
+    return String(b)
 }
 
 /*
