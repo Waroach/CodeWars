@@ -1,7 +1,5 @@
 function halvingSum(n) {
-    for(i=2;n!=1;i+i){
-        
-    }
+    
 }
 
 console.log(halvingSum(25),47)
