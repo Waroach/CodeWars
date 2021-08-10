@@ -1,10 +1,16 @@
 function sortVowels(s){
     if (typeof s !== 'string') return ''
-    return s.split``.map(v=>{
-    if (/[aeiou]/i.test(v)) return '|'+v+'\n'
-    else return v+'|'+'\n'
-    }).join``.slice(0,-1)
+    return s.split(``).map(v=>/[aeiou]/i.test(v) ? '|'+v+'\n' : v+'|'+'\n').join``.slice(0,-1)
 }
+
+                            //First Try
+// function sortVowels(s){
+//     if (typeof s !== 'string') return ''
+//     return s.split``.map(v=>{
+//     if (/[aeiou]/i.test(v)) return '|'+v+'\n'
+//     else return v+'|'+'\n'
+//     }).join``.slice(0,-1)
+// }
 
 console.log(sortVowels('Codewars'), 'C|\n|o\nd|\n|e\nw|\n|a\nr|\ns|')
 console.log(sortVowels('Rnd Te5T'), 'R|\nn|\nd|\n |\nT|\n|e\n5|\nT|')
