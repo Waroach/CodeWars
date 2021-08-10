@@ -1,5 +1,9 @@
 function sortVowels(s){
-    //code
+    if (typeof s !== 'string') return ''
+    return s.split``.map(v=>{
+    if (/[aeiou]/i.test(v)) return '|'+v+'\n'
+    else return v+'|'+'\n'
+    }).join``.slice(0,-1)
 }
 
 console.log(sortVowels('Codewars'), 'C|\n|o\nd|\n|e\nw|\n|a\nr|\ns|')
