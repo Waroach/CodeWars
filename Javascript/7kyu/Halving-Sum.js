@@ -1,5 +1,9 @@
 function halvingSum(n) {
-    
+    let total = 0
+    for(i=n;i>0;i=parseInt(i/2)){
+        total += i
+    }
+    return total
 }
 
 console.log(halvingSum(25),47)
