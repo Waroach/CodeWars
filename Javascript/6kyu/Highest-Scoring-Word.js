@@ -17,6 +17,9 @@ function high(x){
 console.log(high('what time are we climbing up the volcano'), 'volcano')
 console.log(high('aa b'), 'aa')
 
+// Need to REDO this and understand concepts better
+
+
 /*
 Pseudocode
 1) First we need to get a indecies + 1 of the alphabet
