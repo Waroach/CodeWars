@@ -1,5 +1,17 @@
 function high(x){
-
+    const alpha = "abcdefghijklmnopqrstuvwxyz"
+    const wordScore = word => word.split('').reduce((a,c)=>a+(alpha.indexOf(c)+1),0)
+    let hWord = ""
+    let hSum = 0
+    
+    x.split(' ').forEach(w=>{
+        const scoreCheck = wordScore(w)
+        if(scoreCheck>hSum){
+            hWord = w
+            hSum = scoreCheck
+        }
+    })
+    return hWord
 }
 
 console.log(high('what time are we climbing up the volcano'), 'volcano')
