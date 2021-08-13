@@ -1,5 +1,17 @@
 function swapVowelCase(str) {
-    // your code here
+    let newStr = []
+    str.split('').map(l=>{
+        if(l=='a'||l=='e'||l=='i'||l=='o'||l=='u'||l=='A'||l=='E'||l=='I'||l=='O'||l=='U'){
+            if(l==l.toLowerCase()){
+                newStr.push(l.toUpperCase())
+            }else{
+                newStr.push(l.toLowerCase())
+            }
+        }else{
+            newStr.push(l)
+        }
+    })
+    return newStr.join('')
 }
 
 console.log(swapVowelCase(" "), " ")
