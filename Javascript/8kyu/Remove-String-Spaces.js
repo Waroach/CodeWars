@@ -1,6 +1,10 @@
-function noSpace(x){
-    return x.split(' ').join('')
-}
+
+noSpace=x=>x.split(' ').join('')
+
+                            // First Try
+// function noSpace(x){
+//     return x.split(' ').join('')
+// }
 
 /*
 https://www.codewars.com/kata/57eae20f5500ad98e50002c5/train/javascript
