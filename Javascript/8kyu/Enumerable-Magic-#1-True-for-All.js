@@ -1,3 +1,6 @@
+all=(arr,fun)=>arr.every(fun)
+
+                            //First Try
 function all( arr, fun ){
     return arr.every(fun)
 }
