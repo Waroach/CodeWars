@@ -1,8 +1,11 @@
+smash=w=>w.join(' ')
+
+                            // First Try
 // Smash Words
-function smash (words) {
-    "use strict";
-    words.join(' ')
-}
+// function smash (words) {
+//     "use strict";
+//     words.join(' ')
+// }
 
 /*
 https://www.codewars.com/kata/53dc23c68a0c93699800041d/train/javascript
