@@ -1,8 +1,7 @@
 // Smash Words
 function smash (words) {
     "use strict";
-    
-    
+    words.join(' ')
 }
 
 /*
