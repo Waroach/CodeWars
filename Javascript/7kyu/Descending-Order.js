@@ -1,6 +1,9 @@
-function descendingOrder(n){
-    return Number(n.toString().split('').sort((a,b)=>b-a).join(''))
-}
+descendingOrder=n=>Number(n.toString().split('').sort((a,b)=>b-a).join(''))
+
+                            // First Try
+// function descendingOrder(n){
+//     return Number(n.toString().split('').sort((a,b)=>b-a).join(''))
+// }
 
 console.log(descendingOrder(0), 0)
 console.log(descendingOrder(1), 1)
