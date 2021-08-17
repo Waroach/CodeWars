@@ -1,5 +1,5 @@
 function vaporcode(string) {
-
+    return string.split(' ').join('').split('').map(l=>l=l.toUpperCase()).join("  ")
 }
 
 console.log(vaporcode("Let's go to the movies"),"L  E  T  '  S  G  O  T  O  T  H  E  M  O  V  I  E  S")
