@@ -1,10 +1,16 @@
 function solution(nums){
-    if(nums != null){
-        return nums.sort((a,b)=>a-b)
-    }else{
-        return []
-    }
+    if(nums != null){return nums.sort((a,b)=>a-b)}
+    if(nums == null){ return [] }
 }
+
+                            // First Try
+// function solution(nums){
+//     if(nums != null){
+//         return nums.sort((a,b)=>a-b)
+//     }else{
+//         return []
+//     }
+// }
 
 console.log(solution([1,2,3,10,5]), [1,2,3,5,10])
 console.log(solution(null), [])
