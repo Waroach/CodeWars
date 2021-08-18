@@ -1,10 +1,12 @@
 function isValidWalk(walk) {
-    let distance = 0
+    let n = 0, s = 0, e = 0, w = 0
     for (let dir of walk) { 
-        if (dir == 'n' || dir == 'w') distance += 1;
-        if (dir == 's' || dir == 'e') distance -= 1;
+        if(dir == 'n') n += 1
+        if(dir == 's') s += 1
+        if(dir == 'e') e += 1
+        if(dir == 'w') w += 1
     }
-    return walk.length === 10 && distance === 0
+    return walk.length === 10 && n-s === 0 && w-e === 0
 }
 
 
