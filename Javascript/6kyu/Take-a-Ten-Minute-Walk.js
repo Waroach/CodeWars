@@ -2,10 +2,10 @@ function isValidWalk(walk) {
     //insert brilliant code here
 }
 
-Test.expect(isValidWalk(['n','s','n','s','n','s','n','s','n','s']), 'should return true');
-Test.expect(!isValidWalk(['w','e','w','e','w','e','w','e','w','e','w','e']), 'should return false');
-Test.expect(!isValidWalk(['w']), 'should return false');
-Test.expect(!isValidWalk(['n','n','n','s','n','s','n','s','n','s']), 'should return false');
+console.log(isValidWalk(['n','s','n','s','n','s','n','s','n','s']), 'should return true')
+console.log(!isValidWalk(['w','e','w','e','w','e','w','e','w','e','w','e']), 'should return false')
+console.log(!isValidWalk(['w']), 'should return false')
+console.log(!isValidWalk(['n','n','n','s','n','s','n','s','n','s']), 'should return false')
 
 /*
 https://www.codewars.com/kata/54da539698b8a2ad76000228/train/javascript
