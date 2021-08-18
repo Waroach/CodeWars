@@ -1,6 +1,12 @@
 function isValidWalk(walk) {
-    //insert brilliant code here
+    let distance = 0
+    for (let dir of walk) { 
+        if (dir == 'n' || dir == 'w') distance += 1;
+        if (dir == 's' || dir == 'e') distance -= 1;
+    }
+    return walk.length === 10 && distance === 0
 }
+
 
 console.log(isValidWalk(['n','s','n','s','n','s','n','s','n','s']), 'should return true')
 console.log(!isValidWalk(['w','e','w','e','w','e','w','e','w','e','w','e']), 'should return false')
