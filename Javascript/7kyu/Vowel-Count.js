@@ -1,8 +1,7 @@
 function getCount(str) {
     var vowelsCount = 0;
-    
-    // enter your majic here
-    
+    vowels = ['a','e','i','o','u']
+    str.split('').filter(l=>vowels.includes(l)?vowelsCount++:false)
     return vowelsCount;
 }
 
