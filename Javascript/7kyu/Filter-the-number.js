@@ -1,5 +1,7 @@
 var FilterString = function(value) {
-    //Complete this function :)
+    let result = ''
+    value.split('').filter(a=>a==Number(a)?result+=a:false)
+    return Number(result)
 }
 
 console.log(FilterString("123"), 123, 'Just return the numbers')
