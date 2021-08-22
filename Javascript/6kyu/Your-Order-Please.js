@@ -1,5 +1,13 @@
 function order(words){
-    // ...
+    let worder = []
+    for(i=0;i<words.split(' ').length+1;i++){
+        for (w of words.split(' ')){
+            if(w.includes(i)){
+                worder.push(w)
+            }
+        }
+    }
+    return worder.join(' ')
 }
 
 /*
