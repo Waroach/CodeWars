@@ -1,3 +1,6 @@
+domainName=url=>url.replace('www.', '').replace('http://', '').replace('https://', '').split('.').shift()
+
+                            // First Try
 function domainName(url){
     return url.replace('www.', '').replace('http://', '').replace('https://', '').split('.').shift()
 }
