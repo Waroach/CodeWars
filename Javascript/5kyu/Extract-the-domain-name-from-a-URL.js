@@ -1,5 +1,5 @@
 function domainName(url){
-    //your code here
+    return url.replace('www.', '').replace('http://', '').replace('https://', '').split('.').shift()
 }
 
 console.log(domainName("http://google.com"), "google")
