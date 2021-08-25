@@ -1,6 +1,14 @@
-function count(s){
-    return s.split(``).reduce((a,b)=>(a[b]=a[b]+1||1,a),{})
+function count(str){
+    let charCount = {};
+    str.split('').forEach(c=>charCount[c]?charCount[c]++:charCount[c]=1)
+    return charCount
 }
+
+                            // First Try
+// function count(s){
+//     return s.split(``).reduce((a,b)=>(a[b]=a[b]+1||1,a),{})
+// }
+
 
 /*
 https://www.codewars.com/kata/52efefcbcdf57161d4000091/train/javascript
