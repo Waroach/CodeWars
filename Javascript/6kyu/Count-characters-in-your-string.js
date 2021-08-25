@@ -4,6 +4,22 @@ function count(str){
     return charCount
 }
 
+                            // BRUTE FORCE
+function count(str){
+    let charCount = {};
+    str.toLowerCase()
+    .split('')
+    .sort()
+    .forEach(c=>{
+        if(!charCount[c]){
+            charCount[c]=1
+        }else{
+            charCount[c]++
+        }
+    })
+    return charCount
+}
+
                             // First Try
 // function count(s){
 //     return s.split(``).reduce((a,b)=>(a[b]=a[b]+1||1,a),{})
