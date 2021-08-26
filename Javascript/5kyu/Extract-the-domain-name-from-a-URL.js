@@ -1,9 +1,20 @@
 domainName=url=>url.replace('www.', '').replace('http://', '').replace('https://', '').split('.').shift()
 
-                            // First Try
+
+                            // less code? kinda
 function domainName(url){
-    return url.replace('www.', '').replace('http://', '').replace('https://', '').split('.').shift()
+    return url.replace('http://www.', "")
+    .replace('https://www.', '')
+    .replace('http://', '')
+    .replace('https://', '')
+    .replace('www.', '')
+    .split('.')[0]
 }
+
+                            // First Try
+// function domainName(url){
+//     return url.replace('www.', '').replace('http://', '').replace('https://', '').split('.').shift()
+// }
 
 console.log(domainName("http://google.com"), "google")
 console.log(domainName("http://google.co.jp"), "google")
