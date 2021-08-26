@@ -1,18 +1,42 @@
 function high(x){
-    const alpha = "abcdefghijklmnopqrstuvwxyz"
-    const wordScore = word => word.split('').reduce((a,c)=>a+(alpha.indexOf(c)+1),0)
-    let hWord = ""
-    let hSum = 0
+    // Give each letter an altered index
+    let alph ='0abcdefghijklmnopqrstuvwxyz'
+    let highWord = ''
+    let highCount = 0
+    // Get the ‘points’ for each letter
+    // Add those points together
+    // Mini Function to do this.
+    const wordScore = word => word.split('').reduce((a,c)=> a + alph.indexOf(c), 0)
     
+    // Need to split into individial words.
     x.split(' ').forEach(w=>{
         const scoreCheck = wordScore(w)
-        if(scoreCheck>hSum){
-            hWord = w
-            hSum = scoreCheck
+        if (scoreCheck > highCount) {
+            highWord = w
+            highCount = scoreCheck
         }
     })
-    return hWord
+    // return results
+    return highWord
 }
+
+
+                            // First Try
+// function high(x){
+//     const alpha = "abcdefghijklmnopqrstuvwxyz"
+//     const wordScore = word => word.split('').reduce((a,c)=>a+(alpha.indexOf(c)+1),0)
+//     let hWord = ""
+//     let hSum = 0
+    
+//     x.split(' ').forEach(w=>{
+//         const scoreCheck = wordScore(w)
+//         if(scoreCheck>hSum){
+//             hWord = w
+//             hSum = scoreCheck
+//         }
+//     })
+//     return hWord
+// }
 
 console.log(high('what time are we climbing up the volcano'), 'volcano')
 console.log(high('aa b'), 'aa')
