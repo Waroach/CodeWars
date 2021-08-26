@@ -4,21 +4,28 @@ function count(str){
     return charCount
 }
 
+                            // Anki Style Review
+// function count (s) {  
+//     let c = {}
+//     s.split('').map(e=>!c[e]?c[e]=1:c[e]++)
+//     return c
+// }
+
                             // BRUTE FORCE
-function count(str){
-    let charCount = {};
-    str.toLowerCase()
-    .split('')
-    .sort()
-    .forEach(c=>{
-        if(!charCount[c]){
-            charCount[c]=1
-        }else{
-            charCount[c]++
-        }
-    })
-    return charCount
-}
+// function count(str){
+//     let charCount = {};
+//     str.toLowerCase()
+//     .split('')
+//     .sort()
+//     .forEach(c=>{
+//         if(!charCount[c]){
+//             charCount[c]=1
+//         }else{
+//             charCount[c]++
+//         }
+//     })
+//     return charCount
+// }
 
                             // First Try
 // function count(s){
