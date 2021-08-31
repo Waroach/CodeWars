@@ -1,6 +1,9 @@
-function twoOldestAges(ages){
-    return ages.sort((a,b)=>a-b).slice(ages.length - 2)
-}
+twoOldestAges=ages=>ages.sort((a,b)=>a-b).slice(ages.length-2)
+
+                            // First Try
+// function twoOldestAges(ages){
+//     return ages.sort((a,b)=>a-b).slice(ages.length - 2)
+// }
 
 console.log(twoOldestAges([1,5,87,45,8,8]), [87, 45])
 console.log(twoOldestAges([6,5,83,5,3,18]), [83, 18])
