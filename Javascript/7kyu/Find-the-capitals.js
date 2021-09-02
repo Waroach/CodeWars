@@ -1,3 +1,6 @@
+
+
+
 var capitals = function (word) {
     let arr = []
     word.split('').filter( (l,i)=>l===l.toUpperCase()? arr.push(i):console.log('fuck'))
