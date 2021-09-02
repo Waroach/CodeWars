@@ -1,11 +1,16 @@
-
-
-
 var capitals = function (word) {
-    let arr = []
-    word.split('').filter( (l,i)=>l===l.toUpperCase()? arr.push(i):console.log('fuck'))
-    return arr
+    let nums = []
+    word.split('')
+        .filter((l,i)=>l==l.toUpperCase() ? nums.push(i) : false)
+    return nums
 }
+
+                            // First Try
+// var capitals = function (word) {
+//     let arr = []
+//     word.split('').filter( (l,i)=>l===l.toUpperCase()? arr.push(i):console.log('fuck'))
+//     return arr
+// }
 
 /*
 https://www.codewars.com/kata/539ee3b6757843632d00026b/train/javascript
