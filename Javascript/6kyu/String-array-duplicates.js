@@ -1,6 +1,6 @@
 function dup(s) {
-    //..
-};
+    return s.map(word=> word.split('').filter((l,i,arr)=>l!=arr[i-1]).join(''))
+}
 
 console.log(dup(["abracadabra","allottee","assessee"]), ["abracadabra","alote","asese"])
 console.log(dup(["kelless","keenness"]), ["keles","kenes"])
