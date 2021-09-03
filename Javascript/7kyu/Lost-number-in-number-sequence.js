@@ -1,5 +1,5 @@
 function findDeletedNumber(arr, mixArr) {
-    // your code
+    return arr.reduce((c,a)=>c+a) - mixArr.reduce((c,a)=>c+a)
 }
 
 console.log(findDeletedNumber([1,2,3,4,5], [3,4,1,5]), 2, 'Deletion')
