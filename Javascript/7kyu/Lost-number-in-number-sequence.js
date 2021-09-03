@@ -1,6 +1,11 @@
 function findDeletedNumber(arr, mixArr) {
-    return arr.reduce((c,a)=>c+a) - mixArr.reduce((c,a)=>c+a)
+    return arr ? arr.reduce((c,a)=>c+a) - mixArr.reduce((c,a)=>c+a) : 0
 }
+
+                            // First Try
+// function findDeletedNumber(arr, mixArr) {
+//     return arr.reduce((c,a)=>c+a) - mixArr.reduce((c,a)=>c+a)
+// }
 
 console.log(findDeletedNumber([1,2,3,4,5], [3,4,1,5]), 2, 'Deletion')
 console.log(findDeletedNumber([1,2,3,4,5,6,7,8,9], [1,9,7,4,6,2,3,8]), 5, 'Deletion')
