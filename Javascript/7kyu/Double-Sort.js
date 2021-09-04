@@ -1,5 +1,7 @@
 function dbSort(a){
-    // Code here
+    let words = [], nums = []
+    a.filter(e => typeof e === 'number' ? nums.push(e) : words.push(e))
+    return [...nums.sort((x,y)=>x-y), ...words.sort()]
 }
 
 console.log(dbSort([6, 2, 3, 4, 5]), [2, 3, 4, 5, 6]);
