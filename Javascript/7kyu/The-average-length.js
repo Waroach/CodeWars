@@ -1,6 +1,8 @@
-function averageLength() { 
-    // good luck
+function averageLength(arr) { 
+    let ave = Math.round(arr.join('').length / arr.length)
+    return arr.map(e=>e[0].repeat(ave))
 }
+
 /*
 psudocode
 find average by adding all the letters deviding by the amount of words
