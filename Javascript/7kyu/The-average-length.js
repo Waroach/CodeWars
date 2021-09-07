@@ -1,7 +1,11 @@
 function averageLength() { 
     // good luck
 }
-
+/*
+psudocode
+find average by adding all the letters deviding by the amount of words
+Then recreate the strings using the above number to place that many letters.
+*/
 
 console.log(averageLength(['u', 'y']), ['u', 'y']);
 console.log(averageLength(['aa', 'bbb', 'cccc']), ['aaa', 'bbb', 'ccc']);
