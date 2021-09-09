@@ -1,8 +1,14 @@
+                            // Not yet tested
+function averageLength(arr) { 
+    return arr.map(e=>e[0].repeat(Math.round(arr.join('').length / arr.length)))
+}
+
+
+                            // First Try
 function averageLength(arr) { 
     const ave = Math.round(arr.join('').length / arr.length)
     return arr.map(e=>e[0].repeat(ave))
 }
-
 
 
 /*
