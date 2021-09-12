@@ -1,5 +1,18 @@
-var fibsFizzBuzz = function(n) {
-    // Your code here.
+fibsFizzBuzz=n=>{
+    // First lets make the fibs sequence in a array to the n
+    let a=1, b=0, temp, arr=[];
+    while (n >= 1){
+        temp = a;
+        a = a + b;
+        b = temp;
+        n--;
+        // Second lets compare each sequence to its Fizz or Buzz or FizzBuzz section.
+        if(b%3==0 && b%5==0){arr.push('FizzBuzz')}
+        else if(b%3==0){arr.push('Fizz')}
+        else if(b%5==0){arr.push('Buzz')}
+        else{arr.push(b)}
+    }
+    return arr
 }
 
 
