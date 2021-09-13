@@ -14,7 +14,13 @@ fibsFizzBuzz=n=>{
     }
     return arr
 }
-
+/*
+                            Test run of fib...
+let a = 1, b = 0, temp = 0;
+temp = a
+a = a + b
+b = temp
+*/
 
 console.log(fibsFizzBuzz(20),[1,1,2,"Fizz","Buzz",8,13,"Fizz",34,"Buzz",89,"Fizz",233,377,"Buzz","Fizz",1597,2584,4181,"FizzBuzz"])
 
