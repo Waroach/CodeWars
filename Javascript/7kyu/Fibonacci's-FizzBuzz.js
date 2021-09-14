@@ -22,6 +22,16 @@ a = a + b
 b = temp
 */
 
+/*
+let a = 0, b = 1, temp
+
+temp = a
+a = a + b
+b = temp
+arr.push(b)
+*/
+
+
 console.log(fibsFizzBuzz(20),[1,1,2,"Fizz","Buzz",8,13,"Fizz",34,"Buzz",89,"Fizz",233,377,"Buzz","Fizz",1597,2584,4181,"FizzBuzz"])
 
 /*
