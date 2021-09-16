@@ -22,10 +22,9 @@ console.log(fibsFizzBuzz(20),[1,1,2,"Fizz","Buzz",8,13,"Fizz",34,"Buzz",89,"Fizz
 let a=0, b=1, temp;
 temp = a
 a = a+b
-b = temp
+b=temp
+.push(b)
 */
-
-
 
 /*
 https://www.codewars.com/kata/57bf599f102a39bb1e000ae5/train/javascript
