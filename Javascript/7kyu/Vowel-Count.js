@@ -1,6 +1,6 @@
 function getCount(str) {
-    var vowelsCount = 0;
-    vowels = ['a','e','i','o','u']
+    let vowelsCount = 0;
+    let vowels = ['a','e','i','o','u']
     str.split('').filter(l=>vowels.includes(l)?vowelsCount++:false)
     return vowelsCount;
 }
