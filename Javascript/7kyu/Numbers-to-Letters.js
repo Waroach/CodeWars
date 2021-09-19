@@ -1,5 +1,9 @@
 function switcher(x){
-
+    let alpha = 'zyxwvutsrqponmlkjihgfedcba!? ', word = []
+    for(n of x){
+        word.push(alpha.charAt(n-1))
+    }
+    return word.join('')
 }
 
 console.log(switcher(['24', '12', '23', '22', '4', '26', '9', '8']), 'codewars')
