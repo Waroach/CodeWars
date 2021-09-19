@@ -3,11 +3,7 @@ function high(x){
     let alph ='0abcdefghijklmnopqrstuvwxyz'
     let highWord = ''
     let highCount = 0
-    // Get the ‘points’ for each letter
-    // Add those points together
-    // Mini Function to do this.
-    const wordScore = word => word.split('').reduce((a,c)=> a + alph.indexOf(c), 0)
-    
+
     // Need to split into individial words.
     x.split(' ').forEach(w=>{
         const scoreCheck = wordScore(w)
@@ -16,6 +12,12 @@ function high(x){
             highCount = scoreCheck
         }
     })
+
+    // Get the ‘points’ for each letter
+    // Add those points together
+    // Mini Function to do this.
+    const wordScore = word => word.split('').reduce((a,c)=> a + alph.indexOf(c), 0)
+
     // return results
     return highWord
 }
