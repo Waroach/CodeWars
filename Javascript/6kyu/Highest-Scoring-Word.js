@@ -22,6 +22,10 @@ function high(x){
     return highWord
 }
 
+// Need to REDO this and understand concepts better
+
+console.log(high('what time are we climbing up the volcano'), 'volcano')
+console.log(high('aa b'), 'aa')
 
                             // First Try
 // function high(x){
@@ -39,11 +43,6 @@ function high(x){
 //     })
 //     return hWord
 // }
-
-console.log(high('what time are we climbing up the volcano'), 'volcano')
-console.log(high('aa b'), 'aa')
-
-// Need to REDO this and understand concepts better
 
 
 /*

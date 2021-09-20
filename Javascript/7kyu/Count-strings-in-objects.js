@@ -1,5 +1,10 @@
 function strCount(obj){
-    // Your code here
+    let count = 0
+    for(let i in obj){
+        if(typeof obj[i] == 'object') count += strCount(obj[i])
+        if(typeof obj[i] == 'string') count += 1
+    }
+    return count
 }
 
 console.log(strCount({
