@@ -6,6 +6,9 @@ function strCount(obj){
     }
     return count
 }
+/*
+Redo daily until i inderstand better
+*/
 
 console.log(strCount({
     first: "1",
