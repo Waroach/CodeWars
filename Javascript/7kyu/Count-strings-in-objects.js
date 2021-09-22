@@ -8,6 +8,7 @@ function strCount(obj){
 }
 /*
 Redo daily until i inderstand better
+Day 2 redone
 */
 
 console.log(strCount({
