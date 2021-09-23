@@ -10,6 +10,8 @@ var maxProfit = function(prices) {
     return total
 };
 
+/* Leet code says Time Limit Exceeded. So I need to redo this. */
+
 console.log(prices([7,1,5,3,6,4]),5,'buy day 2 sell day 5')
 
 /*
