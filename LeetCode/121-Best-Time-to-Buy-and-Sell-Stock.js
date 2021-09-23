@@ -2,10 +2,8 @@ var maxProfit = function(prices) {
     let total = 0;
     for(let x=0;x<prices.length;x++){
         for(let y=0;y<prices.length;y++){
-            if(x<y){
-                if(prices[y]-prices[x]>total) {
-                    total = prices[y]-prices[x]
-                }
+            if(x<y && prices[y]-prices[x]>total){
+                total = prices[y]-prices[x]
             }
         }
     }
