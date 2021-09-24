@@ -1,7 +1,8 @@
-var maxProfit = function(prices) {
+
+function maxProfit(prices) {
     let total = 0;
     for(let x=0;x<prices.length;x++){
-        for(let y=0;y<prices.length;y++){
+        for(let y=x+1;y<prices.length;y++){
             if(x<y && prices[y]-prices[x]>total){
                 total = prices[y]-prices[x]
             }
@@ -10,7 +11,21 @@ var maxProfit = function(prices) {
     return total
 };
 
-/* Leet code says Time Limit Exceeded. So I need to redo this. */
+
+                            // First Try to Slow
+// Leet code says Time Limit Exceeded. So I need to redo this.
+// var maxProfit = function(prices) {
+//     let total = 0;
+//     for(let x=0;x<prices.length;x++){
+//         for(let y=0;y<prices.length;y++){
+//             if(x<y && prices[y]-prices[x]>total){
+//                 total = prices[y]-prices[x]
+//             }
+//         }
+//     }
+//     return total
+// };
+
 
 console.log(prices([7,1,5,3,6,4]),5,'buy day 2 sell day 5')
 
