@@ -1,4 +1,8 @@
 
+
+
+// Still to slow
+// Removed the loops that would be invalid.
 function maxProfit(prices) {
     let total = 0;
     for(let x=0;x<prices.length;x++){
