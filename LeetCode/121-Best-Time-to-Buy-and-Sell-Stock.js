@@ -1,6 +1,6 @@
 
 
-
+// Not sure what to do i will look up some code today.
 // Still to slow
 // Removed the loops that would be invalid.
 function maxProfit(prices) {
