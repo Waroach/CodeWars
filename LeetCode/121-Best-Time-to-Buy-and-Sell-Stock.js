@@ -1,8 +1,3 @@
-
-
-// Not sure what to do i will look up some code today.
-// Still to slow
-// Removed the loops that would be invalid.
 function maxProfit(prices) {
     let total = 0;
     for(let x=0;x<prices.length;x++){
@@ -14,6 +9,21 @@ function maxProfit(prices) {
     }
     return total
 };
+
+// Not sure what to do i will look up some code today.
+// Still to slow
+// Removed the loops that would be invalid.
+// function maxProfit(prices) {
+//     let total = 0;
+//     for(let x=0;x<prices.length;x++){
+//         for(let y=x+1;y<prices.length;y++){
+//             if(x<y && prices[y]-prices[x]>total){
+//                 total = prices[y]-prices[x]
+//             }
+//         }
+//     }
+//     return total
+// };
 
 
                             // First Try to Slow
