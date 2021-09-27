@@ -39,6 +39,11 @@ console.log(prices([7,1,5,3,6,4]),5,'buy day 2 sell day 5')
 https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 
 
+Part1- https://youtu.be/XIWykOHE1SE
+Part2- https://youtu.be/3gtcRtvDCpA
+Part3- https://youtu.be/YAWRyWJalM0
+Part4- https://youtu.be/mFwf1YbH-Jk
+
 You are given an array prices where prices[i] is the price of a given stock on the ith day.
 You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.
 Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
