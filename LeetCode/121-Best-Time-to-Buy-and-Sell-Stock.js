@@ -1,5 +1,11 @@
 function maxProfit(prices) {
-    // Lets try this again.
+    let minPrice = Number.MAX_VALUE
+    let profit = 0
+    for (let i = 0; i < prices.length; i++) {
+        minPrice = Math.min(prices[i], minPrice)
+        profit = Math.max(profit,prices[i]-minPrice)
+    }
+    return profit
 };
 
 // Not sure what to do i will look up some code today.
