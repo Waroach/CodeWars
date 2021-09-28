@@ -1,3 +1,5 @@
+
+// This works
 function maxProfit(prices) {
     let minPrice = Number.MAX_VALUE
     let profit = 0
@@ -8,28 +10,13 @@ function maxProfit(prices) {
     return profit
 };
 
-// Not sure what to do i will look up some code today.
-// Still to slow
+
+// Toooo slowwwwww
 // Removed the loops that would be invalid.
 // function maxProfit(prices) {
 //     let total = 0;
 //     for(let x=0;x<prices.length;x++){
 //         for(let y=x+1;y<prices.length;y++){
-//             if(x<y && prices[y]-prices[x]>total){
-//                 total = prices[y]-prices[x]
-//             }
-//         }
-//     }
-//     return total
-// };
-
-
-                            // First Try to Slow
-// Leet code says Time Limit Exceeded. So I need to redo this.
-// var maxProfit = function(prices) {
-//     let total = 0;
-//     for(let x=0;x<prices.length;x++){
-//         for(let y=0;y<prices.length;y++){
 //             if(x<y && prices[y]-prices[x]>total){
 //                 total = prices[y]-prices[x]
 //             }
