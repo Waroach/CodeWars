@@ -1,5 +1,7 @@
 function decode(message){
-
+    let abc = "abcdefghijklmnopqrstuvwxyz "
+    let cba = "zyxwvutsrqponmlkjihgfedcba "
+    return message.split('').map(e=> abc[cba.indexOf(e)] ).join('')
 }
 
 console.log(decode("sr"),"hi")
