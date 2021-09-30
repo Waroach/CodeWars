@@ -1,5 +1,16 @@
 function longestConsec(strarr, k) {
-    // your code
+    if(k>strarr.length) return ""
+    if(k<=0) return ""
+    let long = ""
+    let temp = []
+    for(i=0;i<strarr.length;i++){
+        temp = []
+        for(x=0;x<k;x++){
+            temp.push(strarr[i+x])
+        }
+    if(long.length < temp.join('').length) long = temp.join('')
+    }
+    return long
 }
 
 console.log(longestConsec(["zone", "abigail", "theta", "form", "libe", "zas"], 2), "abigailtheta")
