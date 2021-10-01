@@ -16,7 +16,6 @@ const dr = "/+1-541-754-3010 156 Alphand_St. <J Steeve>\n 133, Green, Rd. <E Kus
 + "<P Salinge> Main Street, +1-098-512-2222, Denve\n"
 // DO NOT TOUCH
 
-
 /*
 https://www.codewars.com/kata/56baeae7022c16dd7400086e/train/javascript
 
