@@ -1,5 +1,9 @@
 function doubleChar(str) {
-    // Your code here
+    let newStr = ""
+    for(i=0;i<str.split('').length;i++){
+        newStr += str[i] + str[i]
+    }
+    return newStr
 }
 
 console.log(doubleChar("abcd"), "aabbccdd");
