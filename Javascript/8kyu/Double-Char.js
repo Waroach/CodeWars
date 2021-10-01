@@ -1,10 +1,17 @@
 function doubleChar(str) {
     let newStr = ""
-    for(i=0;i<str.split('').length;i++){
-        newStr += str[i] + str[i]
-    }
+    str.split('').filter(e=>newStr+=e+e)
     return newStr
 }
+
+                            //First Try Brute Force
+// function doubleChar(str) {
+//     let newStr = ""
+//     for(i=0;i<str.split('').length;i++){
+//         newStr += str[i] + str[i]
+//     }
+//     return newStr
+// }
 
 console.log(doubleChar("abcd"), "aabbccdd");
 console.log(doubleChar("Adidas"), "AAddiiddaass");
