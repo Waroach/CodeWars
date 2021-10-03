@@ -11,19 +11,30 @@ const dr = "/+1-541-754-3010 156 Alphand_St. <J Steeve>\n 133, Green, Rd. <E Kus
 + "<P Salinge> Main Street, +1-098-512-2222, Denve\n"
 // DO NOT TOUCH ABOVE
 
-function phone(strng, num) {
-  // const numberRegex = /([0-9]-[0-9]{3}-[0-9]{3}-[0-9]{4})/
-  const nameRegex = /(<[a-z]*\s[a-z]*)/i
-  const name = ''
-  const address = ''
-  strng.split('\n').filter(address=>{
-     // const numberRegex = /([0-9]-[0-9]{3}-[0-9]{3}-[0-9]{4})/.match(address)
-     const numberRegex = address.match(/([0-9]-[0-9]{3}-[0-9]{3}-[0-9]{4})/)[0]
-     console.log(numberRegex)
-     numberRegex === num ? console.log(num) : console.log('failed')
-    // console.log(address.match(numberRegex)[0].slice(1))
-    // address.test(numberRegex)[0].slice(1) ? num : `Error => Not found: ${num}`
-  })
+function phone(str, num) {
+    let arr = str.split`\n`.map(v=>{
+        let a = []
+        let regexNumber = /\d+\-\d+\-\d+\-\d+/
+        let regexName = /<.+>/
+        v=v.replace(regexNumber,x=>{
+        a.push(x)
+        return ''
+        })
+        v=v.replace(regexName,x=>{
+        a.push(x.slice(1,-1))
+        return ''
+        })
+        v.replace(/.+/g,x=>{
+        a.push(x.replace(/[^0-9a-zA-Z\.\-\s_]/g,'').replace(/\s+|_/g,' ').trim())
+        return ''
+        })
+        return a
+    })
+    let check = arr.filter(v=>v[0]===num)
+    if (check.length===0) return `Error => Not found: ${num}`
+    if (check.length>1) return `Error => Too many people: ${num}`
+    check=check[0]
+    return `Phone => ${check[0]}, Name => ${check[1]}, Address => ${check[2]}`
 }
 
 // DO NOT TOUCH
