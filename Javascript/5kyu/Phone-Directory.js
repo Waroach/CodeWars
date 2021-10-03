@@ -11,6 +11,8 @@ const dr = "/+1-541-754-3010 156 Alphand_St. <J Steeve>\n 133, Green, Rd. <E Kus
 + "<P Salinge> Main Street, +1-098-512-2222, Denve\n"
 // DO NOT TOUCH ABOVE
 
+// (<.+>)|(\d+\-\d+\-\d+\-\d+)
+
 function phone(str, num) {
     let arr = str.split`\n`.map(v=>{
         let a = []
@@ -36,6 +38,8 @@ function phone(str, num) {
     check=check[0]
     return `Phone => ${check[0]}, Name => ${check[1]}, Address => ${check[2]}`
 }
+
+
 
 // DO NOT TOUCH
 console.log(phone(dr, "48-421-674-8974"), "Phone => 48-421-674-8974, Name => Anastasia, Address => Via Quirinal Roma")
