@@ -1,7 +1,16 @@
 function phone(strng, num) {
-    strng.split('\n').filter(address=>{
-        address.split(' ').filter(e=>console.log(e))
-    })
+  // const numberRegex = /([0-9]-[0-9]{3}-[0-9]{3}-[0-9]{4})/
+  const nameRegex = /(<[a-z]*\s[a-z]*)/i
+  const name = ''
+  const address = ''
+  strng.split('\n').filter(address=>{
+     // const numberRegex = /([0-9]-[0-9]{3}-[0-9]{3}-[0-9]{4})/.match(address)
+     const numberRegex = address.match(/([0-9]-[0-9]{3}-[0-9]{3}-[0-9]{4})/)[0]
+     console.log(numberRegex)
+     numberRegex === num ? console.log(num) : console.log('failed')
+    // console.log(address.match(numberRegex)[0].slice(1))
+    // address.test(numberRegex)[0].slice(1) ? num : `Error => Not found: ${num}`
+  })
 }
 
 // DO NOT TOUCH
