@@ -1,8 +1,7 @@
 function monkeyCount(n) {
     let monkeys = []
-    for(i=1;i<n;i++){
-        monkeys.push(i)
-        i++
+    for(i=0;i<n;i++){
+        monkeys.push(i+1)
     }
     return monkeys
 }
