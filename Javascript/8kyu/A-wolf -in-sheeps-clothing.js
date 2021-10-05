@@ -1,4 +1,4 @@
-
+// This was a fun one.
 
                                                         // First Try returning undefined
 // function warnTheSheep(queue) {
