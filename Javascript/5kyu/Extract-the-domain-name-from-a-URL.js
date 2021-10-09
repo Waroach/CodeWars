@@ -3,6 +3,7 @@ domainName=url=>url.replace('www.', '').replace('http://', '').replace('https://
 // Need to rerty this with Regex maybe
 // cheat day
 // another day
+// blah
 
                             // less code? kinda
 function domainName(url){
