@@ -1,8 +1,11 @@
-function positiveSum(arr) {
-    let sum = 0
-    arr.filter( n=> Math.sign(n)===1 ? sum+=n : null )
-    return sum
-}
+const positiveSum = arr => arr.reduce((a,c)=>a+(c>0?c:0),0)
+
+                            // First try
+// function positiveSum(arr) {
+//     let sum = 0
+//     arr.filter( n=> Math.sign(n)===1 ? sum+=n : null )
+//     return sum
+// }
 
 console.log(positiveSum([1,2,3,4,5]),15);
 console.log(positiveSum([1,-2,3,4,5]),13);
