@@ -1,5 +1,7 @@
 function positiveSum(arr) {
-  
+    let sum = 0
+    arr.filter( n=> Math.sign(n)===1 ? sum+=n : null )
+    return sum
 }
 
 console.log(positiveSum([1,2,3,4,5]),15);
