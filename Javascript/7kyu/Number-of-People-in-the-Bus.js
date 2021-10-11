@@ -1,11 +1,21 @@
 var number = function(busStops){
     let total = 0
-    for(i=0;i<busStops.length;i++){
-        total += busStops[i][0]
-        total -= busStops[i][1]
-    }
+    busStops.forEach(e=> {
+        total += e[0]
+        total -= e[1]
+    })
     return total
 }
+
+                            // First Try
+// var number = function(busStops){
+//     let total = 0
+//     for(i=0;i<busStops.length;i++){
+//         total += busStops[i][0]
+//         total -= busStops[i][1]
+//     }
+//     return total
+// }
 
 console.log(number([[10,0],[3,5],[5,8]]),5);
 console.log(number([[3,0],[9,1],[4,10],[12,2],[6,1],[7,10]]),17);
