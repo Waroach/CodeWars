@@ -1,5 +1,14 @@
 function isVow(a){
-
+    let vowels = []
+    a.filter(e=>{
+        if(e===97){vowels.push('a')}
+        if(e===101){vowels.push('e')}
+        if(e===105){vowels.push('i')}
+        if(e===111){vowels.push('o')}
+        if(e===117){vowels.push('u')}
+        else vowels.push(e)
+    })
+    return vowels
 }
 
 
