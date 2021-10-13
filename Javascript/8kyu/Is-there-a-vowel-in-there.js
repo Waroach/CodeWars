@@ -1,3 +1,9 @@
+
+function isVow(a){
+
+}
+
+                            // First try
 function isVow(a){
     let vowels = []
     a.filter(e=>{
