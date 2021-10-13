@@ -1,21 +1,26 @@
 
 function isVow(a){
-
+    return a.map(
+        charCode =>
+            /[aeiou]/.test(String.fromCharCode(charCode))
+            ? String.fromCharCode(charCode)
+            : charCode
+    )
 }
 
                             // First try
-function isVow(a){
-    let vowels = []
-    a.filter(e=>{
-        if(e===97){vowels.push('a')}
-        if(e===101){vowels.push('e')}
-        if(e===105){vowels.push('i')}
-        if(e===111){vowels.push('o')}
-        if(e===117){vowels.push('u')}
-        else vowels.push(e)
-    })
-    return vowels
-}
+// function isVow(a){
+//     let vowels = []
+//     a.filter(e=>{
+//         if(e===97){vowels.push('a')}
+//         if(e===101){vowels.push('e')}
+//         if(e===105){vowels.push('i')}
+//         if(e===111){vowels.push('o')}
+//         if(e===117){vowels.push('u')}
+//         else vowels.push(e)
+//     })
+//     return vowels
+// }
 
 
 console.log(isVow([118,117,120,121,117,98,122,97,120,106,104,116,113,114,113,120,106]),[118,"u",120,121,"u",98,122,"a",120,106,104,116,113,114,113,120,106]);
