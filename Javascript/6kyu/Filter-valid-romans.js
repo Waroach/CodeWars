@@ -1,7 +1,10 @@
-function validRomans(arr) {
-    let romans = /^M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/
-    return arr.filter(set => romans.test(set)).filter(set=>set)
-}
+const validRomans=arr=>arr.filter(set=>/^M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/.test(set)).filter(set=>set)
+
+                            // First Try
+// function validRomans(arr) {
+//     let romans = /^M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/
+//     return arr.filter(set => romans.test(set)).filter(set=>set)
+// }
 
 //I: 1, V: 5, X: 10, L: 50, C: 100, D: 500, M: 1000
 
