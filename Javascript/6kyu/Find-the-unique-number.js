@@ -1,5 +1,12 @@
 function findUniq(arr) {
-    // do magic
+    let total = {}
+    let num
+    arr.forEach(n=>!total[n] ? total[n] = 1 : total[n]++)
+    Object.entries(total).forEach(e=>{
+        const [key, value] = e
+        if(value == 1){num = key}
+    })
+    return Number(num)
 }
 
 console.log(findUniq([ 0, 1, 0 ]), 1);
