@@ -1,5 +1,8 @@
 const sumEvenNumbers=input=>input.reduce((a,e)=>e%2==0?a+=e:a,0)
 
+                            // Found on codewars
+// const sumEvenNumbers = a => a.reduce((r, e) => r + (e % 2 ? 0 : e), 0);
+
                             // First Try
 // function sumEvenNumbers(input) {
 //     let evenTotal = 0, oddTotal = 0;
