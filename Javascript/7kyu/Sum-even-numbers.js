@@ -1,5 +1,7 @@
 function sumEvenNumbers(input) {
-    // [...]
+    let evenTotal = 0, oddTotal = 0;
+    input.forEach(n=>n%2==0?evenTotal+=n:oddTotal+=n)
+    return evenTotal
 }
 
 console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]),30,)
