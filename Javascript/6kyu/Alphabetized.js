@@ -1,6 +1,15 @@
 function alphabetized(s) {
-    return s.split(' ').join('').split('').sort((a, b) => a.localeCompare(b, undefined, {sensitivity: 'base'})).join('')
+    return s.split(' ').join('').split('').sort(function (a, b) {
+        return a.toLowerCase().localeCompare(b.toLowerCase());
+    }).join('')
 }
+
+
+                            // First Try
+// function alphabetized(s) {
+//     return s.split(' ').join('').split('').sort((a, b) => a.localeCompare(b, undefined, {sensitivity: 'base'})).join('')
+// }
+
 
 console.log(alphabetized('The Holy Bible'), 'BbeehHilloTy')
 
