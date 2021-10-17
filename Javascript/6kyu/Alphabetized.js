@@ -29,6 +29,7 @@ function alphabetized(s) {
 
 
 console.log(alphabetized('The Holy Bible'), 'BbeehHilloTy')
+console.log(alphabetized('IihHgGFfeEDDccBbaA'), 'aABbccDDeEFfgGhHIi')
 
 
 /*
