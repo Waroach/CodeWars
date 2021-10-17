@@ -1,4 +1,5 @@
 function alphabetized(s) {
+    return s.split(' ').join('').split('').sort((a, b) => a.localeCompare(b, undefined, {sensitivity: 'base'})).join('')
 }
 
 console.log(alphabetized('The Holy Bible'), 'BbeehHilloTy')
