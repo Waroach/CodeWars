@@ -1,4 +1,17 @@
-const alphabetized = s => s.split(' ').join('').split('').sort((a, b) => a.localeCompare(b, undefined, {sensitivity: 'base'})).join('')
+                            // This was found online.
+function alphabetized(s) {
+    var ans="";
+    for (var i=97; i<123; ++i)
+        for (var j=0; j<s.length; j++)
+        if (s[j].toLowerCase().charCodeAt()==i)
+        ans+=s[j]
+    return ans
+}
+
+                            // All Below seem to NOT WORK
+
+                            // One Liner
+// const alphabetized = s => s.split(' ').join('').split('').sort((a, b) => a.localeCompare(b, undefined, {sensitivity: 'base'})).join('')
 
 
                             // Alternative way
