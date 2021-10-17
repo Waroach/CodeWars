@@ -1,8 +1,8 @@
                             // This was found online.
 function alphabetized(s) {
-    var ans="";
-    for (var i=97; i<123; ++i)
-        for (var j=0; j<s.length; j++)
+    let ans="";
+    for (i=97; i<123; ++i)
+        for (j=0; j<s.length; j++)
         if (s[j].toLowerCase().charCodeAt()==i)
         ans+=s[j]
     return ans
