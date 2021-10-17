@@ -1,8 +1,12 @@
-function alphabetized(s) {
-    return s.split(' ').join('').split('').sort(function (a, b) {
-        return a.toLowerCase().localeCompare(b.toLowerCase());
-    }).join('')
-}
+const alphabetized = s => s.split(' ').join('').split('').sort((a, b) => a.localeCompare(b, undefined, {sensitivity: 'base'})).join('')
+
+
+                            // Alternative way
+// function alphabetized(s) {
+//     return s.split(' ').join('').split('').sort(function (a, b) {
+//         return a.toLowerCase().localeCompare(b.toLowerCase());
+//     }).join('')
+// }
 
 
                             // First Try
