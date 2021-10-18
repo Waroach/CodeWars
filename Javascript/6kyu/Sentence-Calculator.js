@@ -1,5 +1,13 @@
 function lettersToNumbers(s) {
-    //your code......
+    let alpha = ' abcdefghijklmnopqrstuvwxyz'
+    let nums = '0123456789'
+    let total = 0
+    s.split(' ').join('').split('').filter(e=>{
+        if(nums.includes(e)) total += nums.indexOf(e)
+        if(alpha.includes(e.toLowerCase()) && e==e.toUpperCase()) total += alpha.indexOf(e.toLowerCase()) * 2
+        if(alpha.includes(e)) total += alpha.indexOf(e)
+    })
+    return total
 }
 
 console.log(lettersToNumbers("I Love You"), 170);
