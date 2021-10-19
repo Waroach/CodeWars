@@ -10,7 +10,23 @@ function whoseBicycle(diary1, diary2, diary3) {
     if( (d1 == d2) && (d2 == d3) ) return "I need to buy a bicycle for my third son."
     if(d1 == d2) return "I need to buy a bicycle for my second son."
     if(d2 == d3) return "I need to buy a bicycle for my third son."
+    if(d1 == d3) return "I need to buy a bicycle for my third son."
 }
+
+                            // First try
+// function whoseBicycle(diary1, diary2, diary3) {
+//     const d1 = Object.values(diary1).reduce((a,c)=>a+c,0)
+//     const d2 = Object.values(diary2).reduce((a,c)=>a+c,0)
+//     const d3 = Object.values(diary3).reduce((a,c)=>a+c,0)
+    
+//     if( (d1 > d2) && (d1 > d3) ) return "I need to buy a bicycle for my first son."
+//     if( (d2 > d1) && (d2 > d3) ) return "I need to buy a bicycle for my second son."
+//     if( (d3 > d1) && (d3 > d2) ) return "I need to buy a bicycle for my third son."
+    
+//     if( (d1 == d2) && (d2 == d3) ) return "I need to buy a bicycle for my third son."
+//     if(d1 == d2) return "I need to buy a bicycle for my second son."
+//     if(d2 == d3) return "I need to buy a bicycle for my third son."
+// }
 
 
 console.log(whoseBicycle(
@@ -139,8 +155,8 @@ Return please :
 If two or three sons have the same highest marks, you need to choose the younger one. Use the age table which is constant and preloaded:
 
 const ageTable = {
-                  'firstSonAge': 14,
-                  'secondSonAge': 9,
-                  'thirdSonAge': 8
-                }
+    'firstSonAge': 14,
+    'secondSonAge': 9,
+    'thirdSonAge': 8
+}
 */
