@@ -1,5 +1,15 @@
 function whoseBicycle(diary1, diary2, diary3) {
-    // good luck
+    const d1 = Object.values(diary1).reduce((a,c)=>a+c,0)
+    const d2 = Object.values(diary2).reduce((a,c)=>a+c,0)
+    const d3 = Object.values(diary3).reduce((a,c)=>a+c,0)
+    
+    if( (d1 > d2) && (d1 > d3) ) return "I need to buy a bicycle for my first son."
+    if( (d2 > d1) && (d2 > d3) ) return "I need to buy a bicycle for my second son."
+    if( (d3 > d1) && (d3 > d2) ) return "I need to buy a bicycle for my third son."
+    
+    if( (d1 == d2) && (d2 == d3) ) return "I need to buy a bicycle for my third son."
+    if(d1 == d2) return "I need to buy a bicycle for my second son."
+    if(d2 == d3) return "I need to buy a bicycle for my third son."
 }
 
 
