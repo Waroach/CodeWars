@@ -1,5 +1,14 @@
 function strong(n) {
-    return "STRONG!!!!" || "Not Strong !!" ;
+    function fact(num){
+        if(num < 0) return -1
+        if(num == 0) return 1
+      else return (num * fact(num - 1))
+    }
+    let total = 0
+    for(i=0;i<n.toString().length;i++){
+        total += fact( Number(n.toString()[i]) )
+    }
+    return total == n ? "STRONG!!!!" : "Not Strong !!"
 }
 
 
