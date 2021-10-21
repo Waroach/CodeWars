@@ -1,7 +1,10 @@
 function disariumNumber(n){
-    //your code here
+    let total = 0
+    for(i=0;i<String(n).length;i++){
+        total += Math.pow(String(n)[i], i+1)
+    }
+    return total == n ? "Disarium !!" : "Not !!"
 }
-
 
 
 console.log(disariumNumber(89),"Disarium !!");
