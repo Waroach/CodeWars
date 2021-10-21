@@ -3,6 +3,14 @@ function disariumNumber(n){
 }
 
 
+
+console.log(disariumNumber(89),"Disarium !!");
+console.log(disariumNumber(564),"Not !!");
+console.log(disariumNumber(1024),"Not !!");
+console.log(disariumNumber(135),"Disarium !!");
+console.log(disariumNumber(136586),"Not !!");
+
+
 /*
 https://www.codewars.com/kata/5a53a17bfd56cb9c14000003/train/javascript
 
