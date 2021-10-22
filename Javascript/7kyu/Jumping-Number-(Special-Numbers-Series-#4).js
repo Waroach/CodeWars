@@ -1,5 +1,10 @@
 function jumpingNumber(n){
-
+    let str = String(n).split('').map(e=>Number(e))
+    if(str.length == 1) return "Jumping!!"
+    for(i=str.length-1;i>0;i--){
+        if( Math.abs(str[i] - str[i-1]) != 1 ) return "Not!!"
+    }
+    return "Jumping!!"
 }
 
 console.log(jumpingNumber(1), "Jumping!!");
