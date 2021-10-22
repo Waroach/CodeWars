@@ -1,3 +1,4 @@
+                            // Single Line option.
 const disariumNumber = n=> n == String(n).split('').reduce((a,c,i)=>a + Math.pow(c,i+1) ,0) ? "Disarium !!" : "Not !!"
 
                             // Single Line Above
