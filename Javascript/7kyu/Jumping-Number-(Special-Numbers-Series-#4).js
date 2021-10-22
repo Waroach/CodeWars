@@ -1,15 +1,5 @@
-function balancedNum(n){
-    let digits = n.toString().split('')
-    let right = digits.slice((digits.length / 2)+1).reduce((a,c)=>a+Number(c), 0)
-    let left
-    if(digits.length <= 2) return "Balanced"
-    if( (digits.length / 2) % 2 == 0 ) {
-        left = digits.slice(0, (digits.length / 2)-1).reduce((a,c)=>a+Number(c), 0)
-    }else{
-        left = digits.slice(0, (digits.length / 2)).reduce((a,c)=>a+Number(c), 0)
-    }
-    if (left == right) return "Balanced"
-    return 'Not Balanced'
+function jumpingNumber(n){
+
 }
 
 console.log(jumpingNumber(1), "Jumping!!");
