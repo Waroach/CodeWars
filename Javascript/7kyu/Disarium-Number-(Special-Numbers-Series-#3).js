@@ -1,10 +1,19 @@
+
+
 function disariumNumber(n){
-    let total = 0
-    for(i=0;i<String(n).length;i++){
-        total += Math.pow(String(n)[i], i+1)
-    }
+    let total = String(n).split('').reduce((a,c,i)=>a + Math.pow(c,i+1) ,0)
     return total == n ? "Disarium !!" : "Not !!"
 }
+
+
+                            // First Try
+// function disariumNumber(n){
+//     let total = 0
+//     for(i=0;i<String(n).length;i++){
+//         total += Math.pow(String(n)[i], i+1)
+//     }
+//     return total == n ? "Disarium !!" : "Not !!"
+// }
 
 
 console.log(disariumNumber(89),"Disarium !!");
