@@ -1,5 +1,5 @@
 function specialNumber(n){
-    //your code here
+    return /[6-9]/gm.test(n) ? "NOT!!" : "Special!!"
 }
 
 
