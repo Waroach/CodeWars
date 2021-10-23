@@ -1,5 +1,10 @@
 function automorphic(n){
-    //your code here
+    let numLength = String(n).length
+    let total =  Math.pow(n, 2)
+    if( Number(String(total).slice(-numLength)) == n){
+        return "Automorphic"
+    }
+    return "Not!!"
 }
 
 console.log(automorphic(1),"Automorphic");
