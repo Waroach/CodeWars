@@ -1,6 +1,9 @@
-function specialNumber(n){
-    return /[6-9]/gm.test(n) ? "NOT!!" : "Special!!"
-}
+const specialNumber = n => /[6-9]/gm.test(n) ? "NOT!!" : "Special!!"
+
+                            // First Try
+// function specialNumber(n){
+//     return /[6-9]/gm.test(n) ? "NOT!!" : "Special!!"
+// }
 
 
 console.log(specialNumber(2),"Special!!");
