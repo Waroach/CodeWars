@@ -1,11 +1,15 @@
-function automorphic(n){
-    let numLength = String(n).length
-    let total =  Math.pow(n, 2)
-    if( Number(String(total).slice(-numLength)) == n){
-        return "Automorphic"
-    }
-    return "Not!!"
-}
+const automorphic = n => Number(String( Math.pow(n, 2) ).slice( -String(n).length) ) == n ? "Automorphic" : "Not!!"
+
+
+                            // Frist Try
+// function automorphic(n){
+//     let numLength = String(n).length
+//     let total =  Math.pow(n, 2)
+//     if( Number(String(total).slice(-numLength)) == n){
+//         return "Automorphic"
+//     }
+//     return "Not!!"
+// }
 
 console.log(automorphic(1),"Automorphic");
 console.log(automorphic(3),"Not!!");
