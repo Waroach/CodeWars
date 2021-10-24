@@ -3,6 +3,13 @@ function tidyNumber(n){
 }
 
 
+console.log(tidyNumber(12),true);
+console.log(tidyNumber(102),false);
+console.log(tidyNumber(9672),false);
+console.log(tidyNumber(2789),true);
+console.log(tidyNumber(2335),true);
+
+
 
 /*
 https://www.codewars.com/kata/5a87449ab1710171300000fd/train/javascript
