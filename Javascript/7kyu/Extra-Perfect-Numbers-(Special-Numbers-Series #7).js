@@ -1,5 +1,9 @@
 function extraPerfect(n){
-    //your code here
+    let nums = []
+    for(i=1;i<=n;i+=2){
+        nums.push(i)
+    }
+    return nums
 }
 
 
