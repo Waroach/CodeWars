@@ -1,10 +1,16 @@
 function tidyNumber(n){
-    let arr = String(n).split('')
-    for(i=arr.length;i>0;i--){
-        if(arr[i]<arr[i-1]) return false
-    }
-    return true
+    return Number([...String(n)].sort().join('')) == n
 }
+
+
+                            // First Try
+// function tidyNumber(n){
+//     let arr = String(n).split('')
+//     for(i=arr.length;i>0;i--){
+//         if(arr[i]<arr[i-1]) return false
+//     }
+//     return true
+// }
 
 
 console.log(tidyNumber(12),true);
