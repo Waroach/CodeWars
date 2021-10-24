@@ -1,6 +1,10 @@
-function tidyNumber(n){
-    return Number([...String(n)].sort().join('')) == n
-}
+const tidyNumber = n => Number([...String(n)].sort().join('')) == n
+
+
+                            // Cleaned up ^^ CREATED ONE LINE ABOVE
+// function tidyNumber(n){
+//     return Number([...String(n)].sort().join('')) == n
+// }
 
 
                             // First Try
