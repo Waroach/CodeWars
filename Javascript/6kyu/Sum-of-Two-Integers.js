@@ -1,7 +1,11 @@
 function add(x, y){
-    
+  while (y != 0) {
+    let carry = x & y
+    x = x ^ y
+    y = carry << 1
+  }
+  return x
 }
-
 
 
                             // I used a + or - I need to redo this code.
