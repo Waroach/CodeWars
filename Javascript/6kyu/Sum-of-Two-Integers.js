@@ -1,6 +1,5 @@
-function add(x, y)
-{
-    return 0 // Do your magic!
+function add(x, y){
+    return x + y
 }
 
 
