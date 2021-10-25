@@ -3,6 +3,13 @@ function numPrimorial(n){
 }
 
 
+console.log(numPrimorial(3),30);
+console.log(numPrimorial(4),210);
+console.log(numPrimorial(5),2310);
+console.log(numPrimorial(8),9699690);
+console.log(numPrimorial(9),223092870);
+
+
 /*
 https://www.codewars.com/kata/5a99a03e4a6b34bb3c000124/train/javascript
 
