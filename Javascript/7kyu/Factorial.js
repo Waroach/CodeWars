@@ -7,6 +7,11 @@ const factorial = n => n==0 ? 1 : n * factorial(n-1)
 //     return n * factorial(n-1)
 // }
 
+// Quick Factorial Writeup.
+// function fact(n){
+//     if n == 0 return 1
+//     return n * fact(n-1)
+// }
 
 console.log(factorial(0), 1);
 console.log(factorial(1), 1);
