@@ -1,5 +1,20 @@
 function mygcd(x,y){
-    //your code here
+    let arr = []
+    // XXXX
+    for(i=1;i<x;i++){
+        if(x % i == 0)arr.push(i)
+    }
+    // YYYY
+    for(i=1;i<y;i++){
+        if(y % i == 0)arr.push(i)
+    }
+    // Sort arr
+    arr = arr.sort((a,b)=>b-a)
+    // find Greatest Common Divisor
+    for(i=0;i<arr.length;i++){
+        if (arr[i] == arr[i+1]) return arr[i]
+    }
+    return 1
 }
 
 
