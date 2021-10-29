@@ -2,6 +2,12 @@ function mygcd(x,y){
     //your code here
 }
 
+
+console.log(mygcd(30,12),6)
+console.log(mygcd(8,9),1)
+console.log(mygcd(1,1),1)
+
+
 /*
 https://www.codewars.com/kata/5500d54c2ebe0a8e8a0003fd/train/javascript
 
