@@ -1,5 +1,5 @@
                     // Optimized
-sumMix=n=>n.reduce((a,c)=>a+Number(c),0)
+sumMix=x=>x.reduce((a,c)=>a+Number(c),0)
 
                     // First Try
 // function sumMix(x){
