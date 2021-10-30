@@ -1,7 +1,15 @@
-                    // Optimized
-sumMix=x=>x.reduce((a,c)=>a+Number(c),0)
+                            // RECURSION Method
+function sumMix(x){
+    if(x.length === 1) return Number(x[0])
+    return Number( x.pop() ) + Number( sumMix(x) )
+}
 
-                    // First Try
+
+                            // Optimized to one line code
+// sumMix=x=>x.reduce((a,c)=>a+Number(c),0)
+
+
+                            // First Try
 // function sumMix(x){
 //     // grab each item from the array
 //     let total = 0
