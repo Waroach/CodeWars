@@ -1,5 +1,9 @@
 function generateRange(min, max, step){
-
+    let range = []
+    for(i=min;i<=max;i+=step){
+        range.push(i)
+    }
+    return range
 }
 
 
