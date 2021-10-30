@@ -1,21 +1,28 @@
+
 function mygcd(x,y){
-    let arr = []
-    // XXXX
-    for(i=1;i<x;i++){
-        if(x % i == 0)arr.push(i)
-    }
-    // YYYY
-    for(i=1;i<y;i++){
-        if(y % i == 0)arr.push(i)
-    }
-    // Sort arr
-    arr = arr.sort((a,b)=>b-a)
-    // find Greatest Common Divisor
-    for(i=0;i<arr.length;i++){
-        if (arr[i] == arr[i+1]) return arr[i]
-    }
-    return 1
+    if (!y) return x
+    return mygcd(y, x % y)
 }
+
+                            // First Try
+// function mygcd(x,y){
+//     let arr = []
+//     // XXXX
+//     for(i=1;i<x;i++){
+//         if(x % i == 0)arr.push(i)
+//     }
+//     // YYYY
+//     for(i=1;i<y;i++){
+//         if(y % i == 0)arr.push(i)
+//     }
+//     // Sort arr
+//     arr = arr.sort((a,b)=>b-a)
+//     // find Greatest Common Divisor
+//     for(i=0;i<arr.length;i++){
+//         if (arr[i] == arr[i+1]) return arr[i]
+//     }
+//     return 1
+// }
 
 
 console.log(mygcd(30,12),6)
