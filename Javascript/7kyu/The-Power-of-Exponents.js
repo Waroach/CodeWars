@@ -1,12 +1,22 @@
 function power(base, exponent){
     if(exponent === 0){
-      return 1
-    }else if (exponent < 0){
-      return 1/(base * power(base, Math.abs(exponent)-1)) 
+        return 1
     }else{
-      return base * power(base, exponent-1) 
+        return exponent < 0 ? 1/( base * power(base, Math.abs(exponent)-1) ) : base * power(base, exponent-1)
     }
 }
+
+
+                            // Using RECURSION
+// function power(base, exponent){
+//     if(exponent === 0){
+//       return 1
+//     }else if (exponent < 0){
+//       return 1/(base * power(base, Math.abs(exponent)-1)) 
+//     }else{
+//       return base * power(base, exponent-1) 
+//     }
+// }
 
 
                             // Completed
