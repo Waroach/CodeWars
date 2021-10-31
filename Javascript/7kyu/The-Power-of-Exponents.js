@@ -3,6 +3,10 @@ function power(base, exponent){
 }
 
 
+console.log(power(2, 3), 8)
+console.log(power(4, -2), 0.0625, "power(x,negative) should be equal 1/power(x,positive)")
+
+
 
 /*
 https://www.codewars.com/kata/53270633b7320eeb0500031d/train/javascript
