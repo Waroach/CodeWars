@@ -1,16 +1,28 @@
 function power(base, exponent){
-    let total = 0
-    if(exponent < 0){
-        for(i=1;i<Math.abs(exponent);i++){
-            total += 1/(base * base)
-        }
+    if(exponent === 0){
+      return 1
+    }else if (exponent < 0){
+      return 1/(base * power(base, Math.abs(exponent)-1)) 
     }else{
-        for(i=1;i<exponent;i++){
-            total += (base * base)
-        }
+      return base * power(base, exponent-1) 
     }
-    return total
 }
+
+
+                            // Completed
+// function power(base, exponent){
+//     let total = 0
+//     if(exponent < 0){
+//         for(i=1;i<Math.abs(exponent);i++){
+//             total += 1/(base * base)
+//         }
+//     }else{
+//         for(i=1;i<exponent;i++){
+//             total += (base * base)
+//         }
+//     }
+//     return total
+// }
 
 
 
