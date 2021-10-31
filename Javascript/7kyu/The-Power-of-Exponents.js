@@ -1,6 +1,23 @@
 function power(base, exponent){
-    return Math.pow(base, exponent)
+    let total = 0
+    if(exponent < 0){
+        for(i=1;i<Math.abs(exponent);i++){
+            total += 1/(base * base)
+        }
+    }else{
+        for(i=1;i<exponent;i++){
+            total += (base * base)
+        }
+    }
+    return total
 }
+
+
+
+                            // Math.pow() this function is not allowed but does work
+// function power(base, exponent){
+//     return Math.pow(base, exponent)
+// }
 
 
 console.log(power(2, 3), 8)
