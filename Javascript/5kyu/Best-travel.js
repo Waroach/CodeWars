@@ -3,6 +3,14 @@ function chooseBestSum(t, k, ls) {
 }
 
 
+var ts = [50, 55, 56, 57, 58]
+console.log(chooseBestSum(163, 3, ts), 163)
+ts = [50]
+console.log(chooseBestSum(163, 3, ts), null)
+ts = [91, 74, 73, 85, 73, 81, 87]
+console.log(chooseBestSum(230, 3, ts), 228)
+
+
 
 /*
 https://www.codewars.com/kata/55e7280b40e1c4a06d0000aa/train/javascript
