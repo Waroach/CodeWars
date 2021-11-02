@@ -1,5 +1,25 @@
 function chooseBestSum(t, k, ls) {
-    // your code
+    if(ls.length < k)return null
+    
+    const result = []
+    let total = 0
+    let temp = null
+    result.length = k
+    
+    function combine(input, len, start) {
+        if(len === 0) {  // process the result
+            total = result.reduce((acc,cur)=>acc+cur)
+            if (total <= t && total > temp) temp = total
+            return;
+        }
+        for (let i = start; i <= input.length - len; i++) {
+            result[result.length - len] = input[i];
+            combine(input, len-1, i+1 );
+        }
+    }
+    combine(ls, k, 0)
+    
+    return temp
 }
 
 
