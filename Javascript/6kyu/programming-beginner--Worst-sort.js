@@ -7,6 +7,26 @@ function correctResult(resultOfJohn){
 }
 
 
+var resultOfJohn=sortByJohn("John say hello")
+console.log(correctResult(resultOfJohn) , " say ell Johnho") 
+
+var resultOfJohn=sortByJohn("Anne and John are good friends")
+console.log(correctResult(resultOfJohn) , "Ae ad  are gd frieds nnnJohnoon")
+
+var resultOfJohn=sortByJohn("My name is John")
+console.log(correctResult(resultOfJohn) , "My ame is  nJohn")
+
+var resultOfJohn=sortByJohn("Hello World")
+console.log(correctResult(resultOfJohn) , "Hell Wrld oo")
+
+var resultOfJohn=sortByJohn("Hi")
+console.log(correctResult(resultOfJohn) , "Hi")
+
+var resultOfJohn=sortByJohn("")
+console.log(correctResult(resultOfJohn) , "")
+
+
+
 /*
 https://www.codewars.com/kata/582539ba4ef190f2e60000b2/train/javascript
 
