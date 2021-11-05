@@ -4,6 +4,13 @@ function remainder(a, b){
 }
 
 
+console.log(remainder(17,5), 2, 'Returned value should be the value left over after dividing as much as possible.');
+console.log(remainder(13, 72), remainder(72, 13), 'The order the arguments are passed should not matter.');
+console.log(isNaN(remainder(1, 0)), 'Divide by zero should return NaN');
+console.log(isNaN(remainder(0, 0)), 'Divide by zero should return NaN');
+
+
+
 /*
 https://www.codewars.com/kata/524f5125ad9c12894e00003f/train/javascript
 
