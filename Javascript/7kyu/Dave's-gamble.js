@@ -3,6 +3,14 @@ function horses(n) {
 }
 
 
+console.log(horses(12), 1320, true)
+console.log(horses(15), 2730, true)
+console.log(horses(2), 0, true)
+console.log(horses(11), 5, true)
+console.log(horses(2.5), undefined, false)
+console.log(horses("a"), 5, true)
+
+
 /*
 https://www.codewars.com/kata/563b8a23b554206f49000059/train/javascript
 
