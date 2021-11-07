@@ -1,5 +1,8 @@
-function horses(n) {
-    //code here
+function horses(totalHorses, totalWinners = 3) {
+    if (!Number.isInteger(totalHorses)) return undefined
+    if (totalHorses < totalWinners) return totalHorses
+
+    return totalHorses * (totalHorses - 1) * (totalHorses - 2)
 }
 
 
