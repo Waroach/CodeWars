@@ -4,14 +4,14 @@ function isPalindrome(x) {
 
 
 
-it("Testing for 'a'", () => assert.strictEqual(isPalindrome("a"), true));
-it("Testing for 'aba'", () => assert.strictEqual(isPalindrome("aba"), true));
-it("Testing for 'Abba'", () => assert.strictEqual(isPalindrome("Abba"), true));
-it("Testing for 'hello'", () => assert.strictEqual(isPalindrome("hello"), false));
-it("Testing for 'Bob'", () => assert.strictEqual(isPalindrome("Bob"), true));
-it("Testing for 'Madam'", () => assert.strictEqual(isPalindrome("Madam"), true));
-it("Testing for 'AbBa'", () => assert.strictEqual(isPalindrome("AbBa"), true));
-it("Testing for ''", () => assert.strictEqual(isPalindrome(""), true));
+console.log(isPalindrome("a"), true));
+console.log(isPalindrome("aba"), true));
+console.log(isPalindrome("Abba"), true));
+console.log(isPalindrome("hello"), false));
+console.log(isPalindrome("Bob"), true));
+console.log(isPalindrome("Madam"), true));
+console.log(isPalindrome("AbBa"), true));
+console.log(isPalindrome(""), true));
 
 
 
