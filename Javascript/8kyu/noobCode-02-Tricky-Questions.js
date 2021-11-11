@@ -3,6 +3,14 @@ function greaterThanLessThan (a,b,c) {
 }
 
 
+
+console.log(greaterThanLessThan(Number(null), 0, 1),true);
+console.log(greaterThanLessThan(700000000001, 700000000002, -1),false);
+console.log(greaterThanLessThan(-9, -8, 7),true);
+console.log(greaterThanLessThan(-9, -8, -7),false);
+
+
+
 /**
 https://www.codewars.com/kata/572269697297444c570008b9/train/javascript
 
