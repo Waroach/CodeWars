@@ -15,6 +15,7 @@ console.log(sc(-1), "", "good luck!");
 https://www.codewars.com/kata/570bcd9715944a2c8e000009/train/javascript
 
 
+
 Coding 3min : Jumping Dutch act
 This is the simple version of Shortest Code series. If you need some challenges, please try the challenge version
 Task:
