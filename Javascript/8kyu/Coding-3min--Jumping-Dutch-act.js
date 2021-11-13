@@ -1,5 +1,5 @@
 function sc(floor){
-    return ?
+    //Code goes here
 }
 
 
