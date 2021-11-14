@@ -1,8 +1,21 @@
 function plusMinus(arr) {
-    // Write your code here
-
+    let pos = 0
+    let neg = 0
+    let zero = 0
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]>1)pos++
+        if(arr[i]<1)neg++
+        if(arr[i]===0)zero++
+    }
+    pos = pos/arr.length
+    neg = neg/arr.length
+    zero = zero/arr.length
+    let result = pos.toFixed(6) + '<br />' + neg.toFixed(6) + '<br />' + zero.toFixed(6)
+    console.log(result)
+    return result
 }
 
+// this comment will give a push
 
 /*
 https://www.hackerrank.com/challenges/one-week-preparation-kit-plus-minus/problem?h_l=interview&playlist_slugs%5B%5D=preparation-kits&playlist_slugs%5B%5D=one-week-preparation-kit&playlist_slugs%5B%5D=one-week-day-one
