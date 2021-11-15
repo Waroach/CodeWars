@@ -7,11 +7,14 @@ function plusMinus(arr) {
         if(arr[i]<1)neg++
         if(arr[i]===0)zero++
     }
+
     pos = pos/arr.length
     neg = neg/arr.length
     zero = zero/arr.length
+
     let result = pos.toFixed(6) + '<br />' + neg.toFixed(6) + '<br />' + zero.toFixed(6)
     console.log(result)
+    
     return result
 }
 
