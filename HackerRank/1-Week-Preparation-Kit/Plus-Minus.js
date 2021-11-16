@@ -1,22 +1,37 @@
 function plusMinus(arr) {
-    let pos = 0
-    let neg = 0
-    let zero = 0
-    for(let i=0;i<arr.length;i++){
-        if(arr[i]>1)pos++
-        if(arr[i]<1)neg++
-        if(arr[i]===0)zero++
+    let length = arr.length
+    let positive = arr.filter(n=>n>0).length
+    let negative = arr.filter(n=>n<0).length
+    let zero = arr.filter(n=>n==0).length
+
+    function findRatio(num){
+        return console.log(parseFloat(num / length))
     }
 
-    pos = pos/arr.length
-    neg = neg/arr.length
-    zero = zero/arr.length
-
-    let result = pos.toFixed(6) + '<br />' + neg.toFixed(6) + '<br />' + zero.toFixed(6)
-    console.log(result)
-    
-    return result
+    findRatio(positive.toFixed(6))
+    findRatio(negative.toFixed(6))
+    findRatio(zero.toFixed(6))
 }
+
+
+
+                            // First Try
+// function plusMinus(arr) {
+//     let pos = 0
+//     let neg = 0
+//     let zero = 0
+//     for(let i=0;i<arr.length;i++){
+//         if(arr[i]>1)pos++
+//         if(arr[i]<1)neg++
+//         if(arr[i]===0)zero++
+//     }
+
+//     pos = pos/arr.length
+//     neg = neg/arr.length
+//     zero = zero/arr.length
+
+//     return console.log(pos.toFixed(6) + '\n' + neg.toFixed(6) + '\n' + zero.toFixed(6))
+// }
 
 
 
