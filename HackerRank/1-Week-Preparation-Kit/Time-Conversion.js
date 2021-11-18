@@ -9,6 +9,22 @@ function timeConversion(s) {
 }
 
 
+                            // still has errors
+function timeConversion(s) {
+    let hours = s.substring(0, 2)
+    let minutes = s.substring(2, s.length-4)
+    let aMPM = s.substring(s.length-2)
+    let seconds = s.substring(6, s.length-2)
+    
+    if(aMPM === 'PM'){
+        if(hours === '12') return hours+minutes+seconds
+        hours = Number(hours) + 12
+        return hours+minutes+seconds
+    }
+    if(hours === '12') hours === '00'
+    return hours+minutes+seconds
+    console.log(hours, minutes, seconds, 'test')
+}
 
 
 /*
