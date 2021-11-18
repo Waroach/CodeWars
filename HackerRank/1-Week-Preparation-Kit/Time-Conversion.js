@@ -1,6 +1,11 @@
 function timeConversion(s) {
-    // Write your code here
-
+    if( s.substring(s.length-2) === 'AM'){
+        return s.substring(0, s.length - 2)
+        }else{
+            let timeSplit = s.split(':')
+            timeSplit[0] = Number(timeSplit[0]) + 12
+            return timeSplit.join(':').substring(0, s.length - 2)
+        }
 }
 
 
