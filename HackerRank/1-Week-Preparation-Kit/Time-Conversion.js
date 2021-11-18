@@ -1,3 +1,4 @@
+// failed 3 out of 10
 function timeConversion(s) {
     if( s.substring(s.length-2) === 'AM'){
         return s.substring(0, s.length - 2)
