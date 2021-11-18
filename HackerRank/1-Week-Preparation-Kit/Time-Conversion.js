@@ -1,31 +1,54 @@
-// failed 3 out of 10
-function timeConversion(s) {
-    if( s.substring(s.length-2) === 'AM'){
-        return s.substring(0, s.length - 2)
-        }else{
-            let timeSplit = s.split(':')
-            timeSplit[0] = Number(timeSplit[0]) + 12
-            return timeSplit.join(':').substring(0, s.length - 2)
-        }
-}
-
-
-                            // still has errors
-function timeConversion(s) {
-    let hours = s.substring(0, 2)
-    let minutes = s.substring(2, s.length-4)
-    let aMPM = s.substring(s.length-2)
-    let seconds = s.substring(6, s.length-2)
-    
-    if(aMPM === 'PM'){
-        if(hours === '12') return hours+minutes+seconds
-        hours = Number(hours) + 12
-        return hours+minutes+seconds
+                            // Works with no Errors
+function timeConversion(input) {
+    input = input.split(':');
+    var hours = parseInt(input[0]);
+    var timeFrame = input[2].slice(2);
+    var seconds = input[2].slice(0,2);
+    if ((timeFrame === 'PM') && (hours !== 12)) {
+        hours += 12;
     }
-    if(hours === '12') hours === '00'
-    return hours+minutes+seconds
-    console.log(hours, minutes, seconds, 'test')
+    if ((hours === 12) && (timeFrame === 'AM')) {
+        hours = '00';
+    } else if (hours < 10) {
+        hours = '0' + hours.toString();
+    } else {
+        hours = hours.toString();
+    }
+    return [hours, input[1], seconds].join(':')
 }
+
+
+
+                            // Still has 3 failed out of 10
+// function timeConversion(s) {
+//     if( s.substring(s.length-2) === 'AM'){
+//         return s.substring(0, s.length - 2)
+//         }else{
+//             let timeSplit = s.split(':')
+//             timeSplit[0] = Number(timeSplit[0]) + 12
+//             return timeSplit.join(':').substring(0, s.length - 2)
+//         }
+// }
+
+
+
+                            // First Try -- failed 3 out of 10
+// function timeConversion(s) {
+//     let hours = s.substring(0, 2)
+//     let minutes = s.substring(2, s.length-4)
+//     let aMPM = s.substring(s.length-2)
+//     let seconds = s.substring(6, s.length-2)
+    
+//     if(aMPM === 'PM'){
+//         if(hours === '12') return hours+minutes+seconds
+//         hours = Number(hours) + 12
+//         return hours+minutes+seconds
+//     }
+//     if(hours === '12') hours === '00'
+//     return hours+minutes+seconds
+//     console.log(hours, minutes, seconds, 'test')
+// }
+
 
 
 /*
