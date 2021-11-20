@@ -1,6 +1,18 @@
-function diagonalDifference(arr) {
-    // Write your code here
 
+
+
+// Failed 5 out of 11
+function diagonalDifference(arr) {
+    let left = 0
+    let right = 0
+    let i
+    
+    for(i=0;i<arr[0].length;i++){
+        left += arr[i][i]
+        right += arr[i][arr[i].length - (i+1)]
+    }
+    
+    return right - left
 }
 
 
