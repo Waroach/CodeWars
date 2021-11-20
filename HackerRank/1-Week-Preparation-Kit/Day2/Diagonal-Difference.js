@@ -1,7 +1,4 @@
-
-
-
-// Failed 5 out of 11
+// Completed with no erros. DIRTY CODE
 function diagonalDifference(arr) {
     let left = 0
     let right = 0
@@ -12,8 +9,24 @@ function diagonalDifference(arr) {
         right += arr[i][arr[i].length - (i+1)]
     }
     
+    if(left > right) return left - right
     return right - left
 }
+
+
+                            // Failed 6 out of 11
+// function diagonalDifference(arr) {
+//     let left = 0
+//     let right = 0
+//     let i
+    
+//     for(i=0;i<arr[0].length;i++){
+//         left += arr[i][i]
+//         right += arr[i][arr[i].length - (i+1)]
+//     }
+    
+//     return right - left
+// }
 
 
 /*
