@@ -1,15 +1,25 @@
-// Completed
+// COMPLETED
 function countingSort(arr) {
-    let i,x
-    let result = arr.map(e=>e=0)
+    let counterArray = Array(100).fill(0);
     
-    for(i=0;i<arr.length;i++){
-        for(x=0;x<arr.length;x++){
-            if(i==arr[x])result[i]++
-        }
+    for (let number of arr) {
+        counterArray[number]++
     }
-    return result
+    return counterArray;
 }
+
+
+                            // failed 4 out of 6
+// function countingSort(arr) {
+//     let i,x
+//     let result = arr.map(e=>e=0)
+//     for(i=0;i<arr.length;i++){
+//         for(x=0;x<arr.length;x++){
+//             if(i==arr[x])result[i]++
+//         }
+//     }
+//     return result
+// }
 
 
                             // First Try fail
@@ -17,7 +27,6 @@ function countingSort(arr) {
 //     let i,x
 //     let total = -1
 //     let result = []
-    
 //     for(i=0;i<arr.length;i++){
 //         for(x=0;x<arr.length;x++){
 //             if(arr[x]===arr[i]) total++
