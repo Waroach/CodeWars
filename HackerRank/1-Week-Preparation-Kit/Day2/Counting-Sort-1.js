@@ -1,3 +1,15 @@
+// Completed
+function countingSort(arr) {
+    let i,x
+    let result = arr.map(e=>e=0)
+    
+    for(i=0;i<arr.length;i++){
+        for(x=0;x<arr.length;x++){
+            if(i==arr[x])result[i]++
+        }
+    }
+    return result
+}
 
 
                             // First Try fail
