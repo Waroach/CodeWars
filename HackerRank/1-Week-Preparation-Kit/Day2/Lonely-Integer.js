@@ -1,6 +1,12 @@
 function lonelyinteger(a) {
-    // Write your code here
-
+    a = a.sort((a,b)=>b-a)
+    
+    let i
+    for(i=0;i<a.length;i++){
+        if(a[i]!==a[i+1] && a[i]!==a[i-1]){
+            return a[i]
+        }
+    }
 }
 
 
