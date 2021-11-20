@@ -1,7 +1,20 @@
-function countingSort(arr) {
-    // Write your code here
 
-}
+
+                            // First Try fail
+// function countingSort(arr) {
+//     let i,x
+//     let total = -1
+//     let result = []
+    
+//     for(i=0;i<arr.length;i++){
+//         for(x=0;x<arr.length;x++){
+//             if(arr[x]===arr[i]) total++
+//         }
+//         result.push(total)
+//         total = -1
+//     }
+//     return result
+// }
 
 
 /*
