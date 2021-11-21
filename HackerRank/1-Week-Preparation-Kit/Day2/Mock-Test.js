@@ -1,27 +1,4 @@
 function flippingMatrix(matrix) {
-    let temp = 0
-
-    let row = 0
-    let num = 0
-    let matrixReverse = matrix[0].reverse()
-    let rowReverse = 0
-    let numReverse = 0
-    // code
-    for(let i=0;i<matrix.length;i++){
-        if(matrix[0][i] < matrix[3][i]){
-            if( temp < (matrix[3][i] - matrix[0][i]) ) {
-                row = i
-                num = matrix[3][i]
-            }
-        }
-        // TEST for reverse top row.
-        if(matrixReverse[i] < matrix[3][i]){
-            if( temp < (matrix[3][i] - matrixReverse[i]) ) {
-                rowReverse = i
-                numReverse = matrix[3][i]
-            }
-        }
-    }
 
     
 }
