@@ -1,14 +1,17 @@
+                            // Final Answer
+const square=n=> Math.pow(2, n-1)
 
 
                             // Cleaned up a little
-function square(number){
-    let total = 1
-    while(number > 1){
-        total *= 2
-        number--
-    }
-    return total
-}
+// function square(number){
+//     let total = 1
+//     while(number > 1){
+//         total *= 2
+//         number--
+//     }
+//     return total
+// }
+
 
                             // Frist Try || It Works.
 // function square(number){
