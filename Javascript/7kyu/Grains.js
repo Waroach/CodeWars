@@ -1,5 +1,11 @@
 function square(number){
-    //your code here
+    let total = 1
+    if(number === 1) return total
+    while(number > 1){
+        total *= 2
+        number--
+    }
+    return total
 }
 
 
