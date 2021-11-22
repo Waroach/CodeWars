@@ -3,6 +3,12 @@ function square(number){
 }
 
 
+console.log(square(1), 1);
+console.log(square(3), 4);
+console.log(square(4), 8);
+console.log(square(16), 32768);
+console.log(square(32), 2147483648);
+
 /*
 https://www.codewars.com/kata/55f7eb009e6614447b000099/train/javascript
 
