@@ -1,12 +1,25 @@
+
+
+                            // Cleaned up a little
 function square(number){
     let total = 1
-    if(number === 1) return total
     while(number > 1){
         total *= 2
         number--
     }
     return total
 }
+
+                            // Frist Try || It Works.
+// function square(number){
+//     let total = 1
+//     if(number === 1) return total
+//     while(number > 1){
+//         total *= 2
+//         number--
+//     }
+//     return total
+// }
 
 
 console.log(square(1), 1);
