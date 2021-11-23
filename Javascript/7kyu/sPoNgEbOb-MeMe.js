@@ -1,3 +1,8 @@
+                            // Using Reduce || WORKING
+function spongeMeme(sentence) {
+    return sentence.split('').reduce((s,l,i,arr)=> i%2===0 ? s+=l.toUpperCase() : s+=l.toLowerCase(), '')
+}
+
 
 
                             // WORKING || Long way
