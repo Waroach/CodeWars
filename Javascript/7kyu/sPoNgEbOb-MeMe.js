@@ -1,23 +1,27 @@
+const spongeMeme = sentence => sentence.split('').reduce((s,l,i,arr)=> i%2===0 ? s+=l.toUpperCase() : s+=l.toLowerCase(), '')
+
+
+
                             // Using Reduce || WORKING
-function spongeMeme(sentence) {
-    return sentence.split('').reduce((s,l,i,arr)=> i%2===0 ? s+=l.toUpperCase() : s+=l.toLowerCase(), '')
-}
+// function spongeMeme(sentence) {
+//     return sentence.split('').reduce((s,l,i,arr)=> i%2===0 ? s+=l.toUpperCase() : s+=l.toLowerCase(), '')
+// }
 
 
 
                             // WORKING || Long way
-function spongeMeme(sentence) {
-    let spongebob = []
-    sentence.split('').filter((e,i)=>{i%2===0?spongebob.push(e.toUpperCase()):spongebob.push(e.toLowerCase())})
-    return spongebob.join('')
-}
+// function spongeMeme(sentence) {
+//     let spongebob = []
+//     sentence.split('').filter((e,i)=>{i%2===0?spongebob.push(e.toUpperCase()):spongebob.push(e.toLowerCase())})
+//     return spongebob.join('')
+// }
 
 
 
                             // First Try || FAILED || Not working
-function spongeMeme(sentence) {
-    return sentence.split('').map((e,i)=>i%2===0?e=e.toLowerCase:e=e.toUpperCase).join('')
-}
+// function spongeMeme(sentence) {
+//     return sentence.split('').map((e,i)=>i%2===0?e=e.toLowerCase:e=e.toUpperCase).join('')
+// }
 
 
 
