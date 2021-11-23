@@ -1,5 +1,17 @@
+
+
+                            // WORKING || Long way
 function spongeMeme(sentence) {
-    // Code Goes Here
+    let spongebob = []
+    sentence.split('').filter((e,i)=>{i%2===0?spongebob.push(e.toUpperCase()):spongebob.push(e.toLowerCase())})
+    return spongebob.join('')
+}
+
+
+
+                            // First Try || FAILED || Not working
+function spongeMeme(sentence) {
+    return sentence.split('').map((e,i)=>i%2===0?e=e.toLowerCase:e=e.toUpperCase).join('')
 }
 
 
