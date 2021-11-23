@@ -3,6 +3,12 @@ function spongeMeme(sentence) {
 }
 
 
+
+console.log(spongeMeme("stop Making spongebob Memes!"), 'StOp mAkInG SpOnGeBoB MeMeS!')
+console.log(spongeMeme("colored teens cant Be successful in tech"), 'CoLoReD TeEnS CaNt bE SuCcEsSfUl iN TeCh')
+
+
+
 /*
 https://www.codewars.com/kata/5982619d2671576e90000017/train/javascript
 
