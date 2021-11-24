@@ -1,4 +1,12 @@
 
+
+                            // Completed using Reduce
+function elevatorDistance(array) {
+    return array.reduce((total,curr,index)=>total+Math.abs(curr-(index==0?curr:array[index-1])),0)
+}
+
+
+
                             // First Try || Works Great
 function elevatorDistance(array) {
     // Create a total to retunr
