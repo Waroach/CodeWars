@@ -1,23 +1,25 @@
+const elevatorDistance = array => array.reduce((total,curr,index)=>total+Math.abs(curr-(index==0?curr:array[index-1])),0)
+
 
 
                             // Completed using Reduce
-function elevatorDistance(array) {
-    return array.reduce((total,curr,index)=>total+Math.abs(curr-(index==0?curr:array[index-1])),0)
-}
+// function elevatorDistance(array) {
+//     return array.reduce((total,curr,index)=>total+Math.abs(curr-(index==0?curr:array[index-1])),0)
+// }
 
 
 
                             // First Try || Works Great
-function elevatorDistance(array) {
-    // Create a total to retunr
-    let total = 0
-    // Step thru the array taking the total difference thru each step
-    for(let i=1; i<array.length;i++){
-        total += Math.abs(array[i-1] - array[i])
-    }
-    // return that total
-    return total
-}
+// function elevatorDistance(array) {
+//     // Create a total to retunr
+//     let total = 0
+//     // Step thru the array taking the total difference thru each step
+//     for(let i=1; i<array.length;i++){
+//         total += Math.abs(array[i-1] - array[i])
+//     }
+//     // return that total
+//     return total
+// }
 
 
 console.log(elevatorDistance([5,2,8]), 9);
