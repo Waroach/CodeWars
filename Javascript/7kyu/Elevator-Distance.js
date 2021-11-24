@@ -1,5 +1,14 @@
+
+                            // First Try || Works Great
 function elevatorDistance(array) {
-    // your code here
+    // Create a total to retunr
+    let total = 0
+    // Step thru the array taking the total difference thru each step
+    for(let i=1; i<array.length;i++){
+        total += Math.abs(array[i-1] - array[i])
+    }
+    // return that total
+    return total
 }
 
 
