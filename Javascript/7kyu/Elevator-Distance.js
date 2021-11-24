@@ -3,6 +3,11 @@ function elevatorDistance(array) {
 }
 
 
+console.log(elevatorDistance([5,2,8]), 9);
+console.log(elevatorDistance([1,2,3]), 2);
+console.log(elevatorDistance([7,1,7,1]), 18);
+
+
 
 /*
 https://www.codewars.com/kata/59f061773e532d0c87000d16/train/javascript
