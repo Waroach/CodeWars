@@ -1,3 +1,5 @@
+
+                            // single line
 const automorphic = n => Number(String( Math.pow(n, 2) ).slice( -String(n).length) ) == n ? "Automorphic" : "Not!!"
 
 
