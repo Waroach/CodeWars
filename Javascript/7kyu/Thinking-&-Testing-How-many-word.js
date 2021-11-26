@@ -1,18 +1,26 @@
-function testit(s){
-    s = s.split('')
-    let count = 0
-    let word = ''
-    for(let i=0;i<s.length;i++){
-        if(s[i].toLowerCase() === 'w' && word === '') word = 'w'
-        if(s[i].toLowerCase() === 'o' && word === 'w') word = 'wo'
-        if(s[i].toLowerCase() === 'r' && word === 'wo') word = 'wor'
-        if(s[i].toLowerCase() === 'd' && word === 'wor'){
-            word = ''
-            count ++
-        }
-    }
-    return count
+
+                            // Regex short version
+function testit(s) {
+    return (s.match(/w.*?o.*?r.*?d/ig) || []).length;
 }
+
+
+                            // Long Version
+// function testit(s){
+//     s = s.split('')
+//     let count = 0
+//     let word = ''
+//     for(let i=0;i<s.length;i++){
+//         if(s[i].toLowerCase() === 'w' && word === '') word = 'w'
+//         if(s[i].toLowerCase() === 'o' && word === 'w') word = 'wo'
+//         if(s[i].toLowerCase() === 'r' && word === 'wo') word = 'wor'
+//         if(s[i].toLowerCase() === 'd' && word === 'wor'){
+//             word = ''
+//             count ++
+//         }
+//     }
+//     return count
+// }
 
 
                             // First try with psudoCode
