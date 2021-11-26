@@ -1,5 +1,28 @@
 function solve(eq){
-    //..
+    eq = eq.split('')
+    // create new string
+    let result = []
+    // create temp stringNumber
+    let nums = []
+    //Step thru array
+    for(let i=0; i<eq.length;i++){
+        // if i === number then push to stringNumber
+        if( Number(eq[i]) || eq[i] === '0'){
+            nums.push(eq[i])
+        }
+        // If numbers is end of array then add stringNumber to result
+        if(i == eq.length-1) result.unshift(nums.join(''))
+        // if i !=== number then do 3 things
+            // unshift numberString
+            // reset numberString
+            // unshift i
+        if(eq[i] != Number(eq[i])){
+            result.unshift(nums.join(''))
+            nums = []
+            result.unshift(eq[i])
+        }
+    }
+    return result.join('')
 }
 
 
