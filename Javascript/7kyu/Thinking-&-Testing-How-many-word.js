@@ -1,14 +1,8 @@
 function testit(s){
     s = s.split('')
-    // how many times does the WORD 'word' show up?
-    // no matter how many letters in the middle.
     let count = 0
     let word = ''
-    // go thru each letter and see how many times you can spell word.
-    // if word is spelled count goes up
     for(let i=0;i<s.length;i++){
-        // console.log('Letter', s[i])
-        // if(regex.test(s[i]))console.log(s[i])
         if(s[i].toLowerCase() === 'w' && word === '') word = 'w'
         if(s[i].toLowerCase() === 'o' && word === 'w') word = 'wo'
         if(s[i].toLowerCase() === 'r' && word === 'wo') word = 'wor'
@@ -19,6 +13,30 @@ function testit(s){
     }
     return count
 }
+
+
+                            // First try with psudoCode
+// function testit(s){
+//     s = s.split('')
+//     // how many times does the WORD 'word' show up?
+//     // no matter how many letters in the middle.
+//     let count = 0
+//     let word = ''
+//     // go thru each letter and see how many times you can spell word.
+//     // if word is spelled count goes up
+//     for(let i=0;i<s.length;i++){
+//         // console.log('Letter', s[i])
+//         // if(regex.test(s[i]))console.log(s[i])
+//         if(s[i].toLowerCase() === 'w' && word === '') word = 'w'
+//         if(s[i].toLowerCase() === 'o' && word === 'w') word = 'wo'
+//         if(s[i].toLowerCase() === 'r' && word === 'wo') word = 'wor'
+//         if(s[i].toLowerCase() === 'd' && word === 'wor'){
+//             word = ''
+//             count ++
+//         }
+//     }
+//     return count
+// }
 
 
 console.log(testit("word"), 1, "");
