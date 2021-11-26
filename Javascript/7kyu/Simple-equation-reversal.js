@@ -1,20 +1,28 @@
+
+                            // Using a Regex to detect math operators
 function solve(eq){
-    eq = eq.split('')
-    let result = []
-    let nums = []
-    for(let i=0; i<eq.length;i++){
-        if( Number(eq[i]) || eq[i] === '0'){
-            nums.push(eq[i])
-            if(i == eq.length-1) result.unshift(nums.join(''))
-        }
-        if(eq[i] != Number(eq[i])){
-            result.unshift(nums.join(''))
-            nums = []
-            result.unshift(eq[i])
-        }
-    }
-    return result.join('')
+    return eq.split(/([*\+\-\/])/).reverse().join('');
 }
+
+
+                            // Cleaned up
+// function solve(eq){
+//     eq = eq.split('')
+//     let result = []
+//     let nums = []
+//     for(let i=0; i<eq.length;i++){
+//         if( Number(eq[i]) || eq[i] === '0'){
+//             nums.push(eq[i])
+//             if(i == eq.length-1) result.unshift(nums.join(''))
+//         }
+//         if(eq[i] != Number(eq[i])){
+//             result.unshift(nums.join(''))
+//             nums = []
+//             result.unshift(eq[i])
+//         }
+//     }
+//     return result.join('')
+// }
 
 
                             // First try with PSUDOCODE
