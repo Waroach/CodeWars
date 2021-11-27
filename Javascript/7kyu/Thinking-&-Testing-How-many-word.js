@@ -1,8 +1,10 @@
+const testit = s => (s.match(/w.*?o.*?r.*?d/ig) || []).length
+
 
                             // Regex short version
-function testit(s) {
-    return (s.match(/w.*?o.*?r.*?d/ig) || []).length;
-}
+// function testit(s) {
+//     return (s.match(/w.*?o.*?r.*?d/ig) || []).length
+// }
 
 
                             // Long Version
