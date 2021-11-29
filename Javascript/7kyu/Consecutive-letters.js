@@ -1,10 +1,16 @@
 
-                            // First Try working
 function solve(s){
-    s = s.split('').sort().join('')
     let alphabet = 'abcdefghijklmnopqrstuvwxyz'
-    return alphabet.includes(s)
+    return alphabet.includes(s.split('').sort().join(''))
 }
+
+
+                            // First Try working
+// function solve(s){
+//     s = s.split('').sort().join('')
+//     let alphabet = 'abcdefghijklmnopqrstuvwxyz'
+//     return alphabet.includes(s)
+// }
 
 
                             // PSEUDOCODE
