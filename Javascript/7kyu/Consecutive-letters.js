@@ -1,5 +1,9 @@
+
+                            // First Try working
 function solve(s){
-    //..
+    s = s.split('').sort().join('')
+    let alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    return alphabet.includes(s)
 }
 
 
