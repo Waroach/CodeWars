@@ -3,6 +3,11 @@ function solve(s){
 }
 
 
+console.log(solve("abc"),true);
+console.log(solve("abd"),false);
+console.log(solve("dabc"),true);
+console.log(solve("abbc"),false);
+
 
 /*
 https://www.codewars.com/kata/5ce6728c939bf80029988b57/train/javascript
