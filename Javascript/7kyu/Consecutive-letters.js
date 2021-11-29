@@ -3,6 +3,16 @@ function solve(s){
 }
 
 
+                            // PSEUDOCODE
+    // are each letter consecutive or adjacent in the alphabet
+    // letters accur only once.
+
+    //sort the string.
+    // check if it contains any doubles charecters
+    // check if the string is contained in the alphabet.
+        // create a alphebit string to check against.
+
+
 console.log(solve("abc"),true);
 console.log(solve("abd"),false);
 console.log(solve("dabc"),true);
