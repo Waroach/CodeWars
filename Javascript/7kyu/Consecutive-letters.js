@@ -1,8 +1,11 @@
+                            // I am not sure if this will work...
+const solve = s => 'abcdefghijklmnopqrstuvwxyz'.includes(s.split('').sort().join(''))
 
-function solve(s){
-    let alphabet = 'abcdefghijklmnopqrstuvwxyz'
-    return alphabet.includes(s.split('').sort().join(''))
-}
+                            // Same as above
+// function solve(s){
+//     let alphabet = 'abcdefghijklmnopqrstuvwxyz'
+//     return alphabet.includes(s.split('').sort().join(''))
+// }
 
 
                             // First Try working
