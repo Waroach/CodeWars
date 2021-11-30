@@ -5,6 +5,9 @@ function remove(s){
 }
 
 
+// PSEUDOCODE
+// go thru the string and if Char/Element matches "!" move it to the end of the string
+
 
 console.log(remove("Hi!") , "Hi!")
 console.log(remove("Hi! Hi!") , "Hi Hi!!")
