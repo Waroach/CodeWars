@@ -1,7 +1,10 @@
+
+                            // First Try || WORKING
 function remove(s){
-    //coding and coding....
-    
-    
+    let startResult = []
+    let endResult = []
+    s.split('').filter( (e,i,arr) => e==='!' ? endResult.push(e) : startResult.push(e) )
+    return startResult.concat(endResult).join('')
 }
 
 
