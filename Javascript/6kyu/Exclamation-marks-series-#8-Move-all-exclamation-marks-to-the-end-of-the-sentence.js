@@ -6,6 +6,14 @@ function remove(s){
 
 
 
+console.log(remove("Hi!") , "Hi!")
+console.log(remove("Hi! Hi!") , "Hi Hi!!")
+console.log(remove("Hi! Hi! Hi!") , "Hi Hi Hi!!!")
+console.log(remove("Hi! !Hi Hi!") , "Hi Hi Hi!!!")
+console.log(remove("Hi! Hi!! Hi!") , "Hi Hi Hi!!!!")
+
+
+
 /*
 https://www.codewars.com/kata/57fafd0ed80daac48800019f/train/javascript
 
