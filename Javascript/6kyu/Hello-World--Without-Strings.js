@@ -1,5 +1,5 @@
 const helloWorld = () => {
-    // feel free to change this into a function :)
+    return new String('Hello, World!')
 }
 
 
