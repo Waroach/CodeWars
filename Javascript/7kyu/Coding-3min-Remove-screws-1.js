@@ -1,5 +1,11 @@
 function sc(screws){
-    return 0;
+    let total = 0
+    screws = screws.split('')
+    for(i=1;i<screws.length;i++){
+        if(screws[i] === screws[i-1]) total += 1
+        if(screws[i] !== screws[i-1]) total += 6
+    }
+    return total += screws.length
 }
 
                             // PSEUDOCODE
