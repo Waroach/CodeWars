@@ -3,6 +3,14 @@ function sc(screws){
 }
 
 
+
+console.log(sc("---+++"), 16);
+console.log(sc("-+-+-+"), 36);
+console.log(sc("-+-+-----------"), 49);
+console.log(sc("-+-+-++++++++++"), 54);
+
+
+
 /*
 https://www.codewars.com/kata/5710a50d336aed828100055a/train/javascript
 
