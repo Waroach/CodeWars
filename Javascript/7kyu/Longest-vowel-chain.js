@@ -1,5 +1,20 @@
 function solve(s){
-    return 0;
+
+}
+
+
+                            // PSEUDOCODE
+function solve(s){
+    // Create a counter
+    // Create max count
+
+    // split and step thru string 
+        // checking each charector in the string if it is a vowel.
+        // if next char is a vowel count goes up one and contines
+        // If it is NOT a vowel
+        // if counter is larger then the max counter set max counter to counter
+        // reset counter to 0
+    // return max counter
 }
 
 
