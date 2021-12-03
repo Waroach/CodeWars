@@ -1,5 +1,17 @@
-function solve(s){
 
+                            // First Try || WORKS GREAT
+function solve(s){
+    let count = 0
+    let maxCount = 0
+    s.split('').filter(e=>{
+        if( e.match(/[a|e|i|o|u]/i) ){
+            count++
+        }else{
+            if(maxCount < count) maxCount = count
+            count = 0
+        }
+    })
+    return maxCount
 }
 
 
