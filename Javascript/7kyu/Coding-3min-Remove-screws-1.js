@@ -2,6 +2,11 @@ function sc(screws){
     return 0;
 }
 
+                            // PSEUDOCODE
+    // Create a total equal to 1
+    // Split the screws and check each screw
+        // If screw is same as last then add 2 seconds
+        // if screw is different then last add 7 seconds || 5 to change drivers || 2 to remove and move...
 
 
 console.log(sc("---+++"), 16);
