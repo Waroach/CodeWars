@@ -3,10 +3,12 @@ function sc(screws){
 }
 
                             // PSEUDOCODE
-    // Create a total equal to 1
+    // Create a total equal to 0
     // Split the screws and check each screw
-        // If screw is same as last then add 2 seconds
-        // if screw is different then last add 7 seconds || 5 to change drivers || 2 to remove and move...
+        // If screw is same as last then add 1 seconds
+        // if screw is different then last add 6 seconds || 5 to change drivers || 1 to remove
+    // then add Total plus array length for each step thru to add 1 second
+    //give back the total.
 
 
 console.log(sc("---+++"), 16);
