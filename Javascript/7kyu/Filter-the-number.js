@@ -1,8 +1,13 @@
 var FilterString = function(value) {
-    let result = ''
-    value.split('').filter(a=>a==Number(a)?result+=a:false)
-    return Number(result)
+    return +value.split('').filter(n => !isNaN(n)).join('');
 }
+
+                            // FIRST TRY || WORKING
+// var FilterString = function(value) {
+//     let result = ''
+//     value.split('').filter(a=>a==Number(a)?result+=a:false)
+//     return Number(result)
+// }
 
 console.log(FilterString("123"), 123, 'Just return the numbers')
 console.log(FilterString("a1b2c3"), 123, 'Just return the numbers')
