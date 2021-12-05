@@ -3,6 +3,11 @@ function makeString(s){
 }
 
 
+                            // PSEUDOCODE
+    // Split the string into single words.
+    //Take the first element out of each string from the above array.
+    // return the results
+
 
 console.log(makeString("sees eyes xray yoat"), "sexy", "Wrong result for 'sees eyes xray yoat'")
 console.log(makeString("brown eyes are nice"), "bean", "Wrong result for 'brown eyes are nice'")
