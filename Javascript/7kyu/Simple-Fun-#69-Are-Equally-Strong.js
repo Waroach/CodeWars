@@ -1,9 +1,13 @@
 
+                            // Created a one liner
+const areEquallyStrong = (yourLeft, yourRight, friendsLeft, friendsRight) => (yourLeft+yourRight) === (friendsLeft+friendsRight) && Math.max(yourLeft, yourRight) === Math.max(friendsLeft, friendsRight)?  true :  false
+
+
                             // First Try || WORKING
-function areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight) {
-    if((yourLeft+yourRight) === (friendsLeft+friendsRight) && Math.max(yourLeft, yourRight) === Math.max(friendsLeft, friendsRight)) return true
-    return false
-}
+// function areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight) {
+//     if((yourLeft+yourRight) === (friendsLeft+friendsRight) && Math.max(yourLeft, yourRight) === Math.max(friendsLeft, friendsRight)) return true
+//     return false
+// }
 
 
 console.log(areEquallyStrong(10,15,15,10),true)
