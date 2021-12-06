@@ -15,6 +15,10 @@ console.log(areEquallyStrong(1,10,10,0),false)
 console.log(areEquallyStrong(10, 5, 11, 4),false)
 
 
+                            // PSEUDOCODE
+    // Find largest arm for each person
+    // if equal return true otherwise return false
+
 
 /*
 https://www.codewars.com/kata/5894017082b9fb62c50000df/train/javascript
