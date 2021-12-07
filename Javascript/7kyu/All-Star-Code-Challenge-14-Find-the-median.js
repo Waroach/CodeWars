@@ -1,5 +1,12 @@
+
+
 function median(array) {
-    //code here
+    let half = Math.floor(array.length / 2)
+    array = array.sort((a,b)=>a-b)
+    
+    if(array.length % 2) return array[half]
+    
+    return (array[half-1] + array[half]) / 2
 }
 
 
@@ -7,6 +14,8 @@ function median(array) {
 console.log(median([3,2,1]),2);
 console.log(median([33,99,100,30,29,50]), 41.5);
 
+                            // PSEUDOCODE
+    // use reduce to add 
 
 
 /*
