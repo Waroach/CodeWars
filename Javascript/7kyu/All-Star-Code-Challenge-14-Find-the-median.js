@@ -3,6 +3,12 @@ function median(array) {
 }
 
 
+
+console.log(median([3,2,1]),2);
+console.log(median([33,99,100,30,29,50]), 41.5);
+
+
+
 /*
 https://www.codewars.com/kata/5864eb8039c5ab9cd400005c/train/javascript
 
