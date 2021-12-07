@@ -15,7 +15,9 @@ console.log(median([3,2,1]),2);
 console.log(median([33,99,100,30,29,50]), 41.5);
 
                             // PSEUDOCODE
-    // use reduce to add 
+    // put the numbers in order
+    // if odd amount of numbers return the middle number
+    // if even amount of numbers grab the middle two numbers and devide them by 2
 
 
 /*
