@@ -5,7 +5,6 @@ function median(array) {
     array = array.sort((a,b)=>a-b)
     
     if(array.length % 2) return array[half]
-    
     return (array[half-1] + array[half]) / 2
 }
 
