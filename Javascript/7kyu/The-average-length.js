@@ -1,3 +1,6 @@
+const averageLength = (arr) => arr.map(e=>e[0].repeat(Math.round(arr.join('').length / arr.length)))
+
+
                             // Not yet tested
 function averageLength(arr) { 
     return arr.map(e=>e[0].repeat(Math.round(arr.join('').length / arr.length)))
