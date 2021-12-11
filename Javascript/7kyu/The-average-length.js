@@ -15,13 +15,14 @@ function averageLength(arr) {
 
 
 /*
+psudocode
+
 to get the average, join the strings without spaces, then divide that by the total strings.
 that will give you the average number, save that into const variable.
 using a map shorten each string into one element, [0]
 then repeat that const average number of times.
 
 
-psudocode
 find average by adding all the letters deviding by the amount of words
 Then recreate the strings using the above number to place that many letters.
 */
