@@ -5,6 +5,14 @@ function pattern(n){
 }
 
 
+                            // PSEUDOCODE
+// if less then 1 return the string
+// Then run a while loop...
+    // as the while loop counts up it takes the number and prints it that many times.
+    // then print /n
+    // then add to the while loop.
+
+
 console.log(pattern(1),"1");
 console.log(pattern(2),"1\n22");
 console.log(pattern(5),"1\n22\n333\n4444\n55555");
