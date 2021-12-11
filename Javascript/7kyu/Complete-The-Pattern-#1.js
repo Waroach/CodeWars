@@ -5,6 +5,9 @@ function pattern(n){
 }
 
 
+console.log(pattern(1),"1");
+console.log(pattern(2),"1\n22");
+console.log(pattern(5),"1\n22\n333\n4444\n55555");
 
 
 /*
