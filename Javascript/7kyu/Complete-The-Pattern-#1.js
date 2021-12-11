@@ -1,6 +1,16 @@
 function pattern(n){
-    var output="";
-      // Happy Coding ^_^
+    let output="";
+    let currentNumber = 1
+    if(n<1) return output
+    if(n===1) return '1'
+    while(currentNumber<=n){
+        for(i=0;currentNumber>i;i++){
+            output = output + currentNumber
+        }
+        currentNumber++
+        output += "\n"
+    }
+    output = output.substring(0, output.length -1)
     return output;
 }
 
