@@ -5,6 +5,13 @@ function growingPlant(upSpeed, downSpeed, desiredHeight) {
 }
 
 
+                            // PSEUDOCODE
+// we need to make a counter and total
+// if the total is less then the disiredHieght 
+// if the count is even add the upSpeed, if odd add the downSpeed
+// run a solution to either add or minus from the total.
+// and add to the count.
+
 
 console.log(growingPlant(100,10,910),10)
 console.log(growingPlant(10,9,4),1)
