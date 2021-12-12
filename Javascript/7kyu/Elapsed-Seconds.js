@@ -3,6 +3,10 @@ function elapsedSeconds(startDate, endDate){
 }
 
 
+                            // PSEUDOCODE
+// We need to minus startDate with endDate using Date()
+
+
 
 /*
 
