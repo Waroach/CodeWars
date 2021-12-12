@@ -1,7 +1,13 @@
 function growingPlant(upSpeed, downSpeed, desiredHeight) {
-    //coding and coding..
-
-
+    let total = 0
+    let count = 0
+    while(total < desiredHeight){
+        if(count%1===0) {total += upSpeed
+        count += .5}
+        else {total -= downSpeed
+        count += .5}
+    }
+    return Math.ceil(count)
 }
 
 
