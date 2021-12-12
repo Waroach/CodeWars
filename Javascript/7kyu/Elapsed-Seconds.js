@@ -1,6 +1,10 @@
+
+
+                            // This is giving NAN
 function elapsedSeconds(startDate, endDate){
-  
+    return (Date(startDate) - Date(endDate))
 }
+
 
 
                             // PSEUDOCODE
