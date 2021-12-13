@@ -1,8 +1,11 @@
+                            // Created one liner
+const circleArea = radius => Math.sign(radius) !== 1 ? false : Number((Math.PI * Math.pow(radius, 2)).toFixed(2))
 
-var circleArea = function(radius) {
-    if(Math.sign(radius) !== 1) return false
-    return  (Math.PI * Math.pow(radius, 2)).toFixed(2)
-};
+                            // First Try || WORKING
+// var circleArea = function(radius) {
+//     if(Math.sign(radius) !== 1) return false
+//     return  (Math.PI * Math.pow(radius, 2)).toFixed(2)
+// };
 
 
 
