@@ -5,6 +5,14 @@ var circleArea = function(radius) {
 
 
 
+console.log(circleArea(-1485.86), false)
+console.log(circleArea(0), false)
+console.log(circleArea(43.2673), 5881.25)
+console.log(circleArea(68), 14526.72)
+console.log(circleArea("number"), false)
+
+
+
 /*
 https://www.codewars.com/kata/537baa6f8f4b300b5900106c/train/javascript
 
