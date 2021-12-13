@@ -1,7 +1,7 @@
 
 var circleArea = function(radius) {
     if(Math.sign(radius) !== 1) return false
-    return  (2 * Math.PI * radius).toFixed(2)
+    return  (Math.PI * Math.pow(radius, 2)).toFixed(2)
 };
 
 
