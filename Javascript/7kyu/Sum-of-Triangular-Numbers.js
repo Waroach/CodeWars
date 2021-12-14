@@ -4,6 +4,14 @@ function sumTriangularNumbers(n) {
 
 
 
+console.log(sumTriangularNumbers(6), 56);
+console.log(sumTriangularNumbers(34), 7140);
+console.log(sumTriangularNumbers(-291), 0);
+console.log(sumTriangularNumbers(943), 140205240);
+console.log(sumTriangularNumbers(-971), 0);
+
+
+
 /*
 https://www.codewars.com/kata/580878d5d27b84b64c000b51/train/javascript
 
