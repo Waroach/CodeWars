@@ -1,6 +1,13 @@
 function sumTriangularNumbers(n) {
-    if(Math.sign(n) !== 1) return 0
-
+    if (n <= 0) return 0
+    return Array.from({ length: n }, (_, index) => index + 1)
+        .map(
+            (number, index, array) =>
+                index === 0
+                ? number
+                : array.slice(0, index + 1).reduce((total, value) => total + value, 0)
+            )
+        .reduce((total, value) => total + value, 0)
 }
 
 
