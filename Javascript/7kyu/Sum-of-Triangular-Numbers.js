@@ -4,6 +4,7 @@ function sumTriangularNumbers(n) {
 }
 
 
+                            // PSEUDOCODE
 // Lets look at how the triangle number is made each time.
 // 01                       <-- if n === 1 then return 01
 // 02 03                    <-- if n === 2 then return 03
