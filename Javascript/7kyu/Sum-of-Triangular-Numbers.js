@@ -1,6 +1,19 @@
 function sumTriangularNumbers(n) {
-    return 0;
+    if(Math.sign(n) !== 1) return 0
+
 }
+
+
+// Lets look at how the triangle number is made each time.
+// 01                       <-- if n === 1 then return 01
+// 02 03                    <-- if n === 2 then return 03
+// 04 05 06                 <-- if n === 3 then return 06
+// 07 08 09 10              <-- if n === 4 then return 10
+// 11 12 13 14 15           <-- if n === 5 then return 15
+// 16 17 18 19 20 21        <-- if n === 6 then return 21
+// 22 23 24 25 26 27 28     <-- if n === 7 then return 28
+// you have to make a row of numbers for each n
+// then take the last number of the row
 
 
 
