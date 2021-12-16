@@ -3,6 +3,13 @@ function unluckyDays(year){
 }
 
 
+                            // PSEUDOCODE
+// Create a variable that will count each time a friday happens in a year
+    // create a for loop that will go to each month and grab the date of the 13th
+    // if that date equals friday then add 1 to the counter
+// return the counter
+
+
 
 console.log(unluckyDays(1586), 1, "should be: 1");
 console.log(unluckyDays(1001), 3, "should be: 3");
