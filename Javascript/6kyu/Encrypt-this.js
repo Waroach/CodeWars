@@ -4,6 +4,14 @@ var encryptThis = function(text) {
 
 
 
+                            // PSEUDOCODE
+// first need to seperate the string into idividual words
+// need to cycle thru each word and do the following
+    // first convert the first letter into ASCII
+    // Then swap the second and last letter
+
+
+
 console.log(encryptThis("A"), "65");
 console.log(encryptThis("A wise old owl lived in an oak"), "65 119esi 111dl 111lw 108dvei 105n 97n 111ka");
 console.log(encryptThis("The more he saw the less he spoke"), "84eh 109ero 104e 115wa 116eh 108sse 104e 115eokp");
@@ -19,12 +27,10 @@ https://www.codewars.com/kata/5848565e273af816fb000449/train/javascript
 
 Acknowledgments:
 I thank yvonne-liu for the idea and for the example tests :)
-
 Description:
 Encrypt this!
-
-You want to create secret messages which can be deciphered by the Decipher this! kata. Here are the conditions:
-
+You want to create secret messages which can be deciphered by the Decipher this! kata.
+Here are the conditions:
 Your message is a string containing space separated words.
 You need to encrypt each word in the message using the following rules:
 The first letter must be converted to its ASCII code.
