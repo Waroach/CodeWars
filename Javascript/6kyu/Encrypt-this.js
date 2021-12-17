@@ -1,5 +1,13 @@
 var encryptThis = function(text) {
-    // Implement me! :)
+    text = text.split(' ')
+    for(i=0;i<text.length;i++){
+        if(text[i].length < 3){
+            text[i] = text[i].charCodeAt(0) + text[i].substring(1)
+        }else{
+            text[i] = text[i].charCodeAt(0) + text[i].substring(text[i].length-1) + text[i].slice(2,text[i].length-1) + text[i][1]
+        }
+    }
+    return text.join(' ')
 }
 
 
