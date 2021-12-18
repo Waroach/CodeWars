@@ -1,6 +1,10 @@
-var kookaCounter = function(laughing) {
-    // Your code here!
-    return 0
+const kookaCounter = function(laughing) {
+    let count = 0
+    laughing = laughing.split('').filter( l => l.toLowerCase() === 'h' ? l : null )
+    for(i=0;i<laughing.length;i++){
+        if(laughing[i] !== laughing[i+1]) count++
+    }
+    return count
 }
 
 
