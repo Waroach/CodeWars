@@ -5,6 +5,13 @@ var kookaCounter = function(laughing) {
 
 
 
+console.log(kookaCounter(""), 0)
+console.log(kookaCounter("hahahahaha"), 1)
+console.log(kookaCounter("hahahahahaHaHaHa"), 2)
+console.log(kookaCounter("HaHaHahahaHaHa"), 3)
+
+
+
 /*
 https://www.codewars.com/kata/58e8cad9fd89ea0c6c000258/train/javascript
 
