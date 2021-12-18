@@ -14,6 +14,8 @@ const kookaCounter = function(laughing) {
 // remove all the 'a' from the string or split array
 // I need to count every time a hH changes from lower to upper or upper to lower
 
+// Would like to rewrite this using .replace then .split .filter with the counter
+
 
 
 console.log(kookaCounter(""), 0)
