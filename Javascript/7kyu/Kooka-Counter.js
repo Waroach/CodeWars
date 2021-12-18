@@ -5,6 +5,13 @@ var kookaCounter = function(laughing) {
 
 
 
+                            // PSEUDOCODE
+// create a variable called counter
+// remove all the 'a' from the string or split array
+// I need to count every time a hH changes from lower to upper or upper to lower
+
+
+
 console.log(kookaCounter(""), 0)
 console.log(kookaCounter("hahahahaha"), 1)
 console.log(kookaCounter("hahahahahaHaHaHa"), 2)
