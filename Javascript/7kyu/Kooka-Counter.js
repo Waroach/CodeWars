@@ -16,9 +16,6 @@ const kookaCounter = function(laughing) {
 // I need to count every time a hH changes from lower to upper or upper to lower
 // Would like to rewrite this using .replace then .split .filter with the counter
 
-// CHEAT DAY
-
-
 
 console.log(kookaCounter(""), 0)
 console.log(kookaCounter("hahahahaha"), 1)
