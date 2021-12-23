@@ -5,6 +5,17 @@ function riders(stations) {
 
 
 
+                            // PSEUDOCODE
+// create a rider count called riderCount
+// create a milage count called distance
+// if the current distance plus the next milage goes over 100
+    // add 1 to riderCount
+    // set distance to next millage
+// otherwise
+    // total previous distance plus next milage
+
+
+
 console.log(riders([18, 15]), 1);
 console.log(riders([43, 23, 40, 13]), 2);
 console.log(riders([33, 8, 16, 47, 30, 30, 46]), 3);
