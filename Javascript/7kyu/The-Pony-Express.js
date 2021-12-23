@@ -1,6 +1,14 @@
 function riders(stations) {
-    // Your code here!
-    return 1
+    let riderCount = 0
+    let distance = stations[0]
+    for(let i=0;i<stations.length;i++){
+        if(distance + stations[i+1] <= 100) distance += stations[i+1]
+        else{
+            riderCount++
+            distance = stations[i+1]
+        }
+    }
+    return riderCount
 }
 
 
