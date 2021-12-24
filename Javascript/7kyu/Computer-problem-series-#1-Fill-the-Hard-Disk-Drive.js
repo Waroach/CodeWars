@@ -1,5 +1,10 @@
 function save(sizes, hd) {
-    // your code here
+    let total = sizes[0]
+    for(let i=0;i<sizes.length;i++){
+        if(total > hd)  return i
+        total += sizes[i+1]
+    }
+    return sizes.length
 }
 
 
