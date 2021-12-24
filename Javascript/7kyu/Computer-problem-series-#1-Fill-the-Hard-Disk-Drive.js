@@ -4,6 +4,13 @@ function save(sizes, hd) {
 
 
 
+// step thru the sizes array
+    // keep adding together until they are equal or less then the hd
+    // either return above length without going over
+    // or create a counter and return count
+
+
+
 console.log(save([4, 4, 4, 3, 3], 12), 3);
 console.log(save([4, 4, 4, 3, 3], 11), 2);
 console.log(save([4, 8, 15, 16, 23, 42], 108), 6);
