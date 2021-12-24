@@ -4,6 +4,7 @@ function save(sizes, hd) {
 
 
 
+                            // PSEUDOCODE
 // step thru the sizes array
     // keep adding together until they are equal or less then the hd
     // either return above length without going over
