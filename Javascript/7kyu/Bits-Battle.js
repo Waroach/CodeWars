@@ -1,10 +1,23 @@
 function bitsBattle(numbers) {
-    return ; //code here
+    oddCount = 0
+    evenCount = 0
+    if (numbers.length === 0) return 'tie'
+    numbers.filter(n => {
+        if (n % 2 === 0) {
+            n.toString(2).split('').filter(e => e === '0' ? evenCount++ : null)
+        }
+        if (n % 2 !== 0) {
+            n.toString(2).split('').filter(e => e === '1' ? oddCount++ : null)
+        }
+    })
+    if (oddCount === evenCount) return 'tie'
+    if (oddCount > evenCount) return 'odds win'
+    if (evenCount > oddCount) return 'evens win'
 }
 
 
 
-                            // PSEUDOCODE
+// PSEUDOCODE
 // if the array length is zero then 'tie'
 // step thru the array of numbers and check if odd or even
 // if odd
