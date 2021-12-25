@@ -4,6 +4,17 @@ function bitsBattle(numbers) {
 
 
 
+                            // PSEUDOCODE
+// first sort the numbers
+// if the length of number array is odd 
+    // if the middle number is odd then 'odds win'
+    // otherwise 'evens win'
+// if the middle two numbers are both odd then 'odds win'
+// if the middle two numbers are both even then 'evens win'
+// otherwise its a 'tie'
+
+
+
 console.log(bitsBattle([5, 3, 14]), 'odds win');
 console.log(bitsBattle([3, 8, 22, 15, 78]), 'evens win');
 console.log(bitsBattle([]), 'tie');
