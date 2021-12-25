@@ -14,7 +14,7 @@ function bitsBattle(numbers) {
 // if even
     // convert to binary string
     // split string and step thru
-    // if 1 add 1 to the evenCount
+    // if 0 add 1 to the evenCount
 // check who has a higher count even or odd
 
 
