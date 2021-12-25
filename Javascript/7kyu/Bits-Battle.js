@@ -5,13 +5,17 @@ function bitsBattle(numbers) {
 
 
                             // PSEUDOCODE
-// first sort the numbers
-// if the length of number array is odd 
-    // if the middle number is odd then 'odds win'
-    // otherwise 'evens win'
-// if the middle two numbers are both odd then 'odds win'
-// if the middle two numbers are both even then 'evens win'
-// otherwise its a 'tie'
+// if the array length is zero then 'tie'
+// step thru the array of numbers and check if odd or even
+// if odd
+    // convert to binary string
+    // split string and step thru
+    // if 1 add 1 to the oddCount
+// if even
+    // convert to binary string
+    // split string and step thru
+    // if 1 add 1 to the evenCount
+// check who has a higher count even or odd
 
 
 
