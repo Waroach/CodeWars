@@ -4,6 +4,13 @@ function bitsBattle(numbers) {
 
 
 
+console.log(bitsBattle([5, 3, 14]), 'odds win');
+console.log(bitsBattle([3, 8, 22, 15, 78]), 'evens win');
+console.log(bitsBattle([]), 'tie');
+console.log(bitsBattle([1, 13, 16]), 'tie');
+
+
+
 /*
 https://www.codewars.com/kata/58856a06760b85c4e6000055/train/javascript
 
