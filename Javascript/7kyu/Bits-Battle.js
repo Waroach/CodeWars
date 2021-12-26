@@ -17,7 +17,7 @@ function bitsBattle(numbers) {
 
 
 
-// PSEUDOCODE
+                            // PSEUDOCODE
 // if the array length is zero then 'tie'
 // step thru the array of numbers and check if odd or even
 // if odd
