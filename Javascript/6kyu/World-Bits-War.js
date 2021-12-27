@@ -4,6 +4,14 @@ function bitsWar(numbers) {
 
 
 
+console.log(bitsWar([1,5,12]), "odds win");
+console.log(bitsWar([7,-3,20]), "evens win");
+console.log(bitsWar([7,-3,-2,6]), "tie");
+console.log(bitsWar([-3,-5]), "evens win");
+console.log(bitsWar([]), "tie");
+
+
+
 /*
 https://www.codewars.com/kata/58865bfb41e04464240000b0/train/javascript
 
