@@ -1,5 +1,20 @@
-function bitsWar(numbers) {
-    //your code here
+function bitsWar(nums) {
+    if (!nums.length) return 'tie'
+    let odd = 0
+    let even = 0
+    nums.filter(n => {
+        //Math.sign(n)
+        if (n % 2 === 0) {
+            if (Math.sign(n) === 1) n.toString(2).split('').filter(bit => bit === '1' ? even++ : null)
+            if (Math.sign(n) === -1) n.toString(2).split('').filter(bit => bit === '1' ? even-- : null)
+        }
+        if (n % 2 !== 0) {
+            if (Math.sign(n) === 1) n.toString(2).split('').filter(bit => bit === '1' ? odd++ : null)
+            if (Math.sign(n) === -1) n.toString(2).split('').filter(bit => bit === '1' ? odd-- : null)
+        }
+    })
+    if (odd === even) return 'tie'
+    return odd > even ? 'odds win' : 'evens win'
 }
 
 
@@ -23,10 +38,10 @@ function bitsWar(numbers) {
 
 
 
-console.log(bitsWar([1,5,12]), "odds win");
-console.log(bitsWar([7,-3,20]), "evens win");
-console.log(bitsWar([7,-3,-2,6]), "tie");
-console.log(bitsWar([-3,-5]), "evens win");
+console.log(bitsWar([1, 5, 12]), "odds win");
+console.log(bitsWar([7, -3, 20]), "evens win");
+console.log(bitsWar([7, -3, -2, 6]), "tie");
+console.log(bitsWar([-3, -5]), "evens win");
 console.log(bitsWar([]), "tie");
 
 
