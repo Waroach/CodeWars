@@ -4,6 +4,25 @@ function bitsWar(numbers) {
 
 
 
+                            // PSEUDOCODE
+// if the array length is zero then 'tie'
+// step thru the array of numbers and check if odd or even
+// if odd
+    // convert to binary string
+    // split string and step thru
+        // if 1
+        // if POSITIVE add 1 to the oddCount
+        // if NEGATIVE minus 1 to the oddCount
+// if even
+    // convert to binary string
+    // split string and step thru
+        // if 0
+        // if POSITIVE add 1 to the evenCount
+        // if NEGATIVE minus 1 to the evenCount
+// check who has a higher count even or odd
+
+
+
 console.log(bitsWar([1,5,12]), "odds win");
 console.log(bitsWar([7,-3,20]), "evens win");
 console.log(bitsWar([7,-3,-2,6]), "tie");
