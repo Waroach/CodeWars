@@ -1,6 +1,6 @@
 function onesComplement(n) {
-    // your code here
-};
+    return n.split('').map(e=>e==="0"?e="1":e="0").join('')
+}
 
 
 
