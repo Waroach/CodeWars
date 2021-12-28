@@ -4,6 +4,12 @@ function onesComplement(n) {
 
 
 
+                            // PSEUDOCODE
+// step thru the each element of the string
+// if the element is a "0" make it a "1"
+// if the element is a "1" make it a "0"
+
+
 console.log(onesComplement("0"), "1");
 console.log(onesComplement("1"), "0");
 console.log(onesComplement("01"), "10");
