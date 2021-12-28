@@ -1,6 +1,11 @@
-function onesComplement(n) {
-    return n.split('').map(e=>e==="0"?e="1":e="0").join('')
-}
+const onesComplement = n => n.split('').map(e=>e==="0"?e="1":e="0").join('')
+
+
+
+                            // First Try
+// function onesComplement(n) {
+//     return n.split('').map(e=>e==="0"?e="1":e="0").join('')
+// }
 
 
 
