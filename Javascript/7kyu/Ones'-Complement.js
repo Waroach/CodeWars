@@ -4,6 +4,14 @@ function onesComplement(n) {
 
 
 
+console.log(onesComplement("0"), "1");
+console.log(onesComplement("1"), "0");
+console.log(onesComplement("01"), "10");
+console.log(onesComplement("10"), "01");
+console.log(onesComplement("1101"), "0010");
+
+
+
 /*
 https://www.codewars.com/kata/59b11f57f322e5da45000254/train/javascript
 
