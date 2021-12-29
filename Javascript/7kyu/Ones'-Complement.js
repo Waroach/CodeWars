@@ -1,3 +1,5 @@
+
+                            // Created a one liner
 const onesComplement = n => n.split('').map(e=>e==="0"?e="1":e="0").join('')
 
 
