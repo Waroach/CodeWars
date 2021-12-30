@@ -1,25 +1,30 @@
-function BinaryPyramid(m,n){
-//solution
+function BinaryPyramid(m, n) {
+    let result = 0
+    while (m <= n) {
+        result += Number(m.toString(2))
+        m++
+    }
+    return result.toString(2)
 }
 
 
 
-                            // PSEUDOCODE
+// PSEUDOCODE
 // take the numbers from m to n
-    // i.e. m=1, n=5. so 1, 2, 3, 4, 5
+// i.e. m=1, n=5. so 1, 2, 3, 4, 5
 // convert them into binary
-    // add each numbers binary form
-        //i.e.  1=1, 2=10, 3=11, 4=100
-        // 1+10+11+100 = 122
+// add each numbers binary form
+//i.e.  1=1, 2=10, 3=11, 4=100
+// 1+10+11+100 = 122
 // return the total result in binary form
-    //i.e 122 = 1111010
+//i.e 122 = 1111010
 
 
 
-console.log(BinaryPyramid(1,4), "1111010");
-console.log(BinaryPyramid(1,6), "101001101");
-console.log(BinaryPyramid(6,20), "1110010110100011");
-console.log(BinaryPyramid(21,60), "1100000100010001010100");
+console.log(BinaryPyramid(1, 4), "1111010");
+console.log(BinaryPyramid(1, 6), "101001101");
+console.log(BinaryPyramid(6, 20), "1110010110100011");
+console.log(BinaryPyramid(21, 60), "1100000100010001010100");
 
 
 
