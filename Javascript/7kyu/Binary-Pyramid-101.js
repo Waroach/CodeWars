@@ -4,6 +4,14 @@ function BinaryPyramid(m,n){
 
 
 
+                            // PSEUDOCODE
+// take the numbrs from m to n
+    // i.e. m=1, n=5. so 1, 2, 3, 4, 5
+// convert them into binary
+// return the result without spaces
+
+
+
 console.log(BinaryPyramid(1,4), "1111010");
 console.log(BinaryPyramid(1,6), "101001101");
 console.log(BinaryPyramid(6,20), "1110010110100011");
