@@ -5,10 +5,14 @@ function BinaryPyramid(m,n){
 
 
                             // PSEUDOCODE
-// take the numbrs from m to n
+// take the numbers from m to n
     // i.e. m=1, n=5. so 1, 2, 3, 4, 5
 // convert them into binary
-// return the result without spaces
+    // add each numbers binary form
+        //i.e.  1=1, 2=10, 3=11, 4=100
+        // 1+10+11+100 = 122
+// return the total result in binary form
+    //i.e 122 = 1111010
 
 
 
