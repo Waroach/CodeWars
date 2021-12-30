@@ -3,6 +3,14 @@ function BinaryPyramid(m,n){
 }
 
 
+
+console.log(BinaryPyramid(1,4), "1111010");
+console.log(BinaryPyramid(1,6), "101001101");
+console.log(BinaryPyramid(6,20), "1110010110100011");
+console.log(BinaryPyramid(21,60), "1100000100010001010100");
+
+
+
 /*
 https://www.codewars.com/kata/5596700a386158e3aa000011/train/javascript
 
