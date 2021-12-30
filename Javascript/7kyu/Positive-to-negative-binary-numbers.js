@@ -4,6 +4,15 @@ function positiveToNegative(b) {
 
 
 
+// Test Cases
+console.log(positiveToNegative([0, 1, 0, 0, 1]), [1, 0, 1, 1, 1]);
+console.log(positiveToNegative([0, 0, 0, 0]), [0, 0, 0, 0]);
+console.log(positiveToNegative([0, 0, 1, 0]), [1, 1, 1, 0]);
+console.log(positiveToNegative([0, 0, 1, 1]), [1, 1, 0, 1]);
+console.log(positiveToNegative([0, 1, 0, 0]), [1, 1, 0, 0]);
+
+
+
 /*
 https://www.codewars.com/kata/5becace7063291bebf0001d5/train/javascript
 
