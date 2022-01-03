@@ -1,25 +1,6 @@
 function positiveToNegative(b) {
-    if (!b.includes(1)) return b
-    b = b.map(e => e === 1 ? e = 0 : e = 1)
-    console.log(b)
+    
 }
-
-
-                            // Another Fail
-// function positiveToNegative(b) {
-//     if(!b.includes(1))return b
-//     b = b.map(e=>e===1?e=0:e=1)
-//     let carry = 0
-//     //console.log(b)
-//     for(let i=0; i<b.length; i++){
-//       let temp = 0
-//       temp += b[i] + 10 + carry
-      
-//     }
-    
-    
-//     return b
-// }
 
 
 
