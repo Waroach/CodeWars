@@ -4,31 +4,6 @@ function positiveToNegative(b) {
 
 
 
-                            // Failed First Try
-// function positiveToNegative(b) {
-//     if (!b.includes(1)) return b
-//     b = b.map(e => e === 1 ? e = 0 : e = 1)
-//     console.log(b)
-//     for (let i = 0; i < b.length; i++) {
-//         let carry = 0
-//         if (b[i] === 0 && carry === 0) {
-//             b[i] = 1
-//         }
-//         if (b[i] === 0 && carry === 1) {
-//             b[i] = 1
-//             carry = 0
-//         }
-//         if (b[i] === 1 && carry === 0) {
-//             b[i] = 0
-//             carry = 1
-//         }
-
-//     }
-//     return b
-// }
-
-
-
                             // PSEUDOCODE
 // Take the array and swap each element
     // if array element is 1 change it to 0
