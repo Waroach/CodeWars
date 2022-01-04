@@ -1,5 +1,10 @@
-function positiveToNegative(b) {
-    
+function positiveToNegative(a) {
+    a = a.map(x => 1 - x);
+    for (let i = a.length - 1; i >= 0; i--) {
+        a[i] = 1 - a[i];
+        if (a[i]) break;
+    }
+    return a;
 }
 
 
