@@ -4,6 +4,15 @@ function figureOut(arr) {
 }
 
 
+
+// PSEUDOCODE
+// Compare each array with the next
+// make sure that each element is within 1 or -1 space
+// if not return that element.
+// Otherwise return null
+
+
+
 // Normal
 console.log(figureOut(["a b", " ba"]), "a");
 console.log(figureOut(["ab kl", "ba kl", "a blk"]), "b");
