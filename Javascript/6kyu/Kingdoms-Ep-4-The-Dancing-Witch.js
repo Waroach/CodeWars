@@ -1,11 +1,19 @@
 
+                            // Failed First Try
 function figureOut(arr) {
-    //your code here
+    for(let i=1;i<arr.length;i++){
+        for(let e=0;e<arr[0].length;i++){
+            if(arr[i][e] !== (arr[i-1][e-1] || arr[i-1][e] || arr[i-1][e+1]) ){
+            return arr[i][e]
+            }
+        }
+    }
+    return null
 }
 
 
 
-// PSEUDOCODE
+                            // PSEUDOCODE
 // Compare each array with the next
 // make sure that each element is within 1 or -1 space
 // if not return that element.
