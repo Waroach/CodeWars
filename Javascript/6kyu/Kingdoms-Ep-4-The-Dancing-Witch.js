@@ -1,16 +1,7 @@
 
-                            // Failed First Try
+                            // First Try
 function figureOut(arr) {
-    for(let i=1;i<arr.length;i++){
-        for(let e=0;e<arr[0].length;i++){
-        console.log('first', arr[i][e])
-        if((arr[i][e] !== arr[i-1][e-1]) || (arr[i][e] !== arr[i-1][e]) || (arr[i][e] !== arr[i-1][e+1]) ){
-            console.log(arr[i][e])
-            return arr[i][e]
-        }
-        }
-    }
-    return null
+
 }
 
 
