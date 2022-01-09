@@ -1,7 +1,7 @@
 
                             // First Try
 function figureOut(arr) {
-
+    // Start here
 }
 
 
