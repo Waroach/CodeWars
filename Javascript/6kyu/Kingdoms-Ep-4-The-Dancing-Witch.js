@@ -1,7 +1,15 @@
 
-                            // First Try
 function figureOut(arr) {
-    // Start here
+    for (let i = 0; i < arr.length - 1; i++) {
+        for (let j = 0; j < arr[i].length; j++) {
+            let c = arr[i][j];
+            if (c === " ") continue;
+            if (Math.abs(arr[i + 1].indexOf(c) - arr[i].indexOf(c)) > 1) {
+                return c;
+            }
+        }
+    }
+    return null;
 }
 
 
@@ -29,7 +37,7 @@ console.log(figureOut(["hop", "hpo", "pho"]), null);
 // New Edge
 console.log(figureOut(["abdgefc", "adbegcf", "daebgfc", "adegfcb", "aedfgbc", "adegfcb", "dagecfb", "adegfcb", "adgefbc"]), "b");
 console.log(figureOut(["dac   b ", "acd    b", "adc    b", "acd   b ", "ca d   b", "c ad  b ", "c ad  b ", " ca db  ", " ac bd  "]), "d");
-console.log(figureOut(["cb feg da", "bcf ge ad", "cbfg ea d", "cfb gae d", "fcbga e d", "fbcag  ed", "bfac ged ", "baf cgde "]), null);   
+console.log(figureOut(["cb feg da", "bcf ge ad", "cbfg ea d", "cfb gae d", "fcbga e d", "fbcag  ed", "bfac ged ", "baf cgde "]), null);
 
 
 
