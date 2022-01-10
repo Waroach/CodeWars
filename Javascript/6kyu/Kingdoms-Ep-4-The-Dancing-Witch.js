@@ -1,4 +1,5 @@
 
+                            // Need to redo || WORKING
 function figureOut(arr) {
     for (let i = 0; i < arr.length - 1; i++) {
         for (let j = 0; j < arr[i].length; j++) {
