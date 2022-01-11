@@ -1,5 +1,10 @@
 function twoHighest(arr) {
-  
+    let set = new Set(arr.sort((a,b)=>b-a))
+    let result = []
+    for(nums of set){
+        result.push(nums)
+    }
+    return result.slice(0,2)
 }
 
 
