@@ -4,6 +4,13 @@ function twoHighest(arr) {
 
 
 
+                            // PSEUDOCODE
+// First sort the array in Decending order
+// create a new array that is a set of unique values
+// return the first two values
+
+
+
 console.log(twoHighest([]), [])
 console.log(twoHighest([15]), [15])
 console.log(twoHighest([15, 20, 20, 17]), [20, 17])
