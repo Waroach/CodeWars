@@ -2,6 +2,13 @@
 
 
 
+                            // PSEUDOCODE
+// convert string into a number
+// and get the decimal reprresentation
+// use less then 15 chars
+
+
+
 console.log(f("2"), 2, "Oops! The output should be 2")
 console.log(f("31"), 25, "Oops! The output should be 25")
 console.log(f("1457"), 815, "Oops! The output should be 815")
