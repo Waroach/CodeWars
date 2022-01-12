@@ -1,6 +1,13 @@
-function f(n){
-    return parseInt(n,8)
-}
+
+                            // WORKING but too long
+const f=n=> parseInt(n,8)
+
+
+
+                            // First try with lots of chars
+// function f(n){
+//     return parseInt(n,8)
+// }
 
 
 
