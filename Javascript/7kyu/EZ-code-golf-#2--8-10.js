@@ -1,4 +1,10 @@
 
+
+                            // Still too long
+f=n=>parseInt(n,8)
+
+
+
                             // WORKING but too long
 const f=n=> parseInt(n,8)
 
