@@ -1,12 +1,15 @@
+// COMPLETED
+f=n=>"0o"+n-0
+
 
 
                             // Still too long
-f=n=>parseInt(n,8)
+// f=n=>parseInt(n,8)
 
 
 
                             // WORKING but too long
-const f=n=> parseInt(n,8)
+// const f=n=> parseInt(n,8)
 
 
 
