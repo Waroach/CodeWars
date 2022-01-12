@@ -1,4 +1,6 @@
-// your code here
+function f(n){
+    return parseInt(n,8)
+}
 
 
 
