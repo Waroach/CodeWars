@@ -2,6 +2,13 @@
 
 
 
+console.log(f("2"), 2, "Oops! The output should be 2")
+console.log(f("31"), 25, "Oops! The output should be 25")
+console.log(f("1457"), 815, "Oops! The output should be 815")
+console.log(f("53275320260735355325703124536"), 104862069400837536141322590, "Oops! The output should be 104862069400837536141322590")
+
+
+
 /*
 https://www.codewars.com/kata/6173bba47e5aa0000f86b76b/train/javascript
 
