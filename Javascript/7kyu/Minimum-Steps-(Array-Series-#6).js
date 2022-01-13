@@ -4,6 +4,16 @@ function minimumSteps(numbers, value){
 
 
 
+                            // PSEUDOCODE
+// sort the array of numbers
+// create a variable called count.
+// step thru the array Adding 1 plus another.
+// when the total is equal or greater then the value
+    // return the count
+// otherwise keep going
+
+
+
 console.log(minimumSteps([4,6,3], 7), 1);
 console.log(minimumSteps([10,9,9,8], 17), 1);
 console.log(minimumSteps([8,9,10,4,2], 23), 3);
