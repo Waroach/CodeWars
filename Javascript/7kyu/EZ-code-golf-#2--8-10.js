@@ -1,7 +1,10 @@
 // COMPLETED
+// I had to look this up. I consider this to be bad code.
+// Only due to it not being readable.
 f=n=>"0o"+n-0
 
                             // Still too long
+// This is readable code!
 // f=n=>parseInt(n,8)
 
                             // WORKING but too long
