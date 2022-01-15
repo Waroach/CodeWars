@@ -1,10 +1,12 @@
+
+                            // FIRST TRY || WORKING
 function lastChair(N){
-    // TODO
+    return N - 1
 }
 
 
 
-// PSEUDOCODE
+                            // PSEUDOCODE
 // LITTLE CONFUSED
 // I think i just minus 1 from n or N
 
