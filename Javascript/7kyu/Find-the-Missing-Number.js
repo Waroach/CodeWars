@@ -12,6 +12,7 @@ function missingNo(nums) {
 // step thru the array
 // check if the next number is +1 from the current number
 // if not return the number +1
+// Othwerwise return undefined
 
 
 
