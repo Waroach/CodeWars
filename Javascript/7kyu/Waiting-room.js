@@ -1,3 +1,6 @@
+const lastChair=N=>N-1
+
+
 
                             // FIRST TRY || WORKING
 function lastChair(N){
