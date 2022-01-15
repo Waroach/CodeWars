@@ -4,6 +4,10 @@ function lastChair(N){
 
 
 
+console.log(lastChair(10), 9, 'Simple test failed')
+
+
+
 /*
 https://www.codewars.com/kata/542f0c36d002f8cd8a0005e5/train/javascript
 
