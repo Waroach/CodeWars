@@ -4,6 +4,12 @@ function lastChair(N){
 
 
 
+// PSEUDOCODE
+// LITTLE CONFUSED
+// I think i just minus 1 from n or N
+
+
+
 console.log(lastChair(10), 9, 'Simple test failed')
 
 
@@ -20,7 +26,7 @@ Find a place as far from other people as possible
 Find a place as close to exit as possible
 All chairs must be occupied before the first person will be served
 So it looks like this for 10 chairs and 10 patients
-Chairs	1	2	3	4	5	6	7	8	9	10
+Chairs	    1	2	3	4	5	6	7	8	9	10
 Patients	1	7	5	8	3	9	4	6	10	2
 Your task is to find last patient's chair's number.
 Input: number of chairs N, an integer greater than 2.
