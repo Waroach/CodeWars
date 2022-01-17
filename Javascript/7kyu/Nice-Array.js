@@ -4,6 +4,14 @@ function isNice(arr){
 
 
 
+                            // PSEUDOCODE
+// Step thru the array
+    // Check if each number -1 or +1 is inside the array
+    // maybe .contains
+
+
+
+
 console.log(isNice([2,10,9,3]),true);
 console.log(isNice([3,4,5,7]),false);
 
