@@ -1,5 +1,10 @@
 function oddOnesOut(nums) {
-    // your code here
+    let numsTotals = {}
+    nums.map(e=>numsTotals[e]=numsTotals[e]?numsTotals[e]+1:1)
+    for(let i in numsTotals){
+        if (numsTotals[i]%2!==0) nums=nums.filter(e=>e!==i*1)
+    }
+    return nums
 }
 
 
@@ -9,6 +14,14 @@ function oddOnesOut(nums) {
 // Step thru the array
 // count how many exist of each number
 // remove any that exist odd amount of times.
+
+
+
+console.log(oddOnesOut([1, 2, 3, 1, 3, 3]), [1, 1])
+console.log(oddOnesOut([75, 68, 75, 47, 68]), [75, 68, 75, 68])
+console.log(oddOnesOut([42, 72, 32, 4, 94, 82, 67, 67]), [67, 67])
+console.log(oddOnesOut([100, 100, 5, 5, 100, 50, 68, 50, 68, 50, 68, 5, 100]), [100, 100, 100, 100])
+console.log(oddOnesOut([82, 86, 71, 58, 44, 79, 50, 44, 79, 67, 82, 82, 55, 50]), [44, 79, 50, 44, 79, 50])
 
 
 
