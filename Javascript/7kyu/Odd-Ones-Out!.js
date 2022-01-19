@@ -4,6 +4,14 @@ function oddOnesOut(nums) {
 
 
 
+                            // PSEUDOCODE
+// Create a variable named count.
+// Step thru the array
+// count how many exist of each number
+// remove any that exist odd amount of times.
+
+
+
 /*
 https://www.codewars.com/kata/5d376cdc9bcee7001fcb84c0/train/javascript
 
