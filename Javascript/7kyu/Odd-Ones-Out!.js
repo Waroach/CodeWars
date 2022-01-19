@@ -1,11 +1,17 @@
 function oddOnesOut(nums) {
-    let numsTotals = {}
-    nums.map(e=>numsTotals[e]=numsTotals[e]?numsTotals[e]+1:1)
-    for(let i in numsTotals){
-        if (numsTotals[i]%2!==0) nums=nums.filter(e=>e!==i*1)
-    }
-    return nums
+    return nums.filter(n => nums.filter(x => x === n).length % 2 === 0);
 }
+
+
+
+// function oddOnesOut(nums) {
+//     let numsTotals = {}
+//     nums.map(e=>numsTotals[e]=numsTotals[e]?numsTotals[e]+1:1)
+//     for(let i in numsTotals){
+//         if (numsTotals[i]%2!==0) nums=nums.filter(e=>e!==i*1)
+//     }
+//     return nums
+// }
 
 
 
