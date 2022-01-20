@@ -3,7 +3,7 @@ function oddOnesOut(nums) {
 }
 
 
-
+                            // REDO THIS 
 // function oddOnesOut(nums) {
 //     let numsTotals = {}
 //     nums.map(e=>numsTotals[e]=numsTotals[e]?numsTotals[e]+1:1)
@@ -20,6 +20,7 @@ function oddOnesOut(nums) {
 // Step thru the array
 // count how many exist of each number
 // remove any that exist odd amount of times.
+
 
 
 
