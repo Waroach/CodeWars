@@ -1,5 +1,6 @@
 function sumOfABeach(beach) {
-    // your code here
+    let regex = /sand|water|fish|sun/gi
+    return !beach.match(regex) ? 0 : beach.match(regex).length
 }
 
 
