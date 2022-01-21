@@ -4,6 +4,16 @@ function minSum(arr) {
 
 
 
+                            // PSEUDOCODE
+// sort the array
+// step thru the array
+// create variable called total
+// Multiply the first and last numbers.
+// Add that to the total
+// repeat until done with nums.
+
+
+
 console.log(minSum([5,4,2,3]), 22);
 console.log(minSum([12,6,10,26,3,24]), 342);
 console.log(minSum([9,2,8,7,5,4,0,6]), 74);
