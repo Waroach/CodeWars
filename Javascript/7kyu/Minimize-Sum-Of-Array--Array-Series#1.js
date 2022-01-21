@@ -1,14 +1,19 @@
 function minSum(arr) {
-    // your code here
+    let total = 0
+    arr = arr.sort((a,b)=>b-a)
+    for(let i=1;i<=arr.length/2;i++){
+        total += arr[i-1] * arr[arr.length-i]
+    }
+    return total
 }
 
 
 
                             // PSEUDOCODE
 // sort the array
-// step thru the array
+// step thru half of the array
 // create variable called total
-// Multiply the first and last numbers.
+// Multiply the first and last numbers of the array.
 // Add that to the total
 // repeat until done with nums.
 
