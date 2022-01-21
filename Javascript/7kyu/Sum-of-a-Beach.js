@@ -4,6 +4,14 @@ function sumOfABeach(beach) {
 
 
 
+                            // PSEUDOCODE
+// create a varable with a array that contains the key words
+// Make sure to ignore case sensitivty or make all lower case
+// maybe slice the array each time it finds a key word
+// return the sliced length
+
+
+
 console.log(sumOfABeach("SanD"), 1)
 console.log(sumOfABeach("sunshine"), 1)
 console.log(sumOfABeach("sunsunsunsun"), 4)
