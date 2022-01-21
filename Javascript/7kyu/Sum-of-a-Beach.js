@@ -4,6 +4,22 @@ function sumOfABeach(beach) {
 
 
 
+console.log(sumOfABeach("SanD", 1);)
+console.log(sumOfABeach("sunshine", 1);)
+console.log(sumOfABeach("sunsunsunsun", 4);)
+console.log(sumOfABeach("123FISH321", 1);)
+
+console.log(sumOfABeach("weoqipurpoqwuirpousandiupqwoieurioweuwateruierqpoiweurpouifiShqowieuqpwoeuisUn", 4);)
+console.log(sumOfABeach("sAnDsandwaTerwatErfishFishsunsunsandwater", 10);)
+console.log(sumOfABeach("joifjepiojfoiejfoajoijawoeifjowejfjoiwaefjiaowefjaofjwoj fawojef ", 0);)
+console.log(sumOfABeach("jwefjwjfsandsandwaterwaterfishfishsunsunsandwateriojwhefa;jawof;jawio;f", 10);)
+console.log(sumOfABeach(
+  "saNdsandwaterwAterfishfishsunsunsandwatersandsandwaterwaterfishfishsunsunsandwatersandsandwaterwaterfishfishsunsunsandwatersandsandwaterwaterfishfishsunsunsandwatersandsandwaterwaterfishfishsunsunsandwatersandsandwaterwaterfishfishsunsunsandwatersandsandwaterwaterfishfishsunsunsandwatersandsandwaterwaterfishfishsunsunsandwatersandsandwaterwaterfishfishsunsunsandwatersandsandwaterwaterfishfishsunsunsandwater",
+  100
+))
+
+
+
 /*
 https://www.codewars.com/kata/5b37a50642b27ebf2e000010/train/javascript
 
