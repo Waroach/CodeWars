@@ -1,7 +1,13 @@
-function sumOfABeach(beach) {
-    let regex = /sand|water|fish|sun/gi
-    return !beach.match(regex) ? 0 : beach.match(regex).length
-}
+
+const regex = /sand|water|fish|sun/gi
+const sumOfABeach = beach => !beach.match(regex) ? 0 : beach.match(regex).length
+
+
+                            // First Try || WORKIKNG
+// function sumOfABeach(beach) {
+//     let regex = /sand|water|fish|sun/gi
+//     return !beach.match(regex) ? 0 : beach.match(regex).length
+// }
 
 
 
