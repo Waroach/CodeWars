@@ -1,5 +1,5 @@
 function maxProduct(numbers, size){
-    //your code here
+    return numbers.sort((a,b)=>a-b).slice(numbers.length - size).reduce((p,c)=>p*c)
 }
 
 
