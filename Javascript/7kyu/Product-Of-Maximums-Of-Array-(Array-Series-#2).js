@@ -4,6 +4,15 @@ function maxProduct(numbers, size){
 
 
 
+                            // PSEUDOCODE
+// sort the number array from highest to lowest
+// createa array named result []
+// slice the numbers array by the number in size
+// reduce result using multiplication.
+// return the result reduced
+
+
+
 console.log(maxProduct([4,3,5], 2), 20);
 console.log(maxProduct([10,8,7,9], 3), 720);
 console.log(maxProduct([8,6,4,6], 3), 288);
