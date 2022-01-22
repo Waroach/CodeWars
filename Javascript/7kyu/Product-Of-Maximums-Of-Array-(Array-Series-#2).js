@@ -5,7 +5,7 @@ function maxProduct(numbers, size){
 
 
                             // PSEUDOCODE
-// sort the number array from highest to lowest
+// sort the number array from lowest to highest
 // createa array named result []
 // slice the numbers array by the number in size
 // reduce result using multiplication.
