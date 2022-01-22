@@ -1,6 +1,11 @@
-function maxProduct(numbers, size){
-    return numbers.sort((a,b)=>a-b).slice(numbers.length - size).reduce((p,c)=>p*c)
-}
+
+const maxProduct = (n,s) => n.sort((a,b)=>a-b).slice(n.length - s).reduce((p,c)=>p*c)
+
+
+                            // First try || WORKING
+// function maxProduct(numbers, size){
+//     return numbers.sort((a,b)=>a-b).slice(numbers.length - size).reduce((p,c)=>p*c)
+// }
 
 
 
