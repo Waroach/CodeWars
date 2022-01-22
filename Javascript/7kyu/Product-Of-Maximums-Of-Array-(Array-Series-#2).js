@@ -1,4 +1,4 @@
-
+// Cleaned up
 const maxProduct = (n,s) => n.sort((a,b)=>a-b).slice(n.length - s).reduce((p,c)=>p*c)
 
 
