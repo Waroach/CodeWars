@@ -4,6 +4,14 @@ var arrayLeaders = numbers => {
 
 
 
+                            // PSEUDOCODE
+// Step thry the array
+// at each step check if the total of all numbers to the right of the current
+// if less then the current number
+// return that number
+    // try filter then reduce
+
+
 
 console.log(arrayLeaders([1,2,3,4,0]), [4])
 console.log(arrayLeaders([16,17,4,3,5,2]), [17,5,2])
