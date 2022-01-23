@@ -4,6 +4,17 @@ function maxGap (numbers){
 
 
 
+                            // PSEUDOCODE
+// Sort the numbers array
+// create a variable named gap set it to 0
+// step thru the numbers array
+// check the difference from one number and the next
+// if the difference is larger then gap
+    // set gap to that difference.
+// return gap
+
+
+
 console.log(maxGap([13,10,2,9,5]),4);
 console.log(maxGap([13,3,5]),8);
 console.log(maxGap([24,299,131,14,26,25]),168);
