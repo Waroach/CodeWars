@@ -1,11 +1,19 @@
+
 function maxGap (numbers){
     let gap = 0
-    numbers = numbers.sort((a,b)=>a-b)
-    for(let i=1;i<=numbers.length;i++){
-        if(gap < numbers[i] - numbers[i-1]) gap = numbers[i] - numbers[i-1]
-    }
+    numbers.sort((a,b)=>a-b).filter((n,i,arr)=>gap<arr[i+1]-arr[i] ? gap = arr[i+1]-arr[i]:null)
     return gap
 }
+
+                            // First Try || WORKING
+// function maxGap (numbers){
+//     let gap = 0
+//     numbers = numbers.sort((a,b)=>a-b)
+//     for(let i=1;i<=numbers.length;i++){
+//         if(gap < numbers[i] - numbers[i-1]) gap = numbers[i] - numbers[i-1]
+//     }
+//     return gap
+// }
 
 
 
