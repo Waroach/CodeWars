@@ -4,6 +4,16 @@ function productArray(numbers){
 
 
 
+// PSEUDOCODE
+// if the numbers array length is 2
+    // Reverse the numbers array
+    // return the reversed numbers array
+// step thru the numbers array.
+// return the product of all numbers in the numbers array EXCEPT the current number
+// return the new numbers array.
+
+
+
 console.log(productArray([12,20]), [20,12]);
 console.log(productArray([12,20]), [20,12]);
 console.log(productArray([3,27,4,2]), [216,24,162,324]);
