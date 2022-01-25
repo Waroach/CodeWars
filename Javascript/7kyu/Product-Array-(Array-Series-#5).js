@@ -1,6 +1,11 @@
-function productArray(n){
-    return n.map(e=>n.reduce((p,c)=>(p*c))/e)
-}
+
+productArray=n=>n.map(e=>n.reduce((p,c)=>(p*c))/e)
+
+
+                            // First Try || WORKING
+// function productArray(n){
+//     return n.map(e=>n.reduce((p,c)=>(p*c))/e)
+// }
 
 
 
