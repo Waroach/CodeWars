@@ -1,5 +1,5 @@
-function productArray(numbers){
-    //your code here
+function productArray(n){
+    return n.map(e=>n.reduce((p,c)=>(p*c))/e)
 }
 
 
