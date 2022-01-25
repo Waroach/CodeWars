@@ -1,5 +1,10 @@
 function maxTriSum(numbers){
-    //your code here
+    numbers.sort((a,b)=>b-a)
+    let maxSet = []
+    for(let i=1;i<=numbers.length;i++){
+        if(maxSet.length === 3) return maxSet.reduce((p,c)=>p+c,0)
+        if(numbers[i-1] !== numbers[i]) maxSet.push(numbers[i-1])
+    }
 }
 
 
