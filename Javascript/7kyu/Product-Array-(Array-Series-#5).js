@@ -4,7 +4,7 @@ function productArray(numbers){
 
 
 
-// PSEUDOCODE
+                            // PSEUDOCODE
 // if the numbers array length is 2
     // Reverse the numbers array
     // return the reversed numbers array
