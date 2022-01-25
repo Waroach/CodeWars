@@ -1,11 +1,12 @@
 
+                            // SECOND TRY || WORKING
 function maxTriSum(numbers){
     numbers.sort((a,b)=>a-b)
     let maxSet = [...new Set(numbers)]
     return maxSet.slice(maxSet.length-3).reduce((p,c)=>p+c,0)
 }
 
-                            // First Try || WORKING
+                            // First Try || NOT WORKING adding a neg with positive same number did not give 0
 // function maxTriSum(numbers){
 //     numbers.sort((a,b)=>b-a)
 //     let maxSet = []
