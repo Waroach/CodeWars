@@ -4,6 +4,15 @@ function rowWeights(array){
 
 
 
+                            // PSEUDOCODE
+// Create a variable array named result
+// Step thru the array
+// if the element index is even add it to result[0]
+// if the element index is odd add it to result[1]
+// return the result
+
+
+
 console.log(rowWeights([80]), [80,0]);
 console.log(rowWeights([100,50]), [100,50]);
 console.log(rowWeights([50,60,70,80]), [120,140]);
