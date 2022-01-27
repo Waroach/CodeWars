@@ -1,5 +1,7 @@
 function minValue(values){
-    //your code here
+    let result = []
+    let set = [...new Set(values)]
+    return Number(set.sort((a,b)=>a-b).join(''))
 }
 
 
