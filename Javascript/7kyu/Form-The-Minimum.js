@@ -5,12 +5,13 @@ function minValue(values){
 
 
 // PSEUDOCODE
-// Create a unique array using new Set()
-// create variable string named result
-    // send lowesest number from values set.
-    // repeat until set is empty.
-    // convert the string into a number
-// return result
+// createa  varible named set
+// create a unuque set of numbers from values
+    // save them to set
+// Sort the set lowest number to highest
+// create a string from the set using join wiht no spaces.
+// convert that set string into a number
+// return set
 
 
 
