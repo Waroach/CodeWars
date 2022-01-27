@@ -1,5 +1,12 @@
 function rowWeights(array){
-    //your code here
+    let totalEven = 0
+    let totalOdd = 0
+    
+    for(let i=0;i<array.length;i++){
+        if(i%2===0)totalEven += array[i]
+        else totalOdd += array[i]
+    }
+    return [totalEven, totalOdd]
 }
 
 
