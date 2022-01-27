@@ -4,6 +4,16 @@ function minValue(values){
 
 
 
+// PSEUDOCODE
+// Create a unique array using new Set()
+// create variable string named result
+    // send lowesest number from values set.
+    // repeat until set is empty.
+    // convert the string into a number
+// return result
+
+
+
 console.log(minValue([1, 3, 1]), 13);
 console.log(minValue([4, 7, 5, 7]), 457);
 console.log(minValue([4, 8, 1, 4]), 148);
