@@ -1,8 +1,14 @@
+
 function minValue(values){
-    let result = []
-    let set = [...new Set(values)]
-    return Number(set.sort((a,b)=>a-b).join(''))
+    return Number(([...new Set(values)]).sort((a,b)=>a-b).join(''))
 }
+
+
+                            // First Try || Working
+// function minValue(values){
+//     let set = [...new Set(values)]
+//     return Number(set.sort((a,b)=>a-b).join(''))
+// }
 
 
 
