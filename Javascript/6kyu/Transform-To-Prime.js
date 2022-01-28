@@ -4,6 +4,14 @@ function minimumNumber(numbers){
 
 
 
+console.log(minimumNumber([3,1,2]),1);
+console.log(minimumNumber([5,2]),0);
+console.log(minimumNumber([1,1,1]),0);
+console.log(minimumNumber([2,12,8,4,6]),5);
+console.log(minimumNumber([50,39,49,6,17,28]),2);
+
+
+
 /*
 https://www.codewars.com/kata/5a946d9fba1bb5135100007c/train/javascript
 
