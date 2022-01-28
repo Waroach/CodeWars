@@ -4,6 +4,17 @@ function minimumNumber(numbers){
 
 
 
+// PSEUDOCODE
+// total all the numbers in the array
+// Create a variable number called count
+// run a while loop that checks two things
+    // add one to the total check if it is a prime
+    // Minus one to the total check if it is a prime
+// Each time add one to the count variable.
+// when the above is true. return the count
+
+
+
 console.log(minimumNumber([3,1,2]),1);
 console.log(minimumNumber([5,2]),0);
 console.log(minimumNumber([1,1,1]),0);
