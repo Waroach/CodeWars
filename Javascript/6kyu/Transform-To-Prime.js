@@ -1,5 +1,14 @@
 function minimumNumber(numbers){
-    //your code here
+    numbers = numbers.reduce((p,c)=>p+c,0)
+    for(let i=0;i<=100;i++){
+        if(isPrime(numbers + i))return i
+    }
+}
+
+function isPrime(num) {
+    for(var i = 2; i < num; i++)
+        if(num % i === 0) return false;
+    return num > 1;
 }
 
 
