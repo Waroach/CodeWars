@@ -1,5 +1,9 @@
 function adjacentElementsProduct(array) {
-    // max product
+    let max = -1000000
+    for(let i=1;i<array.length;i++){
+        if(array[i-1]*array[i] > max) max = array[i-1]*array[i]
+    }
+    return max
 }
 
 
