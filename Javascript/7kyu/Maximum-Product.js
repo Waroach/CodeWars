@@ -4,6 +4,15 @@ function adjacentElementsProduct(array) {
 
 
 
+                            // PSEUDOCODE
+// create variable named max
+// step thru the array
+    // Multiply each pair
+        // If result is larger then max replace max with largest number.\
+// return max
+
+
+
 console.log(adjacentElementsProduct([5, 8]), 40);
 console.log(adjacentElementsProduct([1, 2, 3]), 6);
 console.log(adjacentElementsProduct([1, 5, 10, 9]), 90);
