@@ -5,6 +5,12 @@ function goto(level,button){
 
 
 
+console.log(goto(0,'2'),2);
+console.log(3+goto(3,'1'),1);
+console.log(2+goto(2,'2'),2);
+
+
+
 /*
 https://www.codewars.com/kata/52ed326b8df6540e06000029/train/javascript
 
