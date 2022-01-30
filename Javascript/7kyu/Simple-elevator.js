@@ -5,6 +5,13 @@ function goto(level,button){
 
 
 
+                            // PSEUDOCODE
+// check inputs if not 0-3 both level and button(convert to number)
+    // If outside of the paramaters return 0
+// find the difference between level and button
+
+
+
 console.log(goto(0,'2'),2);
 console.log(3+goto(3,'1'),1);
 console.log(2+goto(2,'2'),2);
