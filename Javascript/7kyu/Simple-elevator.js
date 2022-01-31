@@ -1,6 +1,7 @@
-function goto(level,button){
-    //TODO:return a number, how many levels the elevator must go up or down
-    return 0;
+function goto(level, button) {
+ return typeof button !== 'string' || button < 0 || button > 3 || 
+        typeof level  !== 'number' || level  <  0  || level   > 3 || level ==1.5  ? 
+        0 : parseFloat(button) - level;
 }
 
 
