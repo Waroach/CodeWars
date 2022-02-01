@@ -1,5 +1,9 @@
 function strangeMath(n, k){
-
+    let nArray =[]
+    for( let i=1;i<=n;i++){
+        nArray.push(i)
+    }
+    return nArray.sort().indexOf(k) + 1
 }
 
 
