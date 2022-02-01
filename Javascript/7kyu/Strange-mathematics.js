@@ -4,6 +4,21 @@ function strangeMath(n, k){
 
 
 
+                            // PSEUDOCODE
+// create a variable name nArray
+// create a for loop
+// add a number to the nArray n amount of times.
+// sort aArray without params.
+// then find location of k in nArray.
+// Return the element location + 1
+
+
+console.log(strangeMath(11, 2), 4);
+console.log(strangeMath(15, 5), 11);
+console.log(strangeMath(15, 15), 7);
+
+
+
 /*
 https://www.codewars.com/kata/604517d65b464d000d51381f/train/javascript
 
