@@ -17,6 +17,7 @@ function strangeMath(n, k){
 // Return the element location + 1
 
 
+
 console.log(strangeMath(11, 2), 4);
 console.log(strangeMath(15, 5), 11);
 console.log(strangeMath(15, 15), 7);
