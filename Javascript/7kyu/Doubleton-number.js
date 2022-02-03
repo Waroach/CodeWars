@@ -4,6 +4,19 @@ function doubleton(num){
 
 
 
+                            // PSEUDOCODE
+// create a for loop that goes to 1000000
+// start the loop with num +1
+    //create a variabled named test
+    // convert num into a string.
+    // seperate elements of the string
+    // create a set of the elements
+    // check length of set.
+        // if length is 2 return num
+        // else continue loop
+
+
+
 console.log(doubleton(120), 121, "Wrong result. It should be 121" );
 console.log(doubleton(1234), 1311, "Wrong result. It should be 1311" );
 console.log(doubleton(1), 10, "Wrong result. It should be 10" );
