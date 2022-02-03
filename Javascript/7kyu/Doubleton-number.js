@@ -1,5 +1,8 @@
 function doubleton(num){
- 
+    for(let i=num+1;i<1000000;i++){
+        let test = [...new Set(i.toString().split(''))]
+        if(test.length === 2) return i
+    }
 }
 
 
