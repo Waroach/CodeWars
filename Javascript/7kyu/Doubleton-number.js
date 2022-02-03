@@ -4,6 +4,13 @@ function doubleton(num){
 
 
 
+console.log(doubleton(120), 121, "Wrong result. It should be 121" );
+console.log(doubleton(1234), 1311, "Wrong result. It should be 1311" );
+console.log(doubleton(1), 10, "Wrong result. It should be 10" );
+console.log(doubleton(10), 12, "Wrong result. It should be 12" );
+
+
+
 /*
 https://www.codewars.com/kata/604287495a72ae00131685c7/train/javascript
 
