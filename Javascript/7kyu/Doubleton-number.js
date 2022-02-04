@@ -18,7 +18,8 @@ function doubleton(num){
     // check length of array.
         // if length is 2 return num
         // else continue loop
-
+    // return length
+    
 
 
 console.log(doubleton(120), 121, "Wrong result. It should be 121" );
