@@ -10,11 +10,12 @@ function doubleton(num){
                             // PSEUDOCODE
 // create a for loop that goes to 1000000
 // start the loop with num +1
-    //create a variabled named test
+    // create a set named test
     // convert num into a string.
     // seperate elements of the string
-    // create a set of the elements
-    // check length of set.
+    // pass the above array into the set
+    // spread the above set object into an array
+    // check length of array.
         // if length is 2 return num
         // else continue loop
 
