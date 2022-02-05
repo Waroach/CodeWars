@@ -1,13 +1,16 @@
 function lastSurvivor(letters, coords) {
-
+    for (let i=0;i<coords.length;i++){
+        letters = letters.slice(0, coords[i]) + letters.slice(coords[i]+1)
+    }
+    return letters
 }
 
 
 
                             // PSEUDOCODE
 // step thru the coords array
-// Each time using a slice method to remove a letter fron the letters string
-// return the letters string
+// Each time cuttin a element from the  letters string
+// return the letters string at then end
 
 
 
