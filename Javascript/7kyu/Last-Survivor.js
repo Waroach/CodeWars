@@ -4,6 +4,20 @@ function lastSurvivor(letters, coords) {
 
 
 
+                            // PSEUDOCODE
+// step thru the coords array
+    // Each time using a slice method to remove a letter fron the letters string
+// return the letters stringr
+
+
+
+console.log(lastSurvivor('abc', [1, 1]), 'a')
+console.log(lastSurvivor('kbc', [0, 1]), 'b')
+console.log(lastSurvivor('zbk', [2, 1]), 'z')
+console.log(lastSurvivor('c', []), 'c')
+
+
+
 /*
 
 
