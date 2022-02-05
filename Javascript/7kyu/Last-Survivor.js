@@ -6,8 +6,8 @@ function lastSurvivor(letters, coords) {
 
                             // PSEUDOCODE
 // step thru the coords array
-    // Each time using a slice method to remove a letter fron the letters string
-// return the letters stringr
+// Each time using a slice method to remove a letter fron the letters string
+// return the letters string
 
 
 
