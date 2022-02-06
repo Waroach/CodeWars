@@ -4,6 +4,12 @@ function oddOrEven(n) {
 
 
 
+console.log( oddOrEven(1), EITHER );
+console.log( oddOrEven(6), ODD );
+console.log( oddOrEven(8), EVEN );
+
+
+
 /*
 https://www.codewars.com/kata/619f200fd0ff91000eaf4a08/train/javascript
 
