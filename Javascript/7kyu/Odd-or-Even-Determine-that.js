@@ -4,6 +4,14 @@ function oddOrEven(n) {
 
 
 
+                            // PSEUDOCODE
+// create a variable called sum set it to 0
+// create a loop that adds to sum each time it loops counting up.
+// test the total of sum if the number is odd or even
+// if sum is 1 return either.
+
+
+
 console.log( oddOrEven(1), EITHER );
 console.log( oddOrEven(6), ODD );
 console.log( oddOrEven(8), EVEN );
