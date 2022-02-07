@@ -1,7 +1,8 @@
 function oddOrEven(n) {
-    return ODD || EVEN || EITHER ;
+    if (n%2) return EITHER
+    if (n/2 % 2) return ODD
+    return EVEN
 }
-
 
 
                             // PSEUDOCODE
