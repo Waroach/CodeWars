@@ -4,6 +4,10 @@ decodeMorse = function(morseCode){
 
 
 
+console.log(decodeMorse(".-- --- .-. -..   .-- --- .-. -.."), 'word word')
+console.log(decodeMorse('.... . -.--   .--- ..- -.. .'), 'HEY JUDE')
+
+
 
 /*
 https://www.codewars.com/kata/54b724efac3d5402db00065e/train/javascript
