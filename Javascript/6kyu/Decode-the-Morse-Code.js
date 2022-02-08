@@ -36,8 +36,14 @@ function decodeMorse(morseCode) {
     '---..':  '8',
     '----.':  '9',
     '-----':  '0',
+    '.-.-.-': '.',
+    '--..--': ',',
+    '..--..': '?',
+    '---...': ':',
+    '-..-.': '/',
+    '-.-.--': '!',
+    '...---...': 'SOS'
   };
-  if(morseCode==='...---...') return 'SOS'
   
   return morseCode.split(' ')
                   .map((v,i)=>morse[v]!=undefined?morse[v]:1)
