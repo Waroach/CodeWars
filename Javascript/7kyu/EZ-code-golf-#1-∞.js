@@ -2,6 +2,10 @@
 
 
 
+console.log(f(), Infinity, "Oops! Looks like you returned an incorrect result.")
+
+
+
 /*
 https://www.codewars.com/kata/6162bc81ec0bee001bde10b3/train/javascript
 
