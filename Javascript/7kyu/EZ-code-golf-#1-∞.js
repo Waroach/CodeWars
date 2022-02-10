@@ -1,6 +1,7 @@
+f=n=>1/0
 
 // Works but more thenb 9 chars.
-f=n=>Infinity
+// f=n=>Infinity
 
 
 // First try || did NOT work
