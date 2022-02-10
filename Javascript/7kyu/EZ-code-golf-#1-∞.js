@@ -1,8 +1,10 @@
-// your code here
+
+// First try || did NOT work
+f=n=>n++
 
 
 
-// PSEUDOCODE
+                            // PSEUDOCODE
 // it expects Infinity to be returned.
 // using less then 9 chars.
 // return ∞
