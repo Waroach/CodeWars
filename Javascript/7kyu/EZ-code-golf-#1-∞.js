@@ -4,10 +4,6 @@ f=n=>1/0
 // f=n=>Infinity
 
 
-// First try || did NOT work
-// f=n=>n++
-
-
 
                             // PSEUDOCODE
 // it expects Infinity to be returned.
