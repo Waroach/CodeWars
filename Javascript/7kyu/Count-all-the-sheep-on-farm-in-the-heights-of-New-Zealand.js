@@ -1,5 +1,6 @@
 function lostSheep(friday,saturday,total){
-    //your code here
+    let returned = friday.reduce((a,b)=>a+b,0) + saturday.reduce((a,b)=>a+b,0)
+    return total - returned
 }
 
 
