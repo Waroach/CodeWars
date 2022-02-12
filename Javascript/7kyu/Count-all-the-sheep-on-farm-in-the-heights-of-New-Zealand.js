@@ -4,6 +4,17 @@ function lostSheep(friday,saturday,total){
 
 
 
+                            // PSEUDOCODE
+// create a variable named returned set to 0
+// step thru friday and total each element.
+    // add this to returned
+// step thru saturday and total each element.
+    // add this to returned
+// minus total from returned.
+// return result
+
+
+
 console.log(lostSheep([1,2],[3,4],15),5);
 console.log(lostSheep([3,1,2],[4,5],21),6);
 console.log(lostSheep([5,1,4],[5,4],29),10);
