@@ -1,5 +1,9 @@
+                            // Cleaned up Code looks && works better
+evenLast=(n)=>n.reduce( (prev, cur, index)=> index%2? prev : prev + cur, 0) * n[n.length - 1] || 0
 
-evenLast=(n)=>n.length===0 ? 0 : n.reduce( (prev, cur, index)=> prev + (index%2===0 ? cur : 0, 0) ) * n[n.length - 1]
+
+                            // Created a One Liner
+// evenLast=(n)=>n.length===0 ? 0 : n.reduce( (prev, cur, index)=> prev + (index%2===0 ? cur : 0, 0) ) * n[n.length - 1]
 
 
                             // First try || WORKING
