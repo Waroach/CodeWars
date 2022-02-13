@@ -1,7 +1,12 @@
-function evenLast(numbers) {
-    if (numbers.length === 0) return 0
-    return numbers.reduce( (prev, cur, index)=> prev + (index%2===0 ? cur : 0) ) * numbers[numbers.length - 1]
-}
+
+evenLast=(n)=>n.length===0 ? 0 : n.reduce( (prev, cur, index)=> prev + (index%2===0 ? cur : 0, 0) ) * n[n.length - 1]
+
+
+                            // First try || WORKING
+// function evenLast(numbers) {
+//     if (numbers.length === 0) return 0
+//     return numbers.reduce( (prev, cur, index)=> prev + (index%2===0 ? cur : 0) ) * numbers[numbers.length - 1]
+// }
 
 
 
