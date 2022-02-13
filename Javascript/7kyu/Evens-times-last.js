@@ -4,6 +4,14 @@ function evenLast(numbers) {
 
 
 
+                            // PSEUDOCODE
+// Step thruy the array of numbers
+    // if the index is even add it to the total.
+    // multiply that total with the last item in the numbers array.
+// return the result
+
+
+
 console.log(evenLast([2, 3, 4, 5]), 30)
 
 
