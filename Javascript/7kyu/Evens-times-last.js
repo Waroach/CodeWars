@@ -1,5 +1,6 @@
 function evenLast(numbers) {
-    // Good luck
+    if (numbers.length === 0) return 0
+    return numbers.reduce( (prev, cur, index)=> prev + (index%2===0 ? cur : 0) ) * numbers[numbers.length - 1]
 }
 
 
