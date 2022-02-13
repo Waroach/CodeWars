@@ -4,6 +4,10 @@ function evenLast(numbers) {
 
 
 
+console.log(evenLast([2, 3, 4, 5]), 30)
+
+
+
 /*
 https://www.codewars.com/kata/5a1a9e5032b8b98477000004/train/javascript
 
