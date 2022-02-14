@@ -3,6 +3,14 @@ String.prototype.isLetter = function() {
 
 
 
+                            // PSEUDOCODE
+// Check if length is 1
+    // If so using Regex check to see if it is a letter
+        //if so return true
+// otherwise return false
+
+
+
 console.log("".isLetter(), false);
 console.log("a".isLetter(), true);
 console.log("X".isLetter(), true);
