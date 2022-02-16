@@ -1,8 +1,15 @@
+                            // Cleaned up.
 String.prototype.isLetter = function() {
-    if(this.length === 0 || this.length >=2)return false
-    regex = /[a-z]/i
-    return regex.test(this)
+    return (this.length === 0 || this.length >=2) ? false : /[a-z]/i.test(this)
 }
+
+
+                            // FIRST TRY || WORKING
+// String.prototype.isLetter = function() {
+//     if(this.length === 0 || this.length >=2)return false
+//     regex = /[a-z]/i
+//     return regex.test(this)
+// }
 
 
 
