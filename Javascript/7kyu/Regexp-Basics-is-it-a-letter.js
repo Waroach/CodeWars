@@ -1,7 +1,13 @@
-                            // Cleaned up.
+// Cleaned up some more
 String.prototype.isLetter = function() {
-    return (this.length === 0 || this.length >=2) ? false : /[a-z]/i.test(this)
+    return !(this.length === 1) ? false : /[a-z]/i.test(this)
 }
+
+
+                            // Cleaned up.
+// String.prototype.isLetter = function() {
+//     return (this.length === 0 || this.length >=2) ? false : /[a-z]/i.test(this)
+// }
 
 
                             // FIRST TRY || WORKING
