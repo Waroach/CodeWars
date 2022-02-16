@@ -1,4 +1,7 @@
 String.prototype.isLetter = function() {
+    if(this.length === 0 || this.length >=2)return false
+    regex = /[a-z]/i
+    return regex.test(this)
 }
 
 
