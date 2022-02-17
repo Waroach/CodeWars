@@ -1,8 +1,11 @@
+                            // Cleaned up replace
+switcheroo=x=>x.replace(/[ab]/g,e=>e=="a"?"b":"a")
+
 
                             // Completed with .replace
-function switcheroo(x){
-    return x.replace(/[ab]/g,e=>e=="a"?"b":"a")
-}
+// function switcheroo(x){
+//     return x.replace(/[ab]/g,e=>e=="a"?"b":"a")
+// }
 
 
                             // Cleaned up into One line
