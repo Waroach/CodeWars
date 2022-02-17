@@ -1,10 +1,17 @@
+
 function switcheroo(x){
-    return x.split('').map(e=> {
-        if(e==='a') return 'b'
-        if(e==='b') return 'a'
-        return e
-    } ).join('')
-} 
+    return x.split('').map(e => e=='c'?'c':e=='a'?'b':'a').join('')
+}
+
+
+                            // First Try || COMPLETED
+// function switcheroo(x){
+//     return x.split('').map(e=> {
+//         if(e==='a') return 'b'
+//         if(e==='b') return 'a'
+//         return e
+//     } ).join('')
+// } 
 
 
 
