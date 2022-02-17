@@ -4,6 +4,17 @@ function switcheroo(x){
 
 
 
+                            // PSEUDOCODE
+// seperate the letters into an array.
+// Step thru the letters. 
+    // if a letter is a switch it to b
+    // if a letter is b switch it to a
+    // if anything else return that element
+// fuse the letters back into a string
+// return the string
+
+
+
 console.log(switcheroo('abc'), 'bac');
 console.log(switcheroo('aaabcccbaaa'), 'bbbacccabbb'); 
 console.log(switcheroo('ccccc'), 'ccccc');   
