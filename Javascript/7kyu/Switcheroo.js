@@ -1,7 +1,17 @@
 
+                            // Completed with .replace
 function switcheroo(x){
-    return x.split('').map(e => e=='c'?'c':e=='a'?'b':'a').join('')
+    return x.replace(/[ab]/g,e=>e=="a"?"b":"a")
 }
+
+
+                            // Cleaned up into One line
+// switcheroo=x=>x.split('').map(e => e=='c'?'c':e=='a'?'b':'a').join('')
+
+                            // Completed with Turnerary
+// function switcheroo(x){
+//     return x.split('').map(e => e=='c'?'c':e=='a'?'b':'a').join('')
+// }
 
 
                             // First Try || COMPLETED
