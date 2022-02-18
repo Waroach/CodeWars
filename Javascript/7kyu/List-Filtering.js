@@ -4,6 +4,14 @@ function filter_list(l) {
 
 
 
+                            // PSEUDOCODE
+// step thru the array.
+    // using filter check each element if it is a number
+        // removec if not.
+    // return result
+
+
+
 console.log(filter_list([1,2,'a','b']),[1,2])
 console.log(filter_list([1,'a','b',0,15]),[1,0,15])
 console.log(filter_list([1,2,'aasf','1','123',123]),[1,2,123])
