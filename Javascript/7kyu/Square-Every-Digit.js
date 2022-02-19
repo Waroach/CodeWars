@@ -1,6 +1,12 @@
-function squareDigits(num){
-    return Number(String(num).split('').map(e=>Math.pow(Number(e),2)).join(''))
-}
+
+                            // Created a one Liner
+squareDigits=num=>Number(String(num).split('').map(e=>Math.pow(Number(e),2)).join(''))
+
+
+                            // FIRST TRY || WORKING
+// function squareDigits(num){
+//     return Number(String(num).split('').map(e=>Math.pow(Number(e),2)).join(''))
+// }
 
 
 
