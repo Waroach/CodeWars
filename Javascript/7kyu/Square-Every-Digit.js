@@ -1,5 +1,5 @@
 function squareDigits(num){
-    return 0;
+    return Number(String(num).split('').map(e=>Math.pow(Number(e),2)).join(''))
 }
 
 
