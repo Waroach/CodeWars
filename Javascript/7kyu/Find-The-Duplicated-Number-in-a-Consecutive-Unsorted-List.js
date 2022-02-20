@@ -5,6 +5,11 @@ function findDup( arr ){
 
 
 
+console.log(findDup([1,2,2,3]), 2);
+console.log(findDup([1,3,2,5,4,5,7,6]), 5);
+
+
+
 /*
 https://www.codewars.com/kata/558dd9a1b3f79dc88e000001/train/javascript
 
