@@ -5,6 +5,13 @@ function findDup( arr ){
 
 
 
+                            // PSEUDOCODE
+// arrange the array in order.
+// Step thru the array until you find the duplicate.
+// when found return it.
+
+
+
 console.log(findDup([1,2,2,3]), 2);
 console.log(findDup([1,3,2,5,4,5,7,6]), 5);
 
