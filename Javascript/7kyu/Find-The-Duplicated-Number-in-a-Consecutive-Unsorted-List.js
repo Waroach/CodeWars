@@ -1,6 +1,10 @@
 function findDup( arr ){
-
-    return duplicateValue;
+    let copy = [...arr]
+    copy.sort((a,b)=>a-b)
+    for(let i=0;i<=copy.length;i++){
+        if( copy[i]!==i+1 ) return i
+    }
+    return copy.length + 1
 }
 
 
