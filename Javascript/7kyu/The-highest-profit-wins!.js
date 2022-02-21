@@ -4,6 +4,19 @@ function minMax(arr){
 
 
 
+// PSEUDOCODE
+// Find the smallest number
+    // Sort then grab the first number
+    // or
+    // use a method to grab the smalllest
+// Find the largest number
+    // Sort then grab the last number
+    // or
+    // use a method to grab the largest
+// return a new array with the min and max results.
+
+
+
 console.log([1,2,3,4,5], [1,5])
 console.log([2334454,5], [5, 2334454])
 
