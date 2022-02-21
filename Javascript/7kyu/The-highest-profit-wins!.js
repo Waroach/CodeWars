@@ -1,6 +1,11 @@
-function minMax(arr){
-    return [Math.min(...arr), Math.max(...arr)]
-}
+                            // Cleaned up into One Liner
+minMax=arr=>[Math.min(...arr), Math.max(...arr)]
+
+
+                            // FIRST TRY || WORKING
+// function minMax(arr){
+//     return [Math.min(...arr), Math.max(...arr)]
+// }
 
 
 
