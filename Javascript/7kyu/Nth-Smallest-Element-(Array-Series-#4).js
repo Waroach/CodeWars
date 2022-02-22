@@ -4,6 +4,13 @@ function nthSmallest(arr, pos){
 
 
 
+                            // PSEUDOCODE
+// First arrange the arr array from smallest to largest
+// then find the element position from pos
+// return the result
+
+
+
 console.log(nthSmallest([3,1,2],2),2);
 console.log(nthSmallest([15,20,7,10,4,3],3),7);
 console.log(nthSmallest([-5,-1,-6,-18],4),-1);
