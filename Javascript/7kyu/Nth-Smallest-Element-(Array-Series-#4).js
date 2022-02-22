@@ -1,4 +1,10 @@
-nthSmallest=(arr, pos)=>Number(arr.sort((a,b)=>a-b).splice(pos-1, 1))
+function nthSmallest(arr, pos){
+    return Number(arr.sort((a,b)=>a-b)[pos-1])
+}
+
+
+                            // Single Line
+// nthSmallest=(arr, pos)=>Number(arr.sort((a,b)=>a-b).splice(pos-1, 1))
 
 
                             // FIRST TRY || WORKING
