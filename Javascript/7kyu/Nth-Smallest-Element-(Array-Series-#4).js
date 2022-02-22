@@ -1,5 +1,5 @@
 function nthSmallest(arr, pos){
-    //your code here
+    return Number(arr.sort((a,b)=>a-b).splice(pos-1, 1))
 }
 
 
