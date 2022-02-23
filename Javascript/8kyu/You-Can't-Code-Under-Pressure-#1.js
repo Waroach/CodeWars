@@ -5,6 +5,12 @@ function doubleInteger(i) {
 
 
 
+                            // PSEUDOCODE
+// Take the Integer and add it to the integer.
+// return the result
+
+
+
 console.log(doubleInteger(2), 4)
 
 
