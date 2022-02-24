@@ -1,6 +1,8 @@
 doubleInteger=i=>i+i
 
 
+
+
                             // First Try working
 // function doubleInteger(i) {
 //     return i+i
