@@ -4,6 +4,16 @@ function countSheeps(arrayOfSheep) {
 
 
 
+var array1 = [true,  true,  true,  false,
+    true,  true,  true,  true ,
+    true,  false, true,  false,
+    true,  false, false, true ,
+    true,  true,  true,  true ,
+    false, false, true,  true ];
+Test.assertEquals(countSheeps(array1), 17, "There are 17 sheeps in total")
+
+
+
 /*
 https://www.codewars.com/kata/54edbc7200b811e956000556/train/javascript
 
