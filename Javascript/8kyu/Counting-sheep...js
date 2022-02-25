@@ -1,8 +1,14 @@
 function countSheeps(arrayOfSheep) {
-    let count = 0
-    arrayOfSheep.filter(isheep => isheep ? count++ : null)
-    return count
+    return arrayOfSheep.reduce((p,c)=> c ? p+1 : p+0 ,0)
 }
+
+
+                            // FIRST TRY || Working Long Form
+// function countSheeps(arrayOfSheep) {
+//     let count = 0
+//     arrayOfSheep.filter(isheep => isheep ? count++ : null)
+//     return count
+// }
 
 
 
