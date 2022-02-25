@@ -4,6 +4,16 @@ function countSheeps(arrayOfSheep) {
 
 
 
+                            // PSEUDOCODE1
+// test for null/undefined
+// Create a variable named count
+// Step thry the array
+    //If true add to count
+// return count.
+
+
+
+
 var array1 = [true,  true,  true,  false,
     true,  true,  true,  true ,
     true,  false, true,  false,
