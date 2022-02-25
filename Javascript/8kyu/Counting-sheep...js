@@ -1,6 +1,11 @@
-function countSheeps(arrayOfSheep) {
-    return arrayOfSheep.reduce((p,c)=> c ? p+1 : p+0 ,0)
-}
+                            // Simple Boolean Test
+countSheeps=arrayOfSheep=>arrayOfSheep.filter(Boolean).length
+
+
+                            // Cleaned up using REDUCE
+// function countSheeps(arrayOfSheep) {
+//     return arrayOfSheep.reduce((p,c)=> c ? p+1 : p+0 ,0)
+// }
 
 
                             // FIRST TRY || Working Long Form
