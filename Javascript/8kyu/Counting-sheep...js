@@ -10,7 +10,7 @@ var array1 = [true,  true,  true,  false,
     true,  false, false, true ,
     true,  true,  true,  true ,
     false, false, true,  true ];
-Test.assertEquals(countSheeps(array1), 17, "There are 17 sheeps in total")
+console.log(countSheeps(array1), 17, "There are 17 sheeps in total")
 
 
 
