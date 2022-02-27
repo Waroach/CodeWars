@@ -4,6 +4,14 @@ function isDigit(s) {
 
 
 
+// PSEUDOCODE
+// first we need to take the string and convert it into a Floating Integer
+    // Number() will not work
+// then compare it to the string.
+// return the result.
+
+
+
 /*
 https://www.codewars.com/kata/57126304cdbf63c6770012bd/train/javascript
 
