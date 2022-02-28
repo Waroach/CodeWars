@@ -1,6 +1,10 @@
-function isDigit(s) {
-    return parseFloat(s) == s
-}
+isDigit = s => parseFloat(s) == s
+
+
+                            // First Try
+// function isDigit(s) {
+//     return parseFloat(s) == s
+// }
 
 
 
