@@ -1,10 +1,14 @@
-function areYouPlayingBanjo(name) {
-    if(/r/i.test(name[0])){
-        return `${name} plays banjo`
-    }else{
-        return `${name} does not play banjo`
-    }
-}
+
+areYouPlayingBanjo = name => /r/i.test(name[0]) ? `${name} plays banjo` : `${name} does not play banjo`
+
+                            // FIRST TRY || WORKING
+// function areYouPlayingBanjo(name) {
+//     if(/r/i.test(name[0])){
+//         return `${name} plays banjo`
+//     }else{
+//         return `${name} does not play banjo`
+//     }
+// }
 
 
 
