@@ -1,6 +1,9 @@
 function areYouPlayingBanjo(name) {
-    // Implement me
-    return name;
+    if(/r/i.test(name[0])){
+        return `${name} plays banjo`
+    }else{
+        return `${name} does not play banjo`
+    }
 }
 
 
