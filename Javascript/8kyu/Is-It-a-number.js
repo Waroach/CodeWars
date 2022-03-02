@@ -1,3 +1,4 @@
+                            // Created a One Liner
 isDigit = s => parseFloat(s) == s
 
 
