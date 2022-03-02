@@ -5,6 +5,13 @@ function areYouPlayingBanjo(name) {
 
 
 
+// PSEUDOCODE
+// check if the first letter of the name is r or R
+    // If so return name + DoesPlay
+    // If not return name + DoesNotPlay
+
+
+
 console.log(areYouPlayingBanjo("Adam"), "Adam does not play banjo");
 console.log(areYouPlayingBanjo("Paul"), "Paul does not play banjo");
 console.log(areYouPlayingBanjo("Ringo"), "Ringo plays banjo");
