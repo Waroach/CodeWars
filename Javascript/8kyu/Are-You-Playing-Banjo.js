@@ -5,6 +5,13 @@ function areYouPlayingBanjo(name) {
 
 
 
+console.log(areYouPlayingBanjo("Adam"), "Adam does not play banjo");
+console.log(areYouPlayingBanjo("Paul"), "Paul does not play banjo");
+console.log(areYouPlayingBanjo("Ringo"), "Ringo plays banjo");
+console.log(areYouPlayingBanjo("bravo"), "bravo does not play banjo");
+console.log(areYouPlayingBanjo("rolf"), "rolf plays banjo");
+
+
 
 /*
 https://www.codewars.com/kata/53af2b8861023f1d88000832/train/javascript
