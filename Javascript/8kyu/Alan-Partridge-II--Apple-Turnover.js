@@ -6,6 +6,13 @@ function apple(x){
     }
 }
 
+
+
+                            // PSEUDOCODE
+// I Need to add psedudocode to this
+
+
+
 /*
 https://www.codewars.com/kata/580a094553bd9ec5d800007d/train/javascript
 
