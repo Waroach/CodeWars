@@ -9,7 +9,9 @@ function apple(x){
 
 
                             // PSEUDOCODE
-// I Need to add psedudocode to this
+// check if x squared is larger then 1000.
+    // If so return It's hotter than the sun!!
+    // otherwise return Help yourself to a honeycomb Yorkie for the glovebox.
 
 
 
