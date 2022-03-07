@@ -1,6 +1,10 @@
-var isSquare = function(n){
-    return Math.sqrt(n) % 1 === 0
-}
+                            // Created One Liner
+var isSquare = n => Math.sqrt(n) % 1 === 0
+
+                            // First Try
+// var isSquare = function(n){
+//     return Math.sqrt(n) % 1 === 0
+// }
 
 
 
