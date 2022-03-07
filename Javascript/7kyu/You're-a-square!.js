@@ -4,6 +4,13 @@ var isSquare = function(n){
 
 
 
+// PSEUDOCODE
+// Check if the number is a square number
+// A number is square if it multiplies by itself?
+// exampler: 4x4 = 16 so 16 is square
+
+
+
 console.log(isSquare(-1), false, "-1: Negative numbers cannot be square numbers");
 console.log(isSquare( 0), true, "0 is a square number (0 * 0)");
 console.log(isSquare( 3), false, "3 is not a square number");
