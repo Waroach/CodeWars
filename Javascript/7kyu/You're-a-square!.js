@@ -1,5 +1,5 @@
 var isSquare = function(n){
-    return false; // fix me
+    return Math.sqrt(n) % 1 === 0
 }
 
 
