@@ -6,6 +6,7 @@ function getCount(str) {
 }
 
 console.log(getCount("abracadabra"), 5)
+console.log(getCount("testtesttest"), 3)
 
 
 /*
