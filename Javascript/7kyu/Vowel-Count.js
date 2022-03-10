@@ -5,6 +5,14 @@ function getCount(str) {
     return vowelsCount;
 }
 
+
+
+                            // PSEUDOCODE
+// take a string and check each element
+// if any element matches a letter that is inside of the vowel array
+// return the total
+
+
 console.log(getCount("abracadabra"), 5)
 console.log(getCount("testtesttest"), 3)
 
