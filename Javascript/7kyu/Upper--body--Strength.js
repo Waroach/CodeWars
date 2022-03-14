@@ -1,8 +1,18 @@
 alexMistakes=(numberOfKata,timeLimit)=>Math.floor(Math.log2((timeLimit-6*numberOfKata)/5+1))
 
+
 // function alexMistakes(numberOfKata, timeLimit){  
 //     return Math.floor(Math.log2((timeLimit - 6 * numberOfKata) / 5 + 1))
 // }
+
+
+
+                            // PSEUDOCODE
+// take the time limit and remove 6 minutes
+// then times that by the numberOfKata
+    // then devide that by 5 plus 1
+
+
 
 /*
 Alex is transitioning from website design to coding and wants to sharpen his skills with CodeWars.
