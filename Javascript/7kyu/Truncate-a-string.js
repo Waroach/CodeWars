@@ -1,3 +1,5 @@
+
+                            // Frist Try
 truncateString=(str, num)=>{
     if (str.length <= num) {
         return str
