@@ -10,6 +10,15 @@ truncateString=(str, num)=>{
     return str.slice(0, num) + "..."
 }
 
+
+
+                            // PSEUDOCODE
+// if the str legnth is longer then then num
+    // slice it to the same length of num
+// otherwise return the string
+
+
+
 /*
 Truncate the given string (first argument) if it is longer
 than the given maximum length (second argument).
