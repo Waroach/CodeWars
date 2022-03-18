@@ -16,6 +16,7 @@ truncateString=(str, num)=>{
 // if the str legnth is longer then then num
     // slice it to the same length of num
 // otherwise return the string
+// but if the valie is less then 3 do the same
 
 
 
