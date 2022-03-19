@@ -20,6 +20,10 @@ truncateString=(str, num)=>{
 
 
 
+console.log(truncateString("brentRankin", 8), "should see this")
+
+
+
 /*
 Truncate the given string (first argument) if it is longer
 than the given maximum length (second argument).
