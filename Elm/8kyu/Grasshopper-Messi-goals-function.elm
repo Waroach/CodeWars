@@ -1,7 +1,8 @@
 module Goals exposing (goals)
 
 goals : Int -> Int -> Int -> Int
-goals = ?fill\
+goals a b c =
+  a + b + c
 
 
 
