@@ -5,6 +5,19 @@ goals a b c =
   a + b + c
 
 
+-- PSEUDOCODE
+{--
+First we need to define a function called goals
+  That takes 3 paramaters. each a Int. THEN Return a Int
+
+Second we create the function called goals
+  in Javascript it would look like this...
+
+function goals(a, b, c){
+  return a + b + c
+}
+--}
+
 
 {--
 https://www.codewars.com/kata/55f73be6e12baaa5900000d4/train/elm
