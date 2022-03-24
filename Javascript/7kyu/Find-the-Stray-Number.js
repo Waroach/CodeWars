@@ -1,5 +1,9 @@
 function stray(numbers) {
-  return 0;
+  numbers = numbers.sort((a, b) => a - b);
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] == numbers[i + 1]) return numbers[numbers.length - 1];
+    else return numbers[0];
+  }
 }
 
 console.log(stray([1, 1, 2]), 2);
