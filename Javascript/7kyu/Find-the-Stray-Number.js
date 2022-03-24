@@ -2,6 +2,11 @@ function stray(numbers) {
   return 0;
 }
 
+console.log(stray([1, 1, 2]), 2);
+console.log(stray([17, 17, 3, 17, 17, 17, 17]), 3);
+console.log(stray([17, 17, 11, 17, 17, 17, 17]), 11);
+console.log(stray([17, 17, 18, 17, 17, 17, 17]), 18);
+
 /*
 https://www.codewars.com/kata/57f609022f4d534f05000024/train/javascript
 
