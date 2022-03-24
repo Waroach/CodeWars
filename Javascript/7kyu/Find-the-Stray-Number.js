@@ -7,6 +7,12 @@ console.log(stray([17, 17, 3, 17, 17, 17, 17]), 3);
 console.log(stray([17, 17, 11, 17, 17, 17, 17]), 11);
 console.log(stray([17, 17, 18, 17, 17, 17, 17]), 18);
 
+// PSEUDOCODE
+// First grab the group of numbers and arrange them smallest to largest
+// Check to see if the first two numbers match
+// if so return the last number
+// if not return the first number
+
 /*
 https://www.codewars.com/kata/57f609022f4d534f05000024/train/javascript
 
