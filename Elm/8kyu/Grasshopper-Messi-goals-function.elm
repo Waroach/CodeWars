@@ -5,6 +5,7 @@ goals a b c =
   a + b + c
 
 
+
 -- PSEUDOCODE
 {--
 First we need to define a function called goals
@@ -19,6 +20,8 @@ function goals(a, b, c){
 --}
 
 
+
+-- INFORMATION ABOUT KATA
 {--
 https://www.codewars.com/kata/55f73be6e12baaa5900000d4/train/elm
 
