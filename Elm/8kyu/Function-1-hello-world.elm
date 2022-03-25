@@ -1,8 +1,11 @@
 module Greet exposing (greet)
 
+                        -- PSEUDOCODE
+-- Create a variable that is already passed. greet
+-- assaign this greet function as a string returning a string
+-- assaign the value of the greet string as hello world!
 
 
--- Write a function "greet" that returns "hello world!"
 
 {--
 https://www.codewars.com/kata/523b4ff7adca849afe000035/train/elm
