@@ -1,7 +1,10 @@
-function unusualFive() {
-  let five = "fivve";
-  return five.length;
-}
+const unusualFive = () => "fives".length;
+
+// Second try. DONE!
+// function unusualFive() {
+//   let five = "fivve";
+//   return five.length;
+// }
 
 // First Try
 // function unusualFive() {
