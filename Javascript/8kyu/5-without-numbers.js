@@ -2,6 +2,10 @@ function unusualFive() {
   //
 }
 
+// pseudocode
+// we have to find a method that returns a number depending on certain results.
+// we could use things like .legth. or grab the index of something.
+
 /*
 https://www.codewars.com/kata/59441520102eaa25260000bf/train/javascript
 
