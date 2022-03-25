@@ -1,6 +1,13 @@
 function unusualFive() {
-  //
+  let five = "fivve";
+  return five.length;
 }
+
+// First Try
+// function unusualFive() {
+//   let five = ["h", "u", "i", "j", "g"]
+//   return five.length
+// }
 
 // pseudocode
 // we have to find a method that returns a number depending on certain results.
