@@ -1,10 +1,16 @@
 module Greet exposing (greet)
 
+greet : String
+greet = "hello world!"
+
+                            -- First Try
+-- module Greet exposing (greet)
+-- greet = "hello world!"
+
                         -- PSEUDOCODE
 -- Create a variable that is already passed. greet
 -- assaign this greet function as a string returning a string
 -- assaign the value of the greet string as hello world!
-
 
 
 {--
