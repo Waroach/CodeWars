@@ -1,6 +1,8 @@
-function sum(numbers) {
-  return numbers.reduce((a, b) => a + b, 0);
-}
+const sum = (nums) => nums.reduce((a, b) => a + b, 0);
+
+// function sum(numbers) {
+//   return numbers.reduce((a, b) => a + b, 0);
+// }
 
 //PSEUDOCODE
 // Step thru the array and add each element to a total.
