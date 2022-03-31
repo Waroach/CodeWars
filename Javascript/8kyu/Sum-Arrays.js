@@ -7,6 +7,7 @@ const sum = (nums) => nums.reduce((a, b) => a + b, 0);
 //PSEUDOCODE
 // Step thru the array and add each element to a total.
 // return that total
+// if the array is empty return 0
 
 /*
 https://www.codewars.com/kata/53dc54212259ed3d4f00071c/train/javascript
