@@ -7,15 +7,14 @@ first we need three varibles for end result
     let runnerA = runners a lead time converted into minutes.
     let runnerB = runner b at 0
     let totalTime = 0
-
-    we need a infinate loop to be ended when params are meet.
-        --Params are b is greater then a.
-    the loop will run these equations.
-        -- runnerA + 720 * 60
-        -- runnerb + 850 * 60
-        -- totalTime + 60minutes.
-    once our loop finds its end point do this
-        -- take totalTime and convert to array form [hr,min,sec]
+we need a infinate loop to be ended when params are meet.
+    --Params are b is greater then a.
+the loop will run these equations.
+    -- runnerA + 720 * 60
+    -- runnerb + 850 * 60
+    -- totalTime + 60minutes.
+once our loop finds its end point do this
+    -- take totalTime and convert to array form [hr,min,sec]
 */
 
 /*
