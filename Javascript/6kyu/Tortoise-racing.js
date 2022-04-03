@@ -1,5 +1,10 @@
 function race(v1, v2, g) {
-  // your code
+  if (v1 >= v2) return null;
+  const time = g / (v2 - v1);
+  const h = Math.trunc(time);
+  const m = Math.trunc((time * 60) % 60);
+  const s = Math.trunc((time * 3600) % 60);
+  return [h, m, s];
 }
 
 /*                  PSEUDOCODE
