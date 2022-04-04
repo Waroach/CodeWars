@@ -1,9 +1,9 @@
 function race(v1, v2, g) {
   if (v1 >= v2) return null;
-  const time = g / (v2 - v1);
-  const h = Math.trunc(time);
-  const m = Math.trunc((time * 60) % 60);
-  const s = Math.trunc((time * 3600) % 60);
+  let time = g / (v2 - v1);
+  let h = Math.trunc(time);
+  let m = Math.trunc((time * 60) % 60);
+  let s = Math.trunc((time * 3600) % 60);
   return [h, m, s];
 }
 
