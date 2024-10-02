@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Multiple of 3 or 5</h1>
+<p> If we list all the natural numbers below 10 that are mulitple of 3 or 5 we get 3, 5, 6, and 9. The sum of these mulitples is 23</p>
+
+<p>Find the sum of all the multiples of 3 or 5 below 1000</p>
+<h3 id="answer"></h3><!-- This is where the result will be shown -->
+
+<script>
+function total() {
+  let i = 0;
+  let total = 0;
+
+  while (i < 10) {
+    if (i % 3 === 0 || i % 5 === 0) {
+      // Check if i is a multiple of 3 or 5
+      total = total + i;
+    }
+    i++; // Increment i in each loop
+  }
+  return total;
+}
+
+// Set the result of total() to the <p> element
+document.getElementById("answer").innerHTML = total();
+
+// log to console
+console.log(total());
+
+</script>
+
+</body>
+</html>
