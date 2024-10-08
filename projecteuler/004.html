@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Largest Palindrome Product</h1>
+<p>A palindromic number reads the same both ways. The largest palindrome made from the product of two 
+    2-digit numbers is 9009 = 91 x 99.</p>
+<p>Find the largest palindrome made from the product of two 3-digit numbers.</p>
+
+<h3 id="answer"></h3><!-- This is where the result will be shown -->
+
+<script>
+function isPalindrome(num){
+    // set to string
+    const str = num.toString();
+    // is string equal to string reversed.
+    return str === str.split('').reverse().join('')
+    // if reversed string is equal to original string then the number is a palindrome.
+}
+
+// now we need to loop through all pairs of 3-digit numbers from (999 - 100) and check if their product is a palindrome
+
+function largestPalindromeProduct(){
+    let largestPalindrome = 0
+
+    // loop thru numbers starting from highest 3-digit 999 to lowest 3-digit 100
+    for(let i = 999; i >= 100; i--){
+        // we need to do this twice. as we are checking two 3-digit numbers
+        for(let j = i; j >= 100; j--){
+            // create product of the two 3-digit numbers
+            let product = i * j;
+            // we need to check if it is a palindrom
+            if(isPalindrome(product)){
+                // If palindrom we need to check if it is the largest palindrome
+                if(product > largestPalindrome){
+                    largestPalindrome = product;
+                }
+            }
+        }
+    }
+
+
+    return largestPalindrome
+}
+
+
+
+// Set the result of total() to the <p> element
+document.getElementById("answer").innerHTML = largestPalindromeProduct();
+
+// log to console
+console.log(largestPalindromeProduct());
+
+</script>
+
+</body>
+</html>

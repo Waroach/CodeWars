@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Largest Prime Factor</h1>
+<p>The prime factors of 13195 are 5,7,13 and 29.</p>
+<p>What is the largest prime factor of the number 600851475143</p>
+
+<h3 id="answer"></h3><!-- This is where the result will be shown -->
+
+<script>
+function largestPrimeFactor(num) {
+    let factor = 2; // start with the smallest prime number
+
+    while( num > 1 ){
+        if(num % factor === 0){
+            num = num / factor
+        } else {
+            factor++
+        }
+    }
+
+    return factor
+}
+
+// Set the result of total() to the <p> element
+document.getElementById("answer").innerHTML = largestPrimeFactor(600851475143);
+
+// log to console
+console.log(largestPrimeFactor(600851475143));
+
+</script>
+
+</body>
+</html>
