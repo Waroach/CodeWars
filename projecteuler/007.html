@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>10001st Prime</h1>
+<h2>SOLVED</h2>
+<p>By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.</p>
+<p>What is the 10001st prime number?</p>
+
+<h3 id="answer"></h3><!-- This is where the result will be shown -->
+
+<script>
+
+
+function lastPrimeNumber(prime){
+    // we need to create prime numbers until a given number.
+    // to brute force we could check each number if it is a prime. if it is the count goes up.
+    // when the count equals the given number return the current prime.
+    let primeCount = 0
+    let highestPrime = 0
+    let currentNum = 0
+
+    while (primeCount < prime) {
+        if(isPrime(currentNum)){
+            primeCount++
+            highestPrime = currentNum
+        }
+
+        currentNum++
+        console.log("Prime", prime, "Prime Count", primeCount, "Current", currentNum, "High", highestPrime)
+    }
+
+    function isPrime(num) {
+        if (num <= 1) {
+            return false;
+        }
+
+        // Check for divisibility up to the square root of the number
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i === 0) {
+            return false;
+            }
+        }
+
+        return true;
+    }
+
+    return highestPrime
+}
+
+// function isPrime(num) {
+//     if (num <= 1) {
+//         return false;
+//     }
+
+//     // Check for divisibility up to the square root of the number
+//     for (let i = 2; i <= Math.sqrt(num); i++) {
+//         if (num % i === 0) {
+//         return false;
+//         }
+//     }
+
+//     return true;
+// }
+
+
+// Set the result of problem() to the <p> element
+document.getElementById("answer").innerHTML = lastPrimeNumber(10001);
+
+// log to console
+console.log(lastPrimeNumber(10001));
+
+</script>
+
+</body>
+</html>

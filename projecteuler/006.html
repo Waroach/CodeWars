@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Sum Square Difference</h1>
+<h2>SOLVED</h2>
+<p>The sum of the squares of the first ten natural numbers is, 1powerOf2 + 2powerOf2 + ... 10powerOf2 = 385</p>
+<p>the square sum of the first ten natural numbers is, (1 + 2 + .... 10)powerOf2 == 55powerOf2 = 3025</p>
+<p>Hence the Difference between the sum of the squares of the first ten natural numbers and the square fo the sum is 3025 - 385 = 2640</p>
+<p>Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.</p>
+
+<h3 id="answer"></h3><!-- This is where the result will be shown -->
+
+<script>
+
+
+function nameOfProblem(num){
+
+// We need the result of squaring and totaling the natural numbers.
+    let squareTotal = 0
+
+// We need to sum natural numbers squared. then square that result
+    let sumSquared = 0
+
+    for(i=1; i<=num; i++){
+        squareTotal = squareTotal + i ** 2;
+        sumSquared = sumSquared + i
+    }
+
+
+// Find the difference between the two.
+    return (sumSquared ** 2) - squareTotal
+}
+
+
+
+// Set the result of problem() to the <p> element
+document.getElementById("answer").innerHTML = nameOfProblem(100);
+
+// log to console
+console.log(nameOfProblem(100));
+
+</script>
+
+</body>
+</html>
