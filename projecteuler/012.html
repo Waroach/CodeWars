@@ -26,6 +26,20 @@
 function trianglurNumber(){
     // need to find a way to iterate thru problem and find triangle with x amount of divisors.
     // then once found sum those divisors together.
+    // 1. Set n = 1
+    // 2. Loop until a triangle number with more than 500 divisors is found:
+    //  a. Calculate the triangle number T_n using T_n = n * (n + 1) / 2
+    //  b. Find the number of divisors of T_n
+    //  i. Initialize divisor_count = 0
+    //  ii. Loop from i = 1 to sqrt(T_n):
+    //      If T_n is divisible by i, count both i and T_n / i as divisors (unless they are the same).
+    //   c. If divisor_count > 500, break the loop and return T_n
+    //   d. Otherwise, increment n and repeat.
+    
+    let n = 1
+    let devisorCount = 0
+
+
 }
 
 
