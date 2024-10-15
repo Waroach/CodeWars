@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>TITLE</h1>
+<h2>NOT SOLVED</h2>
+<p>Discription of Problem</p>
+<p>Secondary Discription</p>
+
+<h3 id="answer"></h3><!-- This is where the result will be shown -->
+
+<script>
+
+
+function findMaximumQuality(packets, channels) {
+    // Write your code here
+    
+    // i feel like i should sort the packets to make this a litle easier...
+    packets.sort((a,b) => a -b)
+
+
+    // if # packets is less then # of channels return a "invalid input"
+    // what if there are no channels? 
+    if (packets.length < channels){
+        return "Invalid input: no packets"
+        // TODO BR MAYBE should i use 
+        // throw new Error("Invalid input: no packets")
+    }else if(channels === 0){
+        return "Invalid input: no channels"
+    }
+    
+    // intialize the max quality sum maybe maxQSum maxSum
+    let maxSum = 0
+    let groups = []
+        
+
+    // we will need to iterate over all the poss ways to split the packets into groups or 'channels'
+    // need the median for the channel
+    // need the sum of current medians
+    // update the sum if the sum is greater then old sum
+
+    // lets start with 1 packet and 1 channel, so each has at least one.
+    // my problem is more then one channel?
+    for(let i = 0; i < channels - 1; i++){
+        console.log(i, groups, "channels", channels)
+        groups.push([packets.pop()])
+    }
+    console.log(groups, "before")
+    // do i need to check if packets is greater then 0 length. will an empty (leftovers) packets give an error?
+    groups.push(packets)
+    console.log(groups, "after")
+    
+    // left screen to google javascript .push
+    // i am getting an error. due to the fact i made groups 0 not an array.
+    
+    // after all iterations sum to nearest INT and return maxSum
+    
+    maxSum = groups.reduce((sum, group) => {
+        // tring to decide if i should find median here or create a helper...
+        let median = findMedianHelper(group)
+        return sum + median
+    }, 0)
+    
+    
+    
+    
+    
+    return Math.ceil(maxSum)
+
+}
+
+function findMedianHelper(arr){
+    let arrLength = arr.length
+    let mid = Math.floor(arrLength / 2)
+    
+    
+    if(arrLength % 2 === 1){
+        return arr[mid]
+    }else {
+        return (arr[mid - 1] + arr[mid]) / 2
+    }
+    
+}
+
+// Set the result of problem() to the <p> element
+document.getElementById("answer").innerHTML = findMaximumQuality([2, 2, 1, 5, 3], 2);
+
+// log to console
+console.log(findMaximumQuality([2, 2, 1, 5, 3], 2));
+
+</script>
+
+</body>
+</html>
