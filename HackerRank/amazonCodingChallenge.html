@@ -40,7 +40,7 @@ function findMaximumQuality(packets, channels) {
     // update the sum if the sum is greater then old sum
 
     // lets start with 1 packet and 1 channel, so each has at least one.
-    // my problem is more then one channel?
+    // my problem is more then one channel? does this fix other problems?
     for(let i = 0; i < channels - 1; i++){
         console.log(i, groups, "channels", channels)
         groups.push([packets.pop()])
