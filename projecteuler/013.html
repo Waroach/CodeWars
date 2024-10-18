@@ -134,13 +134,34 @@ function largeSum(){
     //  return totalSum.toString().slice(0, 10)
 
     // lets slice out every 10 digits of the string and sum them
-    let sum = 0
-    for(let i = 0; i < oneHundredFiftyDigitsNumbers.length; i+=10){
-        sum += Number(oneHundredFiftyDigitsNumbers.slice(i, i+10))
+    // let sum = 0
+    // for(let i = 0; i < oneHundredFiftyDigitsNumbers.length; i+=10){
+    //     sum += Number(oneHundredFiftyDigitsNumbers.slice(i, i+10))
+    // }
+
+    // // return the first 10 digits of the sum
+    // return sum.toString().slice(0, 10)
+
+
+    // Split the large string into an array of 50-digit numbers
+    let numbers = [];
+    for (let i = 0; i < oneHundredFiftyDigitsNumbers.length; i += 50) {
+        numbers.push(oneHundredFiftyDigitsNumbers.slice(i, i + 50));
     }
 
-    // return the first 10 digits of the sum
-    return sum.toString().slice(0, 10)
+    // Initialize sum as a BigInt to handle large numbers
+    let sum = BigInt(0);
+
+    // Loop through each number, convert to BigInt, and add to sum
+    for (let i = 0; i < numbers.length; i++) {
+        sum += BigInt(numbers[i]);
+    }
+
+    // Convert the sum to a string and extract the first 10 digits
+    let firstTenDigits = sum.toString().slice(0, 10);
+
+    return firstTenDigits;
+
 }
 
 
