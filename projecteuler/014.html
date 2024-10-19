@@ -3,7 +3,7 @@
 <body>
 
 <h1>Longest Collatz Sequence</h1>
-<h2>NOT SOLVED</h2>
+<h2>SOLVED</h2>
 <p>The following iterative sequence is defined for the set of positive integers:</p>
 <p>n -> n/2(n is even)</p>
 <p>n -> 3n + 1(n is odd)</p>
@@ -18,17 +18,41 @@
 <script>
 
 
-function nameOfProblem(){
+function collatzSequenceLength(n) {
+    let length = 1; // Start with 1 because we include the starting number
+    while (n !== 1) {
+        if (n % 2 === 0) {
+            n = n / 2;
+        } else {
+            n = 3 * n + 1;
+        }
+        length++;
+    }
+    return length;
+}
 
+function longestCollatzSequence(limit) {
+    let longestChain = 0;
+    let numberWithLongestChain = 0;
+
+    for (let i = 1; i < limit; i++) {
+        let currentChainLength = collatzSequenceLength(i);
+        if (currentChainLength > longestChain) {
+            longestChain = currentChainLength;
+            numberWithLongestChain = i;
+        }
+    }
+
+    return numberWithLongestChain;
 }
 
 
 
 // Set the result of problem() to the <p> element
-document.getElementById("answer").innerHTML = nameOfProblem();
+document.getElementById("answer").innerHTML = longestCollatzSequence(1000000);
 
 // log to console
-console.log(nameOfProblem());
+console.log(longestCollatzSequence(1000000));
 
 </script>
 
