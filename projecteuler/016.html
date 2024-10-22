@@ -13,19 +13,28 @@
 
 
 function powerDigitSum(numPower){
-    num = numPower[0]
-    power = numPower[1]
+    let num = BigInt(numPower[0])
+    let power = BigInt(numPower[1])
+    // let total = Math.pow(num, power)
+    // Had to remove the math.pow() because it cannot handle BigInts
+    let total = num ** power
+    let digits = total.toString()
+    console.log(total)
+    let sum = 0
     
-    
+    for(i=0;i<digits.length;i++){
+        sum += Number(digits[i])
+    }
+
+    return sum
 }
 
-
+// log to console
+console.log(powerDigitSum([2,1000]));
 
 // Set the result of problem() to the <p> element
-document.getElementById("answer").innerHTML = powerDigitSum([2,15]);
+document.getElementById("answer").innerHTML = powerDigitSum([2,1000]);
 
-// log to console
-console.log(powerDigitSum([2,15]));
 
 </script>
 
