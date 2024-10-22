@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Summation of Primes</h1>
+<h2>SOLVED</h2>
+<p>The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17</p>
+<p>Find the sum of all the primes below two million.</p>
+
+<h3 id="answer"></h3><!-- This is where the result will be shown -->
+
+<script>
+
+
+function summationOfPrimes(below){
+    // we need to set a totalSum
+    // we then need to iterate thru the numbers until we reach the given number.
+    // check if it is  a prime or not.
+
+    let totalSum = 0
+
+    for (let i = 2; i <= below; i++) {
+        if(isPrime(i)){
+            totalSum = totalSum + i
+        }
+    }
+
+    function isPrime(number) {
+        if (number <= 1) return false; // Numbers less than or equal to 1 are not prime
+        for (let i = 2; i < number; i++) {
+            if (number % i === 0) {
+                return false; // If num is divisible by any number other than 1 and itself
+            }
+        }
+        return true; // If no divisors were found, num is a prime number
+    }
+
+    return totalSum
+}
+
+
+
+// Set the result of problem() to the <p> element
+document.getElementById("answer").innerHTML = summationOfPrimes(2000000);
+
+// log to console
+console.log(summationOfPrimes(2000000));
+
+</script>
+
+</body>
+</html>
