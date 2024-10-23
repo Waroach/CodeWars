@@ -2,27 +2,87 @@
 <html>
 <body>
 
-<h1>TITLE</h1>
+<h1>Number Letter Counts</h1>
 <h2>NOT SOLVED</h2>
-<p>Discription of Problem</p>
-<p>Secondary Discription</p>
+<p>If the number 1 to 5 are written out in words: one, two, three, four, five, then there are 3 + 3 + 5 + 4 + 4 = 19 letters used in total.</p>
+<p>if all the numbers from 1 to 1000 (one thousand) inclusive were written out in words, how many letters would be used?</p>
+
+<p><b>NOTE:</b> Do not count spaces or hyphens. For example, 342 (three hundred and forty-two) contains 23 letters and 115 (one hundred and fifteen) contains 20 letters. The use of "and" when writing out numbers is in compliance with British usage </p>
 
 <h3 id="answer"></h3><!-- This is where the result will be shown -->
 
 <script>
 
 
-function nameOfProblem(){
+function numberLetterCounts(){
+
+    // Define words for 1 to 9
+    let singles = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
+    
+    // Define words for 10 to 19
+    let teens = ["ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"];
+    
+    // Define words for 20, 30, ..., 90
+    let tens = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"];
+    
+    let hundred = "hundred";
+    let thousand = "one thousand";
+    
+    let totalLetters = 0;
+    
+    // Function to remove spaces and hyphens and count letters
+    function countLetters(word) {
+        return word.replace(/[\s-]/g, '').length;
+    }
+
+    // Count numbers from 1 to 9
+    for (let i = 1; i < 10; i++) {
+        totalLetters += countLetters(singles[i]);
+    }
+
+    // Count numbers from 10 to 19
+    for (let i = 0; i < 10; i++) {
+        totalLetters += countLetters(teens[i]);
+    }
+
+    // Count numbers from 20 to 99
+    for (let i = 2; i < 10; i++) {  // Tens place
+        for (let j = 0; j < 10; j++) {  // Ones place
+            totalLetters += countLetters(tens[i] + singles[j]);
+        }
+    }
+
+    // Count numbers from 100 to 999
+    for (let i = 1; i < 10; i++) {
+        totalLetters += countLetters(singles[i] + " " + hundred); // "one hundred", "two hundred", etc.
+        
+        for (let j = 1; j < 100; j++) {  // Add the part after "hundred"
+            let num = "";
+            if (j < 10) {
+                num = singles[j]; // 101-109, etc.
+            } else if (j < 20) {
+                num = teens[j - 10]; // 110-119, etc.
+            } else {
+                num = tens[Math.floor(j / 10)] + singles[j % 10]; // 120-199, etc.
+            }
+            totalLetters += countLetters(singles[i] + " " + hundred + " and " + num);
+        }
+    }
+
+    // Count 1000 ("one thousand")
+    totalLetters += countLetters(thousand);
+
+    return totalLetters;    
 
 }
 
 
 
 // Set the result of problem() to the <p> element
-document.getElementById("answer").innerHTML = nameOfProblem();
+document.getElementById("answer").innerHTML = numberLetterCounts("one, two, three, four, five");
 
 // log to console
-console.log(nameOfProblem());
+console.log(numberLetterCounts("one, two, three, four, five"));
 
 </script>
 
